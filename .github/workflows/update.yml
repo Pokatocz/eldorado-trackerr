@@ -1,0 +1,26 @@
+name: Aktualizace cen Eldorado
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # každých 6 hodin
+  workflow_dispatch:         # ruční spuštění tlačítkem
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Stáhnout ceny
+        env:
+          MAX_PER_RUN: '140'
+          DELAY: '2.5'
+        run: python scripts/update.py
+      - name: Uložit data do repozitáře
+        run: |
+          git config user.name "price-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/catalog.json data/history.json
+          git diff --cached --quiet || git commit -m "data: aktualizace cen $(date -u +'%Y-%m-%d %H:%M')"
+          git push
