@@ -1,27 +1,43 @@
-# Eldorado Tracker
+# Eldorado Tracker v2 – portál
 
-Živá tabule cen pro všech 555 kategorií na Eldorado.gg (currency, items, accounts, boosting, top-upy, gift karty), se skóre „jak je to teď dobré pro prodejce", historií a watchlistem.
+Živé ceny a skóre výhodnosti pro **329 her / 555 kategorií** na Eldorado.gg. Každá hra má vlastní stránku: ceny po typech (currency / items / accounts / boosting / top-upy / gift karty), tabulku položek, výdělkové metody s AFK skóre a rizikem, graf a zdroje. Na hlavní stránce je živá tabule, karty her a žebříček 25 metod napříč hrami.
 
-## Jak to rozjet (10 minut, zdarma)
+## Nasazení (jednou)
 
-1. **GitHub** – založ účet, vytvoř nový repozitář (např. `eldorado-tracker`) a nahraj do něj obsah této složky (přetažením souborů ve webovém rozhraní GitHubu – i složky `data`, `scripts`, `.github`).
-2. **Zapni robota** – v repozitáři klikni na záložku **Actions** → workflow „Aktualizace cen Eldorado" → **Run workflow**. Poprvé ho spusť ručně, dál poběží sám každých 6 hodin. Po každém běhu se do repozitáře uloží nová data.
-3. **Netlify** – na app.netlify.com klikni *Add new site → Import an existing project → GitHub*, vyber repozitář. Build command nech prázdný, Publish directory `.` (je v `netlify.toml`). Netlify web znovu nasadí pokaždé, když robot zapíše nová data.
+1. Nahraj obsah této složky do GitHub repozitáře (soubor `.github/workflows/update.yml` vytvoř přes *Add file → Create new file*, protože Chrome skryté složky nepřetáhne – obsah je v tomto zipu).
+2. Settings → Actions → General → Workflow permissions → **Read and write** → Save.
+3. Actions → „Aktualizace cen Eldorado" → Run workflow (poprvé ručně, pak sám každých 6 h).
+4. Netlify → Import from GitHub → Build command prázdné, Publish directory `.` → Deploy. Netlify web znovu nasadí po každém běhu robota.
 
-## Co kde je
+## Jak to aktualizovat
 
-- `index.html` – celá stránka (bez závislostí kromě fontů).
-- `data/catalog.json` – 555 kategorií: hra, typ, URL, jednotka, poplatek, poslední cena, nabídky, top prodejce.
-- `data/history.json` – časové řady (cena, nabídky, recenze) pro graf a výpočet změny.
-- `scripts/update.py` – aktualizátor: stáhne stránky kategorií a doplní čísla. Šetrný: max 140 stránek za běh, pauza 2,5 s. Když stránka nejde načíst, nechá poslední známou hodnotu a zapíše chybu (vidíš ji v detailu řádku).
-- `.github/workflows/update.yml` – rozvrh robota (`17 */6 * * *`). Pokud chceš častěji, změň cron; nedoporučuji pod 3 h – Eldorado by mohlo blokovat.
+### Ceny a nabídky (automaticky)
+`scripts/update.py` obejde každých 6 hodin až 150 kategorií (všech 6 typů, nejdřív ty s nejstaršími daty) a zapíše do `data/catalog.json` (aktuální hodnoty) a `data/history.json` (časové řady). Robota spustíš i ručně v záložce Actions. Když Eldorado stránku zablokuje, zůstane poslední hodnota a v detailu hry uvidíš chybu. Interval změníš v `.github/workflows/update.yml` (řádek `cron`); pod 3 hodiny nedoporučuji.
 
-## Skóre
+### Výdělkové metody (`data/methods.json`)
+Jeden objekt = jedna metoda. Klíč `game_id` je číslo hry z URL Eldorada (např. `/g/278` → `"278"` DonutSMP, `/i/259` → `"259"` Steal a Brainrot, `/g/11-0-0` → `"11"` Warframe). Pole:
+```json
+{"game_id":"11","method":"Void Cascade – relic farm","description":"…","rate_value":120,"rate_unit":"relics/h","usd_per_hour_net":2.1,"requirements":"Zariman","afk_score":0,"ban_risk_note":"…","source":"https://…","source_date":"2026-08-27"}
+```
+Neznámé hodnoty nech `null`. `usd_per_hour_net` = výnos × cena na Eldoradu × (1 − fee).
 
-0–100 = 35 % cenový trend za 7 dní + 25 % hloubka trhu (log počtu nabídek) − 20 % dominance top prodejce (log recenzí) − 20 % poplatek. Vzorec je v `index.html` ve funkci `score()`, klidně si ho uprav.
+### Položky (`data/items.json`)
+```json
+{"game_id":"278","name":"Elytra","category":"item","price_usd":9.14,"unit":"ks","ingame_value":"345–800M","seller":"LootNova","seller_reviews":25174,"note":"…","source":"eldorado.gg","observed_at":"2026-08-27"}
+```
 
-## Poznámky
+### Žebříček (`data/ranking.json`)
+25 řádků z analýzy pro prodejce z EU; sloupce `usd_n` (číslo pro řazení), `afk`, `auto`, `ban` 0–5, `comp` kompozit.
 
-- Ceny jsou *nejnižší nabídky na první stránce kategorie* – to je cena, pod kterou musí jít nový prodejce, aby se vůbec zobrazil.
-- Top-upy a gift karty robot nestahuje (jsou to arbitrážní produkty, ne farmovatelné) – řádky jsou v katalogu jen pro úplnost.
-- Robot čte veřejné stránky; žádné API Eldorada neexistuje a žádné boty ve hrách se nepoužívají. Pokud Eldorado změní vzhled stránek, upravte regulární výrazy v `scripts/update.py` (funkce `parse`).
+### Nová hra na Eldoradu
+Přidej řádek do `data/catalog.json` (id, game, type, url, slug, fee_pct) a do `data/games.json` (id hry, name, types, cats). Robot ji začne stahovat při dalším běhu.
+
+### Skóre
+V `assets/app.js`, funkce `score()`: 35 % trend 7 d + 25 % hloubka trhu − 20 % dominance top prodejce − 20 % poplatek.
+
+## Soubory
+- `index.html` – hlavní stránka; `game.html?g=<id>` – detail hry; `assets/style.css`, `assets/app.js` – sdílený vzhled a logika
+- `data/catalog.json` (555 kategorií), `data/games.json` (329 her), `data/history.json`, `data/methods.json` (90 metod, 24 her), `data/items.json` (49 položek), `data/ranking.json` (25)
+- `scripts/update.py`, `.github/workflows/update.yml`, `netlify.toml`
+
+Prodej herních statků za reálné peníze porušuje podmínky většiny her; web je analýza trhu a neobsahuje boty, makra ani obcházení banů.

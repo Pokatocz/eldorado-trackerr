@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hra · Eldorado Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="top"><div class="top__in">
+  <a class="brand" href="index.html">ELDORADO <em>TRACKER</em></a>
+  <nav class="nav"><a href="index.html#tabule">Tabule</a><a href="index.html#hry">Hry</a><a href="index.html#zebricek">Žebříček metod</a></nav>
+  <div class="spacer"></div>
+  <input class="search" id="q" type="search" placeholder="Přejít na jinou hru…" list="gamelist" aria-label="Hledat hru"><datalist id="gamelist"></datalist>
+  <div class="status"><i id="dot"></i><span id="upd">načítám…</span></div>
+</div></div>
+
+<main class="wrap" id="main">
+  <div class="crumb"><a href="index.html">Tabule</a> › <a href="index.html#hry">Hry</a> › <span id="c-name">…</span></div>
+  <section class="card">
+    <div class="eyebrow" id="eyebrow">Hra</div>
+    <h1 id="title">…</h1>
+    <p class="lead" id="lead"></p>
+    <div class="typelinks" id="typelinks"></div>
+    <div class="grid g4" style="margin-top:14px" id="kpis"></div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">Kategorie na Eldoradu</div>
+    <h2>Ceny, nabídky, skóre</h2>
+    <div class="tbl"><table class="wide" id="cats"><thead><tr><th>Typ</th><th>Kategorie</th><th>Jednotka</th><th>Nejnižší cena</th><th>Netto po fee</th><th>Změna 7 d</th><th>Nabídek</th><th>Top prodejce</th><th>Fee</th><th>Skóre</th><th>Stáří</th><th>Odkaz</th></tr></thead><tbody></tbody></table></div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card"><h3 id="charttitle">Vývoj nejnižší ceny</h3><canvas class="big" id="chart"></canvas><div class="sub" style="margin-top:6px" id="chartnote"></div></div>
+      <div class="card" id="scorebox"></div>
+    </div>
+  </section>
+
+  <section class="section" id="itemsec">
+    <div class="eyebrow">Položky</div>
+    <h2>Ceny položek</h2>
+    <p class="lead" id="itemslead">Konkrétní položky, tiery a jejich ceny na Eldoradu (nejnižší nabídky, 27. 8. 2026) vedle hodnoty ve hře.</p>
+    <div class="tbl" style="margin-top:12px"><table class="wide" id="items"><thead><tr><th class="sortable" data-k="name" data-d="asc">Položka</th><th>Kategorie</th><th class="sortable desc" data-k="price_usd">Cena Eldorado</th><th>Hodnota ve hře</th><th>Prodejce</th><th>Poznámka</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="section" id="methsec">
+    <div class="eyebrow">Výdělkové metody</div>
+    <h2>Jak se ve hře vydělává</h2>
+    <p class="lead">Jen legitimní herní mechaniky (bez botů, maker a exploitů). <b>AFK</b> 0 = plně aktivní, 5 = běží bez tebe. <b>$/h čistý</b> = výnos × cena na Eldoradu × (1 − fee), kde je známý.</p>
+    <div class="tools"><button class="chip on" data-f="all">vše</button><button class="chip" data-f="afk">jen AFK ≥ 3</button><button class="chip" data-f="usd">jen s $/h</button><span class="hint" id="mhint"></span></div>
+    <div class="tbl"><table class="wide" id="methods"><thead><tr><th class="sortable" data-k="method" data-d="asc">Metoda</th><th>Popis</th><th class="sortable" data-k="rate_value">Výnos ve hře</th><th class="sortable desc" data-k="usd_per_hour_net">$/h čistý</th><th>Požadavky</th><th class="sortable" data-k="afk_score">AFK</th><th>Riziko</th><th>Zdroj</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">Poznámky a zdroje</div>
+    <h2>Trh, pravidla, odkazy</h2>
+    <div id="notes" class="grid g2"></div>
+  </section>
+  <p class="foot">Eldorado Tracker · ceny z veřejných stránek eldorado.gg · metody z herních wiki a guidů (srpen 2026) · prodej za reálné peníze porušuje podmínky většiny her</p>
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+const GID=new URLSearchParams(location.search).get('g');
+let methFilter='all', mSortK='usd_per_hour_net', mSortD='desc', iSortK='price_usd', iSortD='desc';
+const RISK_TAGS={ 5:'<span class="tag bad">velmi vysoké</span>', 4:'<span class="tag bad">vysoké</span>', 3:'<span class="tag">střední</span>', 2:'<span class="tag good">nízké</span>', 1:'<span class="tag good">velmi nízké</span>' };
+function riskOf(note){ if(!note) return 3; const n=note.toLowerCase(); if(/perman|konfisk|wipe/.test(n)) return 5; if(/zakáz|zakaz|banuje|ban vln/.test(n)) return 4; if(/legál|povolen|tolerov/.test(n)) return 2; return 3; }
+function render(){
+  const D=T.data; const g=D.games.find(x=>x.id===GID); if(!g){ document.getElementById('main').innerHTML='<div class="card"><h2>Hra nenalezena</h2><p class="lead">Zkus se vrátit na <a href="index.html">tabuli</a>.</p></div>'; return; }
+  document.title=g.name+' · Eldorado Tracker'; document.getElementById('c-name').textContent=g.name; document.getElementById('title').textContent=g.name;
+  const cats=g.cats.map(id=>D.byId[id]).filter(Boolean).sort((a,b)=>['currency','items','accounts','boosting','topups','giftcards'].indexOf(a.type)-['currency','items','accounts','boosting','topups','giftcards'].indexOf(b.type));
+  const priced=cats.filter(c=>c.price_low_usd!=null); const methods=D.methods.filter(m=>m.game_id===g.id); const items=D.items.filter(i=>i.game_id===g.id);
+  document.getElementById('eyebrow').textContent=Object.keys(g.types).map(t=>T.TYP[t]).join(' · ')+' · '+cats.length+' kategorií na Eldoradu';
+  document.getElementById('lead').textContent= priced.length ? `Nejnižší cena ${T.USD(Math.min(...priced.map(c=>c.price_low_usd)))}, ${priced.reduce((s,c)=>s+(c.listings||0),0).toLocaleString('cs-CZ')} nabídek celkem, ${methods.length} výdělkových metod, ${items.length} sledovaných položek.` : `Kategorie zatím nemá staženou cenu – robot ji doplní při dalším běhu. ${methods.length} výdělkových metod.`;
+  document.getElementById('typelinks').innerHTML=cats.map(c=>`<a href="${c.url}" target="_blank" rel="noopener">${T.TYP[c.type]} na Eldoradu ↗</a>`).join('');
+  const scs=cats.map(T.score).filter(x=>x!=null); const best=scs.length?Math.max(...scs):null; const top=cats.filter(c=>c.top_seller).sort((a,b)=>(b.top_seller_reviews||0)-(a.top_seller_reviews||0))[0];
+  document.getElementById('kpis').innerHTML=`<div class="kpi"><b>${best==null?'—':best}</b><span>nejlepší skóre</span></div><div class="kpi"><b>${priced.length?T.USD(Math.min(...priced.map(c=>c.price_low_usd))):'—'}</b><span>nejnižší cena</span></div><div class="kpi"><b>${top?T.FMT(top.top_seller_reviews):'—'}</b><span>${top?'recenzí · '+top.top_seller:'top prodejce'}</span></div><div class="kpi"><b>${Math.min(...cats.map(c=>c.fee_pct))}–${Math.max(...cats.map(c=>c.fee_pct))} %</b><span>poplatek Eldorada</span></div>`;
+  // kategorie
+  document.querySelector('#cats tbody').innerHTML=cats.map(c=>{const sc=T.score(c),age=T.ageHours(c);return `<tr><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td><td><b>${c.game}</b><div class="sub">${c.slug}</div></td><td class="muted">${c.unit||'—'}</td><td class="num">${T.USD(c.price_low_usd)}</td><td class="num">${T.USD(T.net(c))}</td><td class="num">${T.chgHtml(T.change7d(c.id))}</td><td class="num">${T.FMT(c.listings)}</td><td>${c.top_seller?c.top_seller+'<div class="sub">'+T.FMT(c.top_seller_reviews)+' rec.</div>':'—'}</td><td class="num">${c.fee_pct} %</td><td>${T.scoreHtml(sc)}</td><td class="num">${T.ageHtml(age)}</td><td><a href="${c.url}" target="_blank" rel="noopener">otevřít ↗</a></td></tr>`;}).join('');
+  // graf: nejlikvidnější kategorie s cenou
+  const main=priced.slice().sort((a,b)=>(b.listings||0)-(a.listings||0))[0];
+  if(main){ document.getElementById('charttitle').textContent='Vývoj nejnižší ceny · '+main.game+' ('+T.TYP[main.type]+')'; requestAnimationFrame(()=>T.bigChart(document.getElementById('chart'),T.series(main.id),main.unit?'USD za '+main.unit:'USD')); document.getElementById('chartnote').textContent=T.series(main.id).length+' snímků v historii · '+(main.observed_at?'naposledy '+main.observed_at:''); }
+  else { document.getElementById('charttitle').textContent='Vývoj ceny'; T.bigChart(document.getElementById('chart'),[]); }
+  const sc=best; document.getElementById('scorebox').innerHTML=`<h3>Co říká skóre</h3><p class="lead">${sc==null?'Bez ceny zatím nelze hodnotit.':sc>=60?'<b>'+sc+'/100 – dobrá chvíle.</b> Cena drží nebo roste a trh není ovládaný jedním prodejcem.':sc>=40?'<b>'+sc+'/100 – průměr.</b> Bez výrazného trendu, nebo vyšší poplatek či konkurence.':'<b>'+sc+'/100 – slabé.</b> Cena padá, silná dominance velkého prodejce nebo vysoký poplatek.'}</p>${top?`<p class="lead" style="margin-top:8px">Trh vede <b>${top.top_seller}</b> s ${T.FMT(top.top_seller_reviews)} recenzemi – nový prodejce se prosadí jen cenou pod ${T.USD(Math.min(...priced.map(c=>c.price_low_usd)))}.</p>`:''}${cats.some(c=>c.note)?'<p class="lead" style="margin-top:8px">'+cats.filter(c=>c.note).map(c=>c.note).join(' · ')+'</p>':''}`;
+  // položky
+  renderItems(items); renderMethods(methods);
+  // poznámky
+  const risks=[...new Set(methods.map(m=>m.ban_risk_note).filter(Boolean))]; const srcs=[...new Set([...methods.map(m=>m.source),...items.map(i=>i.source)].filter(Boolean))];
+  document.getElementById('notes').innerHTML=`<div class="card"><h3>Pravidla a riziko</h3>${risks.length?risks.map(r=>`<p class="lead" style="margin:0 0 8px">${r}</p>`).join(''):'<p class="lead">Pro tuhle hru zatím nejsou zpracované metody – doplníš je v data/methods.json.</p>'}</div><div class="card"><h3>Zdroje</h3>${srcs.length?'<ul style="margin:0;padding-left:18px;color:var(--muted)">'+srcs.map(s=>`<li>${/^https?:/.test(s)?`<a href="${s}" target="_blank" rel="noopener">${s.replace(/^https?:\/\//,'').slice(0,70)}</a>`:s}</li>`).join('')+'</ul>':'<p class="lead">Eldorado kategorie výše.</p>'}</div>`;
+}
+function renderItems(items){
+  const sec=document.getElementById('itemsec'); if(!items.length){ sec.querySelector('.tbl').innerHTML='<div class="card"><p class="lead">Pro tuhle hru zatím nejsou zpracované položky. Robot sleduje nejnižší cenu kategorie; konkrétní položky doplníš v <code>data/items.json</code>.</p></div>'; return; }
+  const rows=items.slice().sort((a,b)=>{let va=a[iSortK],vb=b[iSortK];if(va==null)return 1;if(vb==null)return -1;if(typeof va==='string')return iSortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return iSortD==='asc'?va-vb:vb-va;});
+  document.querySelector('#items tbody').innerHTML=rows.map(i=>`<tr><td><b>${i.name}</b></td><td><span class="tag">${i.category}</span></td><td class="num">${T.USD(i.price_usd)}${i.unit?' / '+i.unit:''}</td><td class="num muted">${i.ingame_value||'—'}</td><td>${i.seller?i.seller+(i.seller_reviews?'<div class="sub">'+T.FMT(i.seller_reviews)+' rec.</div>':''):'—'}</td><td class="muted">${i.note||''}</td></tr>`).join('');
+  document.querySelectorAll('#items th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===iSortK) th.classList.add(iSortD);});
+}
+function renderMethods(methods){
+  const sec=document.getElementById('methsec'); if(!methods.length){ sec.querySelector('.tbl').innerHTML='<div class="card"><p class="lead">Metody pro tuhle hru ještě nejsou zpracované. Přidáš je do <code>data/methods.json</code> (viz README) – nebo napiš, které hry doplnit dalším researchem.</p></div>'; document.getElementById('mhint').textContent=''; return; }
+  let rows=methods.filter(m=>methFilter==='all'||(methFilter==='afk'&&m.afk_score>=3)||(methFilter==='usd'&&m.usd_per_hour_net!=null));
+  rows.sort((a,b)=>{let va=a[mSortK],vb=b[mSortK];if(va==null&&vb==null)return 0;if(va==null)return 1;if(vb==null)return -1;if(typeof va==='string')return mSortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return mSortD==='asc'?va-vb:vb-va;});
+  document.querySelector('#methods tbody').innerHTML=rows.map(m=>`<tr><td><b>${m.method}</b></td><td class="muted" style="max-width:360px">${m.description||''}</td><td class="num">${m.rate_value!=null?T.FMT(m.rate_value)+(m.rate_unit?' '+m.rate_unit:''):(m.rate_unit||'nenalezeno')}</td><td class="num">${m.usd_per_hour_net!=null?'<b>'+T.USD(m.usd_per_hour_net)+'</b>':'—'}</td><td class="muted">${m.requirements||'—'}</td><td>${T.dots(m.afk_score,'afk')}</td><td>${RISK_TAGS[riskOf(m.ban_risk_note)]}</td><td>${/^https?:/.test(m.source||'')?`<a href="${m.source}" target="_blank" rel="noopener">zdroj ↗</a>`:(m.source||'—')}<div class="sub">${m.source_date||''}</div></td></tr>`).join('');
+  document.getElementById('mhint').textContent=rows.length+' z '+methods.length+' metod';
+  document.querySelectorAll('#methods th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===mSortK) th.classList.add(mSortD);});
+}
+document.querySelectorAll('#methsec .chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#methsec .chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');methFilter=b.dataset.f;renderMethods(T.data.methods.filter(m=>m.game_id===GID));}));
+document.querySelectorAll('#methods th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(mSortK===k) mSortD=mSortD==='asc'?'desc':'asc'; else {mSortK=k; mSortD=th.dataset.d||'desc';} renderMethods(T.data.methods.filter(m=>m.game_id===GID));}));
+document.querySelectorAll('#items th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(iSortK===k) iSortD=iSortD==='asc'?'desc':'asc'; else {iSortK=k; iSortD=th.dataset.d||'desc';} renderItems(T.data.items.filter(i=>i.game_id===GID));}));
+T.load().then(D=>{ T.status(); document.getElementById('gamelist').innerHTML=D.games.map(g=>`<option value="${g.name}">`).join(''); document.getElementById('q').addEventListener('change',e=>{const g=D.games.find(x=>x.name.toLowerCase()===e.target.value.toLowerCase()); if(g) location.href=T.gameHref(g.id);}); render(); }).catch(e=>{document.getElementById('upd').textContent='chyba dat: '+e.message;});
+</script>
+</body>
+</html>

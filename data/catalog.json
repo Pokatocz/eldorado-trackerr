@@ -14,7 +14,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "77"
  },
  {
   "id": "accounts-99-nights-in-the-forest-accounts",
@@ -31,7 +31,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "265"
  },
  {
   "id": "accounts-adopt-me-accounts-for-sale",
@@ -48,7 +48,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "201"
  },
  {
   "id": "accounts-afk-journey-accounts",
@@ -65,7 +65,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "426"
  },
  {
   "id": "accounts-aion-2-accounts",
@@ -82,7 +82,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "360"
  },
  {
   "id": "accounts-albion-online-accounts",
@@ -99,7 +99,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "41"
  },
  {
   "id": "accounts-all-star-tower-defense-x-accounts",
@@ -116,7 +116,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "261"
  },
  {
   "id": "accounts-anime-expeditions-accounts-for-sale",
@@ -133,7 +133,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "440"
  },
  {
   "id": "accounts-anime-vanguards-accounts",
@@ -150,7 +150,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "212"
  },
  {
   "id": "accounts-apex-legends-accounts",
@@ -167,7 +167,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "33"
  },
  {
   "id": "accounts-arc-raiders-accounts",
@@ -184,7 +184,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "319"
  },
  {
   "id": "accounts-arena-breakout-accounts",
@@ -201,7 +201,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "321"
  },
  {
   "id": "accounts-arena-breakout-infinite-accounts",
@@ -218,7 +218,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "320"
  },
  {
   "id": "accounts-ark-survival-ascended-accounts",
@@ -235,7 +235,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "34"
  },
  {
   "id": "accounts-arknights-accounts",
@@ -252,7 +252,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "166"
  },
  {
   "id": "accounts-arknights-endfield-accounts",
@@ -269,7 +269,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "358"
  },
  {
   "id": "accounts-aotr-accounts-for-sale",
@@ -286,7 +286,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "345"
  },
  {
   "id": "accounts-battlefield-accounts",
@@ -303,7 +303,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "248"
  },
  {
   "id": "accounts-battlenet-accounts",
@@ -320,7 +320,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "124"
  },
  {
   "id": "accounts-bee-swarm-simulator-accounts-for-sale",
@@ -337,7 +337,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "347"
  },
  {
   "id": "accounts-bgmi-accounts-for-sale",
@@ -354,7 +354,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "382"
  },
  {
   "id": "accounts-bdo-accounts-for-sale",
@@ -371,7 +371,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "24"
  },
  {
   "id": "accounts-bleach-brave-souls-accounts",
@@ -388,7 +388,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "138"
  },
  {
   "id": "accounts-bleach-soul-resonance-accounts",
@@ -405,7 +405,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "353"
  },
  {
   "id": "accounts-blockspin-accounts",
@@ -422,7 +422,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "369"
  },
  {
   "id": "accounts-blood-strike-accounts",
@@ -439,7 +439,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "271"
  },
  {
   "id": "accounts-bloodlines-roblox-account",
@@ -456,7 +456,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "386"
  },
  {
   "id": "accounts-blox-fruits-accounts",
@@ -473,7 +473,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "202"
  },
  {
   "id": "accounts-brawl-stars-accounts",
@@ -490,7 +490,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "56"
  },
  {
   "id": "accounts-bridger-western-accounts",
@@ -507,7 +507,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "399"
  },
  {
   "id": "accounts-call-of-duty-accounts",
@@ -524,7 +524,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "35"
  },
  {
   "id": "accounts-call-of-duty-mobile-accounts",
@@ -541,7 +541,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "59"
  },
  {
   "id": "accounts-captain-tsubasa-dream-team-accounts",
@@ -558,7 +558,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "425"
  },
  {
   "id": "accounts-car-parking-multiplayer-accounts",
@@ -575,7 +575,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "339"
  },
  {
   "id": "accounts-chaos-zero-nightmare-accounts",
@@ -592,7 +592,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "316"
  },
  {
   "id": "accounts-clash-of-clans-account-for-sale",
@@ -602,14 +602,14 @@
   "slug": "clash-of-clans-account-for-sale",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": 20.0,
+  "price_low_usd": null,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": "2026-08-27",
-  "source": "eldorado.gg",
-  "last_error": null
+  "observed_at": null,
+  "source": null,
+  "game_id": "18"
  },
  {
   "id": "accounts-clash-royale-accounts",
@@ -626,7 +626,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "52"
  },
  {
   "id": "accounts-cookie-run-kingdom-accounts",
@@ -643,7 +643,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "247"
  },
  {
   "id": "accounts-cs2-accounts",
@@ -660,7 +660,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "20"
  },
  {
   "id": "accounts-crunchyroll-accounts",
@@ -677,7 +677,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "253"
  },
  {
   "id": "accounts-dark-and-darker-accounts",
@@ -694,7 +694,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "128"
  },
  {
   "id": "accounts-darkorbit-accounts",
@@ -711,7 +711,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "344"
  },
  {
   "id": "accounts-dayz-accounts",
@@ -728,7 +728,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "75"
  },
  {
   "id": "accounts-dead-by-daylight-accounts",
@@ -738,14 +738,14 @@
   "slug": "dead-by-daylight-accounts",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": 14.0,
+  "price_low_usd": null,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": "2026-08-27",
-  "source": "eldorado.gg",
-  "last_error": null
+  "observed_at": null,
+  "source": null,
+  "game_id": "47"
  },
  {
   "id": "accounts-dead-rails-accounts",
@@ -762,7 +762,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "258"
  },
  {
   "id": "accounts-deadlock-accounts",
@@ -779,7 +779,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "214"
  },
  {
   "id": "accounts-delta-force-accounts",
@@ -796,7 +796,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "233"
  },
  {
   "id": "accounts-destiny-accounts",
@@ -813,7 +813,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "44"
  },
  {
   "id": "accounts-diablo-4-accounts",
@@ -830,7 +830,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "132"
  },
  {
   "id": "accounts-diablo-immortal-accounts",
@@ -847,7 +847,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "115"
  },
  {
   "id": "accounts-discord-accounts",
@@ -864,7 +864,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "217"
  },
  {
   "id": "accounts-cheap-disney-plus",
@@ -881,7 +881,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "383"
  },
  {
   "id": "accounts-donut-smp-accounts",
@@ -898,7 +898,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "278"
  },
  {
   "id": "accounts-dota-accounts",
@@ -915,7 +915,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "43"
  },
  {
   "id": "accounts-dragon-ball-legends-accounts",
@@ -932,7 +932,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "130"
  },
  {
   "id": "accounts-dbz-dokkan-battle-accounts",
@@ -949,7 +949,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "156"
  },
  {
   "id": "accounts-driving-empire-accounts-for-sale",
@@ -966,7 +966,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "439"
  },
  {
   "id": "accounts-ea-fc-accounts",
@@ -983,7 +983,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "142"
  },
  {
   "id": "accounts-fc-mobile-accounts",
@@ -1000,7 +1000,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "188"
  },
  {
   "id": "accounts-efootball-accounts",
@@ -1017,7 +1017,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "183"
  },
  {
   "id": "accounts-elden-ring-accounts",
@@ -1034,7 +1034,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "111"
  },
  {
   "id": "accounts-eso-accounts-for-sale",
@@ -1051,7 +1051,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "3"
  },
  {
   "id": "accounts-epic-games-accounts",
@@ -1068,7 +1068,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "108"
  },
  {
   "id": "accounts-epic-seven-accounts",
@@ -1085,7 +1085,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "134"
  },
  {
   "id": "accounts-escape-from-tarkov-accounts",
@@ -1102,7 +1102,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "19"
  },
  {
   "id": "accounts-etheria-restart-accounts",
@@ -1119,7 +1119,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "266"
  },
  {
   "id": "accounts-fallout-accounts-for-sale",
@@ -1136,7 +1136,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "22"
  },
  {
   "id": "accounts-fate-grand-order-accounts",
@@ -1153,7 +1153,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "133"
  },
  {
   "id": "accounts-fisch-accounts",
@@ -1170,7 +1170,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "219"
  },
  {
   "id": "accounts-fortnite-accounts-for-sale",
@@ -1186,7 +1186,8 @@
   "top_seller_reviews": 200219,
   "note": "OG účty medián ~$22, max $1 648",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "16"
  },
  {
   "id": "accounts-forza-horizon-5-accounts",
@@ -1203,7 +1204,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "106"
  },
  {
   "id": "accounts-forza-horizon-6-accounts",
@@ -1220,7 +1221,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "414"
  },
  {
   "id": "accounts-free-fire-accounts",
@@ -1237,7 +1238,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "46"
  },
  {
   "id": "accounts-genshin-impact-accounts",
@@ -1254,7 +1255,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "39"
  },
  {
   "id": "accounts-girls-frontline-2-accounts",
@@ -1271,7 +1272,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "251"
  },
  {
   "id": "accounts-goddess-of-victory-nikke-accounts",
@@ -1288,7 +1289,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "143"
  },
  {
   "id": "accounts-gta-5-modded-accounts",
@@ -1304,7 +1305,8 @@
   "top_seller_reviews": 206750,
   "note": "medián ~$23",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "25"
  },
  {
   "id": "accounts-greenville-accounts-for-sale",
@@ -1321,7 +1323,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "467"
  },
  {
   "id": "accounts-roblox-grow-a-garden-accounts",
@@ -1338,7 +1340,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "243"
  },
  {
   "id": "accounts-grow-a-garden-2-accounts-for-sale",
@@ -1355,7 +1357,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "430"
  },
  {
   "id": "accounts-growtopia-accounts",
@@ -1372,7 +1374,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "99"
  },
  {
   "id": "accounts-hay-day-accounts",
@@ -1389,7 +1391,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "139"
  },
  {
   "id": "accounts-hearthstone-account-for-sale",
@@ -1406,7 +1408,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "424"
  },
  {
   "id": "accounts-honkai-impact-3rd-accounts",
@@ -1423,7 +1425,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "154"
  },
  {
   "id": "accounts-honkai-star-rail-accounts",
@@ -1440,7 +1442,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "137"
  },
  {
   "id": "accounts-hytale-accounts",
@@ -1457,7 +1459,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "363"
  },
  {
   "id": "accounts-jailbreak-accounts",
@@ -1474,7 +1476,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "236"
  },
  {
   "id": "accounts-jujutsu-infinite-accounts",
@@ -1491,7 +1493,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "231"
  },
  {
   "id": "accounts-jujutsu-phanpara-accounts",
@@ -1508,7 +1510,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "179"
  },
  {
   "id": "accounts-kaiju-no-8-accounts",
@@ -1525,7 +1527,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "287"
  },
  {
   "id": "accounts-king-legacy-accounts",
@@ -1542,7 +1544,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "223"
  },
  {
   "id": "accounts-kingshot-accounts-for-sale",
@@ -1559,7 +1561,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "374"
  },
  {
   "id": "accounts-knight-online-accounts",
@@ -1576,7 +1578,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "338"
  },
  {
   "id": "accounts-last-island-of-survival-accounts",
@@ -1593,7 +1595,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "342"
  },
  {
   "id": "accounts-last-war-accounts-for-sale",
@@ -1610,7 +1612,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "279"
  },
  {
   "id": "accounts-league-of-legends-accounts-for-sale",
@@ -1627,7 +1629,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "17"
  },
  {
   "id": "accounts-lol-wild-rift-accounts",
@@ -1644,7 +1646,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "53"
  },
  {
   "id": "accounts-lords-mobile-accounts",
@@ -1661,7 +1663,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "74"
  },
  {
   "id": "accounts-maplestory-accounts-for-sale",
@@ -1678,7 +1680,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "120"
  },
  {
   "id": "accounts-marvel-contest-of-champions-accounts",
@@ -1695,7 +1697,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "331"
  },
  {
   "id": "accounts-marvel-rivals-accounts",
@@ -1712,7 +1714,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "227"
  },
  {
   "id": "accounts-metin2-accounts",
@@ -1729,7 +1731,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "335"
  },
  {
   "id": "accounts-minecraft-accounts",
@@ -1739,14 +1741,14 @@
   "slug": "minecraft-accounts",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": 5.0,
+  "price_low_usd": null,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": "2026-08-27",
-  "source": "eldorado.gg",
-  "last_error": null
+  "observed_at": null,
+  "source": null,
+  "game_id": "61"
  },
  {
   "id": "accounts-moco-accounts",
@@ -1763,7 +1765,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "241"
  },
  {
   "id": "accounts-mobile-legends-accounts",
@@ -1780,7 +1782,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "55"
  },
  {
   "id": "accounts-monster-hunter-now-accounts",
@@ -1797,7 +1799,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "175"
  },
  {
   "id": "accounts-monster-strike-accounts",
@@ -1814,7 +1816,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "149"
  },
  {
   "id": "accounts-mortal-kombat-mobile-accounts",
@@ -1831,7 +1833,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "423"
  },
  {
   "id": "accounts-mm2-accounts-for-sale",
@@ -1848,7 +1850,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "204"
  },
  {
   "id": "accounts-netflix-accounts",
@@ -1865,7 +1867,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "255"
  },
  {
   "id": "accounts-neverness-to-everness-accounts",
@@ -1882,7 +1884,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "400"
  },
  {
   "id": "accounts-osrs-accounts-for-sale",
@@ -1899,7 +1901,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "10"
  },
  {
   "id": "accounts-one-piece-bounty-rush-accounts",
@@ -1916,7 +1918,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "135"
  },
  {
   "id": "accounts-one-piece-treasure-cruise-accounts",
@@ -1933,7 +1935,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "184"
  },
  {
   "id": "accounts-origin-accounts",
@@ -1950,7 +1952,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "64"
  },
  {
   "id": "accounts-overwatch-accounts",
@@ -1967,7 +1969,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "27"
  },
  {
   "id": "accounts-path-of-exile-accounts",
@@ -1984,7 +1986,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "2"
  },
  {
   "id": "accounts-path-of-exile-2-accounts",
@@ -2001,7 +2003,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "220"
  },
  {
   "id": "accounts-psn-accounts",
@@ -2018,7 +2020,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "104"
  },
  {
   "id": "accounts-pokemon-go-accounts",
@@ -2035,7 +2037,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "57"
  },
  {
   "id": "accounts-pokemon-tcg-pocket-accounts",
@@ -2052,7 +2054,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "226"
  },
  {
   "id": "accounts-project-sekai-accounts",
@@ -2069,7 +2071,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "185"
  },
  {
   "id": "accounts-pubg-accounts",
@@ -2086,7 +2088,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "45"
  },
  {
   "id": "accounts-pubg-mobile-accounts-for-sale",
@@ -2103,7 +2105,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "21"
  },
  {
   "id": "accounts-raid-shadow-legends-accounts",
@@ -2120,7 +2122,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "73"
  },
  {
   "id": "accounts-rainbow-six-siege-accounts",
@@ -2137,7 +2139,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "48"
  },
  {
   "id": "accounts-rise-of-kingdoms-accounts-for-sale",
@@ -2154,7 +2156,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "94"
  },
  {
   "id": "accounts-roblox-accounts-for-sale",
@@ -2171,7 +2173,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "70"
  },
  {
   "id": "accounts-roblox-rivals-accounts-for-sale",
@@ -2188,7 +2190,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "207"
  },
  {
   "id": "accounts-rocket-league-accounts-for-sale",
@@ -2205,7 +2207,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "1"
  },
  {
   "id": "accounts-royale-online-accounts",
@@ -2222,7 +2224,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "341"
  },
  {
   "id": "accounts-runescape-accounts-for-sale",
@@ -2239,7 +2241,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "9"
  },
  {
   "id": "accounts-rust-accounts",
@@ -2256,7 +2258,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "37"
  },
  {
   "id": "accounts-sailor-piece-accounts",
@@ -2273,7 +2275,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "380"
  },
  {
   "id": "accounts-sd-gundam-g-generation-eternal-accounts",
@@ -2290,7 +2292,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "244"
  },
  {
   "id": "accounts-sea-of-thieves-accounts",
@@ -2307,7 +2309,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "82"
  },
  {
   "id": "accounts-seven-knights-re-birth-accounts",
@@ -2324,7 +2326,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "286"
  },
  {
   "id": "accounts-sky-children-of-the-light-accounts",
@@ -2341,7 +2343,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "177"
  },
  {
   "id": "accounts-spotify-accounts",
@@ -2358,7 +2360,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "252"
  },
  {
   "id": "accounts-standoff-2-accounts",
@@ -2375,7 +2377,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "340"
  },
  {
   "id": "accounts-star-citizen-accounts-for-sale",
@@ -2392,7 +2394,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "141"
  },
  {
   "id": "accounts-steal-a-brainrot-accounts",
@@ -2409,7 +2411,7 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "last_error": "2026-08-27T17:25:32Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
+  "game_id": "259"
  },
  {
   "id": "accounts-steal-an-egg-accounts",
@@ -2425,7 +2427,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "452"
  },
  {
   "id": "accounts-steam-accounts",
@@ -2441,7 +2444,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "42"
  },
  {
   "id": "accounts-summoners-war-accounts",
@@ -2457,7 +2461,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "29"
  },
  {
   "id": "accounts-division-2-accounts-for-sale",
@@ -2473,7 +2478,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "411"
  },
  {
   "id": "accounts-the-finals-accounts",
@@ -2489,7 +2495,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "168"
  },
  {
   "id": "accounts-the-forge-accounts",
@@ -2505,7 +2512,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "329"
  },
  {
   "id": "accounts-seven-deadly-sins-accounts",
@@ -2521,7 +2529,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "186"
  },
  {
   "id": "accounts-seven-deadly-sins-origin-accounts",
@@ -2537,7 +2546,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "390"
  },
  {
   "id": "accounts-throne-and-liberty-accounts",
@@ -2553,7 +2563,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "171"
  },
  {
   "id": "accounts-tower-of-fantasy-accounts",
@@ -2569,7 +2580,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "119"
  },
  {
   "id": "accounts-ubisoft-connect-accounts",
@@ -2585,7 +2597,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "65"
  },
  {
   "id": "accounts-uma-musume-accounts",
@@ -2601,7 +2614,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "151"
  },
  {
   "id": "accounts-valorant-accounts",
@@ -2617,7 +2631,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "32"
  },
  {
   "id": "accounts-volleyball-legends-accounts",
@@ -2633,7 +2648,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "333"
  },
  {
   "id": "accounts-war-thunder-accounts",
@@ -2649,7 +2665,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "80"
  },
  {
   "id": "accounts-warframe-accounts-for-sale",
@@ -2665,7 +2682,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "11"
  },
  {
   "id": "accounts-wartune-ultra-accounts",
@@ -2681,7 +2699,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "336"
  },
  {
   "id": "accounts-watcher-of-realms-accounts-for-sale",
@@ -2697,7 +2716,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "325"
  },
  {
   "id": "accounts-bloxburg-accounts-for-sale",
@@ -2713,7 +2733,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "410"
  },
  {
   "id": "accounts-where-winds-meet-accounts",
@@ -2729,7 +2750,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "323"
  },
  {
   "id": "accounts-whiteout-survival-accounts",
@@ -2745,7 +2767,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "208"
  },
  {
   "id": "accounts-wolfteam-accounts",
@@ -2761,7 +2784,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "343"
  },
  {
   "id": "accounts-world-of-tanks-accounts",
@@ -2777,7 +2801,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "240"
  },
  {
   "id": "accounts-wow-accounts-for-sale",
@@ -2793,7 +2818,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "0"
  },
  {
   "id": "accounts-wows-accounts",
@@ -2809,7 +2835,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "330"
  },
  {
   "id": "accounts-wow-classic-accounts",
@@ -2825,7 +2852,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "92"
  },
  {
   "id": "accounts-wow-mists-of-pandaria-classic-accounts",
@@ -2841,7 +2869,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "14"
  },
  {
   "id": "accounts-wuthering-waves-accounts",
@@ -2857,7 +2886,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "190"
  },
  {
   "id": "accounts-xbox-accounts",
@@ -2873,7 +2903,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "103"
  },
  {
   "id": "accounts-yokai-punipuni-accounts",
@@ -2889,7 +2920,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "178"
  },
  {
   "id": "accounts-yu-gi-oh-master-duel-accounts",
@@ -2905,7 +2937,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "232"
  },
  {
   "id": "accounts-zenless-zone-zero-accounts",
@@ -2921,7 +2954,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "194"
  },
  {
   "id": "accounts-zula-accounts",
@@ -2937,7 +2971,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "334"
  },
  {
   "id": "boosting-anime-vanguards-boosting",
@@ -2953,7 +2988,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "212"
  },
  {
   "id": "boosting-apex-legends-boosting",
@@ -2969,7 +3005,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "33"
  },
  {
   "id": "boosting-arc-raiders-boosting",
@@ -2985,7 +3022,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "319"
  },
  {
   "id": "boosting-arena-breakout-boosting",
@@ -3001,7 +3039,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "321"
  },
  {
   "id": "boosting-arena-breakout-infinite-boosting",
@@ -3017,7 +3056,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "320"
  },
  {
   "id": "boosting-battlefield-boosting",
@@ -3033,7 +3073,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "248"
  },
  {
   "id": "boosting-bdo-power-leveling",
@@ -3049,7 +3090,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "24"
  },
  {
   "id": "boosting-blox-fruits-boosting",
@@ -3065,7 +3107,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "202"
  },
  {
   "id": "boosting-brawl-stars-boosting",
@@ -3081,7 +3124,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "56"
  },
  {
   "id": "boosting-call-of-duty-boosting",
@@ -3097,7 +3141,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "35"
  },
  {
   "id": "boosting-clash-of-clans-boosting",
@@ -3113,7 +3158,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "18"
  },
  {
   "id": "boosting-clash-royale-boosting",
@@ -3129,7 +3175,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "52"
  },
  {
   "id": "boosting-cs2-boosting",
@@ -3145,7 +3192,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "20"
  },
  {
   "id": "boosting-dead-by-daylight-boosting",
@@ -3161,7 +3209,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "47"
  },
  {
   "id": "boosting-deadlock-boosting",
@@ -3177,7 +3226,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "214"
  },
  {
   "id": "boosting-delta-force-boosting",
@@ -3193,7 +3243,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "233"
  },
  {
   "id": "boosting-destiny-2-boosting",
@@ -3209,7 +3260,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "44"
  },
  {
   "id": "boosting-diablo-4-boosting",
@@ -3225,7 +3277,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "132"
  },
  {
   "id": "boosting-donut-smp-boosting-services",
@@ -3241,7 +3294,8 @@
   "top_seller_reviews": null,
   "note": "build/AFK/dig — ceny na poptávku",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "278"
  },
  {
   "id": "boosting-dota-2-boosting",
@@ -3257,7 +3311,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "43"
  },
  {
   "id": "boosting-dungeon-quest-reborn-services",
@@ -3273,7 +3328,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "464"
  },
  {
   "id": "boosting-ea-fc-boosting",
@@ -3289,7 +3345,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "142"
  },
  {
   "id": "boosting-escape-from-tarkov-power-leveling",
@@ -3305,7 +3362,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "19"
  },
  {
   "id": "boosting-fisch-boosting",
@@ -3321,7 +3379,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "219"
  },
  {
   "id": "boosting-fortnite-boosting",
@@ -3337,7 +3396,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "16"
  },
  {
   "id": "boosting-forza-horizon-6-boosting",
@@ -3353,7 +3413,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "414"
  },
  {
   "id": "boosting-genshin-impact-boosting",
@@ -3369,7 +3430,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "39"
  },
  {
   "id": "boosting-league-of-legends-boosting",
@@ -3385,7 +3447,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "17"
  },
  {
   "id": "boosting-lol-wild-rift-boosting",
@@ -3401,7 +3464,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "53"
  },
  {
   "id": "boosting-marvel-rivals-boosting",
@@ -3417,7 +3481,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "227"
  },
  {
   "id": "boosting-minecraft-boosting",
@@ -3433,7 +3498,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "61"
  },
  {
   "id": "boosting-mobile-legends-boosting",
@@ -3449,7 +3515,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "55"
  },
  {
   "id": "boosting-osrs-power-leveling",
@@ -3465,7 +3532,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "10"
  },
  {
   "id": "boosting-overwatch-boosting-services",
@@ -3481,7 +3549,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "27"
  },
  {
   "id": "boosting-poe-boosting",
@@ -3497,7 +3566,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "2"
  },
  {
   "id": "boosting-poe-2-boosting",
@@ -3513,7 +3583,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "220"
  },
  {
   "id": "boosting-pokemon-go-boosting",
@@ -3529,7 +3600,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "57"
  },
  {
   "id": "boosting-r6-boosting",
@@ -3545,7 +3617,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "48"
  },
  {
   "id": "boosting-roblox-boosting",
@@ -3561,7 +3634,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "70"
  },
  {
   "id": "boosting-rocket-league-boosting",
@@ -3577,7 +3651,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "1"
  },
  {
   "id": "boosting-runescape-power-leveling",
@@ -3593,7 +3668,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "9"
  },
  {
   "id": "boosting-rust-boosting",
@@ -3609,7 +3685,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "37"
  },
  {
   "id": "boosting-tft-boosting",
@@ -3625,7 +3702,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "198"
  },
  {
   "id": "boosting-division-2-boosting",
@@ -3641,7 +3719,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "411"
  },
  {
   "id": "boosting-the-first-descendant-boosting",
@@ -3657,7 +3736,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "210"
  },
  {
   "id": "boosting-throne-and-liberty-boosting",
@@ -3673,7 +3753,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "171"
  },
  {
   "id": "boosting-valorant-boosting-services",
@@ -3689,7 +3770,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "32"
  },
  {
   "id": "boosting-vv-ultimatum-services",
@@ -3705,7 +3787,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "432"
  },
  {
   "id": "boosting-war-thunder-boosting",
@@ -3721,7 +3804,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "80"
  },
  {
   "id": "boosting-warframe-boosting",
@@ -3737,7 +3821,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "11"
  },
  {
   "id": "boosting-where-winds-meet-boosting",
@@ -3753,7 +3838,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "323"
  },
  {
   "id": "boosting-wow-power-leveling",
@@ -3769,7 +3855,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "0"
  },
  {
   "id": "boosting-wow-classic-boosting",
@@ -3785,7 +3872,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "92"
  },
  {
   "id": "boosting-wow-mists-of-pandaria-classic-boosting",
@@ -3801,7 +3889,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "14"
  },
  {
   "id": "currency-8-ball-pool-coins",
@@ -3817,7 +3906,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "77"
  },
  {
   "id": "currency-aion-2-kinah",
@@ -3833,7 +3923,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "360"
  },
  {
   "id": "currency-albion-online-silver",
@@ -3849,7 +3940,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "41"
  },
  {
   "id": "currency-arc-raiders-coins",
@@ -3865,7 +3957,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "319"
  },
  {
   "id": "currency-bdo-silver",
@@ -3881,7 +3974,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "24"
  },
  {
   "id": "currency-blade-ball-tokens",
@@ -3897,7 +3991,8 @@
   "top_seller_reviews": 5137,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "203"
  },
  {
   "id": "currency-cfb-coins",
@@ -3913,7 +4008,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "435"
  },
  {
   "id": "currency-creatures-of-sonaria-mushrooms",
@@ -3929,7 +4025,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "280"
  },
  {
   "id": "currency-buy-dark-and-darker-gold",
@@ -3945,7 +4042,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "128"
  },
  {
   "id": "currency-dc-universe-online-cash",
@@ -3961,7 +4059,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "239"
  },
  {
   "id": "currency-death-ball-gems",
@@ -3977,7 +4076,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "463"
  },
  {
   "id": "currency-delta-force-tekniq-alloy",
@@ -3993,7 +4093,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "233"
  },
  {
   "id": "currency-diablo-4-gold",
@@ -4009,7 +4110,8 @@
   "top_seller_reviews": 1207641,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "132"
  },
  {
   "id": "currency-dofus-kamas",
@@ -4025,7 +4127,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "78"
  },
  {
   "id": "currency-donutsmp-money",
@@ -4041,7 +4144,8 @@
   "top_seller_reviews": 1694,
   "note": "Discord autosell vykupuje $14/mld",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "278"
  },
  {
   "id": "currency-dragon-adventures-coins",
@@ -4057,7 +4161,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "401"
  },
  {
   "id": "currency-dune-awakening-solaris",
@@ -4073,7 +4178,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "257"
  },
  {
   "id": "currency-ea-fc-coins",
@@ -4089,7 +4195,8 @@
   "top_seller_reviews": 19529,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "142"
  },
  {
   "id": "currency-elden-ring-runes",
@@ -4105,7 +4212,8 @@
   "top_seller_reviews": 107683,
   "note": "featured $0,20/B",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "111"
  },
  {
   "id": "currency-eso-gold",
@@ -4121,7 +4229,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "3"
  },
  {
   "id": "currency-escape-from-tarkov-roubles",
@@ -4137,7 +4246,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "19"
  },
  {
   "id": "currency-eve-echoes-isk",
@@ -4153,7 +4263,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "40"
  },
  {
   "id": "currency-eve-isk",
@@ -4169,7 +4280,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "4"
  },
  {
   "id": "currency-fallout-76-caps",
@@ -4185,7 +4297,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "22"
  },
  {
   "id": "currency-farever-gold",
@@ -4201,7 +4314,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "418"
  },
  {
   "id": "currency-ffxi-gil",
@@ -4217,7 +4331,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "6"
  },
  {
   "id": "currency-ffxiv-gil",
@@ -4233,7 +4348,8 @@
   "top_seller_reviews": 5746,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "7"
  },
  {
   "id": "currency-fisch-money",
@@ -4249,7 +4365,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "219"
  },
  {
   "id": "currency-fix-it-up-money",
@@ -4265,7 +4382,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "403"
  },
  {
   "id": "currency-forza-horizon-5-credits",
@@ -4281,7 +4399,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "106"
  },
  {
   "id": "currency-grow-a-garden-2-sheckles",
@@ -4297,7 +4416,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "430"
  },
  {
   "id": "currency-grow-a-garden-tokens",
@@ -4313,7 +4433,8 @@
   "top_seller_reviews": 54535,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "243"
  },
  {
   "id": "currency-buy-growtopia-diamond-locks",
@@ -4329,7 +4450,8 @@
   "top_seller_reviews": 7356,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "99"
  },
  {
   "id": "currency-buy-gw2-gold",
@@ -4345,7 +4467,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "51"
  },
  {
   "id": "currency-knight-online-gb",
@@ -4361,7 +4484,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "338"
  },
  {
   "id": "currency-last-epoch-gold",
@@ -4377,7 +4501,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "187"
  },
  {
   "id": "currency-buy-lost-ark-gold",
@@ -4393,7 +4518,8 @@
   "top_seller_reviews": 52535,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "50"
  },
  {
   "id": "currency-mut-coins",
@@ -4409,7 +4535,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "193"
  },
  {
   "id": "currency-maplestory-mesos",
@@ -4425,7 +4552,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "120"
  },
  {
   "id": "currency-metin2-won-and-yang",
@@ -4441,7 +4569,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "335"
  },
  {
   "id": "currency-minecraft-hypixel-coins",
@@ -4457,7 +4586,8 @@
   "top_seller_reviews": 1209608,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "61"
  },
  {
   "id": "currency-mistfall-hunter-gyldenblod",
@@ -4473,7 +4603,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "442"
  },
  {
   "id": "currency-mlb-the-show-stubs",
@@ -4489,7 +4620,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "412"
  },
  {
   "id": "currency-mortal-online-2-gold",
@@ -4505,7 +4637,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "216"
  },
  {
   "id": "currency-new-world-coins",
@@ -4521,7 +4654,8 @@
   "top_seller_reviews": 6294,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "36"
  },
  {
   "id": "currency-osrs-gold",
@@ -4537,7 +4671,8 @@
   "top_seller_reviews": 39692,
   "note": "ArgenGaming 114 766 rec. 6. za $0,259",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "10"
  },
  {
   "id": "currency-poe-2-currency",
@@ -4553,7 +4688,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "220"
  },
  {
   "id": "currency-poe-currency",
@@ -4569,7 +4705,8 @@
   "top_seller_reviews": 13284,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "2"
  },
  {
   "id": "currency-pet-simulator-99-gems",
@@ -4585,7 +4722,8 @@
   "top_seller_reviews": 139,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "199"
  },
  {
   "id": "currency-pets-go-diamonds",
@@ -4601,7 +4739,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "213"
  },
  {
   "id": "currency-pixel-worlds-byte-coins",
@@ -4617,7 +4756,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "413"
  },
  {
   "id": "currency-pokemon-go-stardust",
@@ -4633,7 +4773,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "209"
  },
  {
   "id": "currency-rise-online-gb",
@@ -4649,7 +4790,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "354"
  },
  {
   "id": "currency-buy-robux",
@@ -4665,7 +4807,8 @@
   "top_seller_reviews": 10480,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "70"
  },
  {
   "id": "currency-royale-high-diamonds",
@@ -4681,7 +4824,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "402"
  },
  {
   "id": "currency-runescape-gold",
@@ -4697,7 +4841,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "9"
  },
  {
   "id": "currency-runescape-bonds",
@@ -4713,7 +4858,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "196"
  },
  {
   "id": "currency-spiritvale-gold",
@@ -4729,7 +4875,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "441"
  },
  {
   "id": "currency-standoff-2-gold",
@@ -4745,7 +4892,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "340"
  },
  {
   "id": "currency-star-citizen-auec",
@@ -4761,7 +4909,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "141"
  },
  {
   "id": "currency-swtor-credits",
@@ -4777,7 +4926,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "69"
  },
  {
   "id": "currency-tap-simulator-tokens",
@@ -4793,7 +4943,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "350"
  },
  {
   "id": "currency-temtem-pansun",
@@ -4809,7 +4960,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "31"
  },
  {
   "id": "currency-the-quinfall-gold",
@@ -4825,7 +4977,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "377"
  },
  {
   "id": "currency-throne-and-liberty-lucent",
@@ -4841,7 +4994,8 @@
   "top_seller_reviews": 1914,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "171"
  },
  {
   "id": "currency-tibia-gold",
@@ -4857,7 +5011,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "371"
  },
  {
   "id": "currency-toilet-tower-defense-gems",
@@ -4873,7 +5028,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "218"
  },
  {
   "id": "currency-torchlight-infinite-flame-elementium",
@@ -4889,7 +5045,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "225"
  },
  {
   "id": "currency-buy-trove-flux",
@@ -4905,7 +5062,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "98"
  },
  {
   "id": "currency-warframe-buy-platinum",
@@ -4921,7 +5079,8 @@
   "top_seller_reviews": 43956,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "11"
  },
  {
   "id": "currency-buy-wow-gold",
@@ -4937,7 +5096,8 @@
   "top_seller_reviews": 670,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "0"
  },
  {
   "id": "currency-wow-classic-gold",
@@ -4953,7 +5113,8 @@
   "top_seller_reviews": 29693,
   "note": null,
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "92"
  },
  {
   "id": "currency-wow-mists-of-pandaria-classic-gold",
@@ -4969,7 +5130,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "14"
  },
  {
   "id": "giftcards-amazon-gift-card",
@@ -4985,7 +5147,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "269"
  },
  {
   "id": "giftcards-apple-gift-card",
@@ -5001,7 +5164,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "275"
  },
  {
   "id": "giftcards-blizzard-gift-card",
@@ -5017,7 +5181,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "305"
  },
  {
   "id": "giftcards-cd-keys",
@@ -5033,7 +5198,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "283"
  },
  {
   "id": "giftcards-discord-nitro",
@@ -5049,7 +5215,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "217"
  },
  {
   "id": "giftcards-fortnite-gift-card",
@@ -5065,7 +5232,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "16"
  },
  {
   "id": "giftcards-free-fire-gift-card",
@@ -5081,7 +5249,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "46"
  },
  {
   "id": "giftcards-google-play-gift-card",
@@ -5097,7 +5266,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "306"
  },
  {
   "id": "giftcards-league-of-legends-gift-card",
@@ -5113,7 +5283,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "17"
  },
  {
   "id": "giftcards-netflix-gift-card",
@@ -5129,7 +5300,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "255"
  },
  {
   "id": "giftcards-nintendo-gift-card",
@@ -5145,7 +5317,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "242"
  },
  {
   "id": "giftcards-psn-gift-card",
@@ -5161,7 +5334,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "104"
  },
  {
   "id": "giftcards-pubg-gift-card",
@@ -5177,7 +5351,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "21"
  },
  {
   "id": "giftcards-razer-gold",
@@ -5193,7 +5368,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "260"
  },
  {
   "id": "giftcards-roblox-gift-card",
@@ -5209,7 +5385,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "70"
  },
  {
   "id": "giftcards-steam-accounts",
@@ -5225,7 +5402,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "282"
  },
  {
   "id": "giftcards-steam-gift-card",
@@ -5241,7 +5419,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "42"
  },
  {
   "id": "giftcards-valorant-gift-card",
@@ -5257,7 +5436,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "32"
  },
  {
   "id": "giftcards-xbox-gift-card",
@@ -5273,7 +5453,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "103"
  },
  {
   "id": "items-speed-keyboard-escape-shop",
@@ -5289,7 +5470,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "429"
  },
  {
   "id": "items-a-universal-time-shop",
@@ -5305,7 +5487,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "406"
  },
  {
   "id": "items-abyss-roblox-shop",
@@ -5321,7 +5504,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "375"
  },
  {
   "id": "items-adopt-me-pets",
@@ -5337,7 +5521,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "201"
  },
  {
   "id": "items-albion-online-items",
@@ -5353,7 +5538,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "41"
  },
  {
   "id": "items-all-star-tower-defense-x-units",
@@ -5369,7 +5555,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "261"
  },
  {
   "id": "items-animal-crossing-items",
@@ -5385,7 +5572,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "150"
  },
  {
   "id": "items-anime-apocalypse-shop",
@@ -5401,7 +5589,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "415"
  },
  {
   "id": "items-anime-astral-simulator-shop",
@@ -5417,7 +5606,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "431"
  },
  {
   "id": "items-anime-card-clash-shop",
@@ -5433,7 +5623,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "404"
  },
  {
   "id": "items-anime-card-farm-shop",
@@ -5449,7 +5640,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "446"
  },
  {
   "id": "items-anime-defenders-items",
@@ -5465,7 +5657,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "200"
  },
  {
   "id": "items-anime-eternal-items",
@@ -5481,7 +5674,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "288"
  },
  {
   "id": "items-anime-expeditions-shop",
@@ -5497,7 +5691,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "440"
  },
  {
   "id": "items-anime-fighting-simulator-shop",
@@ -5513,7 +5708,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "348"
  },
  {
   "id": "items-anime-last-stand-items",
@@ -5529,7 +5725,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "256"
  },
  {
   "id": "items-anime-origins-shop",
@@ -5545,7 +5742,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "453"
  },
  {
   "id": "items-anime-squadron-shop",
@@ -5561,7 +5759,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "433"
  },
  {
   "id": "items-anime-vanguards-items",
@@ -5577,7 +5776,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "212"
  },
  {
   "id": "items-anime-warriors-3-shop",
@@ -5593,7 +5793,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "417"
  },
  {
   "id": "items-arc-raiders-items",
@@ -5609,7 +5810,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "319"
  },
  {
   "id": "items-ark-survival-ascended-dinosaurs",
@@ -5625,7 +5827,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "34"
  },
  {
   "id": "items-attack-on-titan-revolution-shop",
@@ -5641,7 +5844,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "345"
  },
  {
   "id": "items-baddies-roblox-shop",
@@ -5657,7 +5861,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "356"
  },
  {
   "id": "items-be-a-lucky-block-shop",
@@ -5673,7 +5878,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "394"
  },
  {
   "id": "items-roblox-bedwars-shop",
@@ -5689,7 +5895,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "454"
  },
  {
   "id": "items-bee-swarm-simulator-shop",
@@ -5705,7 +5912,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "347"
  },
  {
   "id": "items-bizarre-lineage-shop",
@@ -5721,7 +5929,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "381"
  },
  {
   "id": "items-blade-ball-swords",
@@ -5737,7 +5946,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "203"
  },
  {
   "id": "items-bloodlines-roblox-shop",
@@ -5753,7 +5963,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "386"
  },
  {
   "id": "items-blox-fruits-shop",
@@ -5769,7 +5980,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "202"
  },
  {
   "id": "items-bloxstrike-store",
@@ -5785,7 +5997,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "392"
  },
  {
   "id": "items-blue-lock-rivals-items",
@@ -5801,7 +6014,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "230"
  },
  {
   "id": "items-borderlands-4-items",
@@ -5817,7 +6031,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "277"
  },
  {
   "id": "items-break-a-lucky-block-shop",
@@ -5833,7 +6048,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "359"
  },
  {
   "id": "items-bridger-western-shop",
@@ -5849,7 +6065,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "399"
  },
  {
   "id": "items-broken-blade-shop",
@@ -5865,7 +6082,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "428"
  },
  {
   "id": "items-bubble-gum-simulator-infinity-pets",
@@ -5881,7 +6099,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "238"
  },
  {
   "id": "items-build-a-ring-farm-shop",
@@ -5897,7 +6116,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "427"
  },
  {
   "id": "items-build-a-zoo-items",
@@ -5913,7 +6133,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "284"
  },
  {
   "id": "items-cod-skins",
@@ -5929,7 +6150,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "35"
  },
  {
   "id": "items-capybaras-vs-plants-shop",
@@ -5945,7 +6167,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "449"
  },
  {
   "id": "items-case-paradise-shop",
@@ -5961,7 +6184,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "373"
  },
  {
   "id": "items-catch-and-tame-shop",
@@ -5977,7 +6201,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "367"
  },
  {
   "id": "items-clash-of-clans-clan",
@@ -5993,7 +6218,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "18"
  },
  {
   "id": "items-cs2-skins",
@@ -6009,7 +6235,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "20"
  },
  {
   "id": "items-creatures-of-sonaria-shop",
@@ -6025,7 +6252,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "280"
  },
  {
   "id": "items-da-hood-shop",
@@ -6041,7 +6269,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "352"
  },
  {
   "id": "items-dark-and-darker-golden-key",
@@ -6057,7 +6286,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "128"
  },
  {
   "id": "items-deepwoken-shop",
@@ -6073,7 +6303,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "455"
  },
  {
   "id": "items-delta-force-items",
@@ -6089,7 +6320,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "233"
  },
  {
   "id": "items-destiny-2-items",
@@ -6105,7 +6337,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "44"
  },
  {
   "id": "items-devil-hunter-roblox-shop",
@@ -6121,7 +6354,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "355"
  },
  {
   "id": "items-diablo-2-resurrected-items",
@@ -6137,7 +6371,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "95"
  },
  {
   "id": "items-diablo-4-items",
@@ -6153,7 +6388,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "132"
  },
  {
   "id": "items-discord-boosts-and-decorations",
@@ -6169,7 +6405,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "217"
  },
  {
   "id": "items-donutsmp-store",
@@ -6185,7 +6422,8 @@
   "top_seller_reviews": 25174,
   "note": "elytra $9,14, skeleton spawner $0,25, netherite block $2,15",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "278"
  },
  {
   "id": "items-dota-2-items",
@@ -6201,7 +6439,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "43"
  },
  {
   "id": "items-drag-drive-simulator-shop",
@@ -6217,7 +6456,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "448"
  },
  {
   "id": "items-dune-awakening-items",
@@ -6233,7 +6473,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "257"
  },
  {
   "id": "items-fc-players",
@@ -6249,7 +6490,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "142"
  },
  {
   "id": "items-elden-ring-items",
@@ -6265,7 +6507,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "111"
  },
  {
   "id": "items-eso-items",
@@ -6281,7 +6524,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "3"
  },
  {
   "id": "items-escape-from-tarkov-items",
@@ -6297,7 +6541,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "19"
  },
  {
   "id": "items-escape-tsunami-for-brainrots-shop",
@@ -6313,7 +6558,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "351"
  },
  {
   "id": "items-eve-online-skill-injector",
@@ -6329,7 +6575,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "4"
  },
  {
   "id": "items-evomon-shop",
@@ -6345,7 +6592,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "434"
  },
  {
   "id": "items-fallout-76-items",
@@ -6361,7 +6609,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "22"
  },
  {
   "id": "items-fight-in-a-school-shop",
@@ -6377,7 +6626,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "456"
  },
  {
   "id": "items-fisch-items",
@@ -6393,7 +6643,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "219"
  },
  {
   "id": "items-fish-an-anime-rng-shop",
@@ -6409,7 +6660,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "465"
  },
  {
   "id": "items-fish-it-items",
@@ -6425,7 +6677,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "318"
  },
  {
   "id": "items-flee-the-facility-shop",
@@ -6441,7 +6694,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "391"
  },
  {
   "id": "items-fortnite-skins",
@@ -6457,7 +6711,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "16"
  },
  {
   "id": "items-gakuran-roblox-shop",
@@ -6473,7 +6728,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "438"
  },
  {
   "id": "items-garden-tower-defense-units",
@@ -6489,7 +6745,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "268"
  },
  {
   "id": "items-gpo-shop",
@@ -6505,7 +6762,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "324"
  },
  {
   "id": "items-greedy-growers-shop",
@@ -6521,7 +6779,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "460"
  },
  {
   "id": "items-roblox-grow-a-garden-items",
@@ -6537,7 +6796,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "243"
  },
  {
   "id": "items-grow-a-garden-2-shop",
@@ -6553,7 +6813,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "430"
  },
  {
   "id": "items-growtopia-items",
@@ -6569,7 +6830,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "99"
  },
  {
   "id": "items-gw2-legendary-items",
@@ -6585,7 +6847,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "51"
  },
  {
   "id": "items-hay-day-items",
@@ -6601,7 +6864,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "139"
  },
  {
   "id": "items-haze-seas-shop",
@@ -6617,7 +6881,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "444"
  },
  {
   "id": "items-hugosmp-shop",
@@ -6633,7 +6898,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "422"
  },
  {
   "id": "items-hypershot-shop",
@@ -6649,7 +6915,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "349"
  },
  {
   "id": "items-ink-game-items",
@@ -6665,7 +6932,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "263"
  },
  {
   "id": "items-iron-soul-dungeon-shop",
@@ -6681,7 +6949,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "458"
  },
  {
   "id": "items-jailbreak-cars",
@@ -6697,7 +6966,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "236"
  },
  {
   "id": "items-jujutsu-infinite-shop",
@@ -6713,7 +6983,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "231"
  },
  {
   "id": "items-kaizen-roblox-shop",
@@ -6729,7 +7000,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "396"
  },
  {
   "id": "items-kick-a-lucky-block-shop",
@@ -6745,7 +7017,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "408"
  },
  {
   "id": "items-shop-king-legacy",
@@ -6761,7 +7034,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "223"
  },
  {
   "id": "items-knife-duels-shop",
@@ -6777,7 +7051,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "457"
  },
  {
   "id": "items-knight-online-items",
@@ -6793,7 +7068,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "338"
  },
  {
   "id": "items-roblox-knockout-shop",
@@ -6809,7 +7085,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "376"
  },
  {
   "id": "items-league-of-legends-items",
@@ -6825,7 +7102,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "17"
  },
  {
   "id": "items-lost-ark-items",
@@ -6841,7 +7119,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "50"
  },
  {
   "id": "items-metin2-items",
@@ -6857,7 +7136,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "335"
  },
  {
   "id": "items-mine-a-mountain-shop",
@@ -6873,7 +7153,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "443"
  },
  {
   "id": "items-minecraft-hypixel-items",
@@ -6889,7 +7170,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "61"
  },
  {
   "id": "items-mini-war-shop",
@@ -6905,7 +7187,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "421"
  },
  {
   "id": "items-mistfall-hunter-items",
@@ -6921,7 +7204,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "442"
  },
  {
   "id": "items-monopoly-go-stickers",
@@ -6937,7 +7221,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "215"
  },
  {
   "id": "items-murder-duels-shop",
@@ -6953,7 +7238,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "459"
  },
  {
   "id": "items-mm2-shop",
@@ -6969,7 +7255,8 @@
   "top_seller_reviews": 143204,
   "note": "sety až $85",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "204"
  },
  {
   "id": "items-mvsd-shop",
@@ -6985,7 +7272,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "346"
  },
  {
   "id": "items-muscle-legends-shop",
@@ -7001,7 +7289,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "462"
  },
  {
   "id": "items-noob-tower-defense-shop",
@@ -7017,7 +7306,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "416"
  },
  {
   "id": "items-osrs-items",
@@ -7033,7 +7323,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "10"
  },
  {
   "id": "items-poe-items",
@@ -7049,7 +7340,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "2"
  },
  {
   "id": "items-poe-2-items",
@@ -7065,7 +7357,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "220"
  },
  {
   "id": "items-pet-simulator-99-shop",
@@ -7081,7 +7374,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "199"
  },
  {
   "id": "items-pets-go-items",
@@ -7097,7 +7391,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "213"
  },
  {
   "id": "items-plants-vs-brainrots-items",
@@ -7113,7 +7408,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "285"
  },
  {
   "id": "items-pokemon-go-items",
@@ -7129,7 +7425,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "57"
  },
  {
   "id": "items-shiny-pokemon-legends-za",
@@ -7145,7 +7442,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "328"
  },
  {
   "id": "items-pokemon-tcg-pocket-cards",
@@ -7161,7 +7459,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "226"
  },
  {
   "id": "items-re-rangers-x-shop",
@@ -7177,7 +7476,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "393"
  },
  {
   "id": "items-rng-heroes-shop",
@@ -7193,7 +7493,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "445"
  },
  {
   "id": "items-roblox-items",
@@ -7209,7 +7510,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "70"
  },
  {
   "id": "items-roblox-limiteds",
@@ -7225,7 +7527,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "206"
  },
  {
   "id": "items-roblox-rivals-items",
@@ -7241,7 +7544,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "207"
  },
  {
   "id": "items-roll-anime-to-fight-shop",
@@ -7257,7 +7561,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "451"
  },
  {
   "id": "items-runescape-items-for-sale",
@@ -7273,7 +7578,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "9"
  },
  {
   "id": "items-rust-items",
@@ -7289,7 +7595,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "37"
  },
  {
   "id": "items-sailor-piece-shop",
@@ -7305,7 +7612,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "380"
  },
  {
   "id": "items-san-diego-border-roleplay-shop",
@@ -7321,7 +7629,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "450"
  },
  {
   "id": "items-shindo-life-shop",
@@ -7337,7 +7646,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "447"
  },
  {
   "id": "items-slime-rng-shop",
@@ -7353,7 +7663,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "409"
  },
  {
   "id": "items-sniper-arena-store",
@@ -7369,7 +7680,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "420"
  },
  {
   "id": "items-shop-sol-rng",
@@ -7385,7 +7697,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "397"
  },
  {
   "id": "items-sorcerer-tower-defense-shop",
@@ -7401,7 +7714,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "407"
  },
  {
   "id": "items-spin-a-baddie-shop",
@@ -7417,7 +7731,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "370"
  },
  {
   "id": "items-spin-a-soccer-card-shop",
@@ -7433,7 +7748,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "437"
  },
  {
   "id": "items-spongebob-tower-defense-shop",
@@ -7449,7 +7765,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "366"
  },
  {
   "id": "items-star-citizen-ships",
@@ -7465,7 +7782,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "141"
  },
  {
   "id": "items-steal-a-brainrot-brainrots",
@@ -7481,7 +7799,8 @@
   "top_seller_reviews": 107701,
   "note": "vzácné $15–45, secret až $2 000",
   "observed_at": "2026-08-27",
-  "source": "eldorado.gg"
+  "source": "eldorado.gg",
+  "game_id": "259"
  },
  {
   "id": "items-steal-an-egg-shop",
@@ -7497,7 +7816,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "452"
  },
  {
   "id": "items-steam-items",
@@ -7513,7 +7833,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "42"
  },
  {
   "id": "items-storage-hunters-shop",
@@ -7529,7 +7850,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "436"
  },
  {
   "id": "items-summon-heroes-shop",
@@ -7545,7 +7867,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "405"
  },
  {
   "id": "items-survive-lava-for-brainrots-shop",
@@ -7561,7 +7884,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "372"
  },
  {
   "id": "items-swing-obby-for-brainrots-shop",
@@ -7577,7 +7901,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "389"
  },
  {
   "id": "items-tap-simulator-shop",
@@ -7593,7 +7918,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "350"
  },
  {
   "id": "items-tf2-keys",
@@ -7609,7 +7935,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "113"
  },
  {
   "id": "items-the-forge-shop",
@@ -7625,7 +7952,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "329"
  },
  {
   "id": "items-tips-jar",
@@ -7641,7 +7969,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "224"
  },
  {
   "id": "items-tower-defense-simulator-shop",
@@ -7657,7 +7986,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "461"
  },
  {
   "id": "items-twitch-drops",
@@ -7673,7 +8003,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "235"
  },
  {
   "id": "items-type-soul-items",
@@ -7689,7 +8020,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "267"
  },
  {
   "id": "items-universal-tower-defense-shop",
@@ -7705,7 +8037,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "337"
  },
  {
   "id": "items-volleyball-legends-shop",
@@ -7721,7 +8054,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "333"
  },
  {
   "id": "items-vv-ultimatum-shop",
@@ -7737,7 +8071,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "432"
  },
  {
   "id": "items-war-tycoon-shop",
@@ -7753,7 +8088,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "388"
  },
  {
   "id": "items-warframe-items",
@@ -7769,7 +8105,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "11"
  },
  {
   "id": "items-wizard-alchemy-items",
@@ -7785,7 +8122,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "419"
  },
  {
   "id": "items-wow-items",
@@ -7801,7 +8139,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "0"
  },
  {
   "id": "items-wow-classic-items",
@@ -7817,7 +8156,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "92"
  },
  {
   "id": "items-wow-mists-of-pandaria-classic-items",
@@ -7833,7 +8173,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "14"
  },
  {
   "id": "topups-8-ball-pool-top-up",
@@ -7849,7 +8190,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "77"
  },
  {
   "id": "topups-99-nights-in-the-forest-diamonds",
@@ -7865,7 +8207,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "265"
  },
  {
   "id": "topups-amazon-prime",
@@ -7881,7 +8224,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "269"
  },
  {
   "id": "topups-apex-legends-coins",
@@ -7897,7 +8241,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "33"
  },
  {
   "id": "topups-top-up-arena-breakout",
@@ -7913,7 +8258,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "321"
  },
  {
   "id": "topups-top-up-arknights-endfield",
@@ -7929,7 +8275,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "358"
  },
  {
   "id": "topups-bgmi-uc-purchase",
@@ -7945,7 +8292,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "382"
  },
  {
   "id": "topups-bigo-live-recharge",
@@ -7961,7 +8309,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "281"
  },
  {
   "id": "topups-bite-by-night-scraps",
@@ -7977,7 +8326,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "398"
  },
  {
   "id": "topups-blood-strike-gold",
@@ -7993,7 +8343,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "271"
  },
  {
   "id": "topups-bloxstrike-credits",
@@ -8009,7 +8360,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "392"
  },
  {
   "id": "topups-brawl-stars-gems",
@@ -8025,7 +8377,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "56"
  },
  {
   "id": "topups-codm-top-up",
@@ -8041,7 +8394,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "59"
  },
  {
   "id": "topups-cod-points",
@@ -8057,7 +8411,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "35"
  },
  {
   "id": "topups-chatgpt-plus-cheap",
@@ -8073,7 +8428,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "385"
  },
  {
   "id": "topups-clash-of-clans-gems",
@@ -8089,7 +8445,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "18"
  },
  {
   "id": "topups-clash-royale-gems",
@@ -8105,7 +8462,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "52"
  },
  {
   "id": "topups-crunchyroll-premium",
@@ -8121,7 +8479,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "253"
  },
  {
   "id": "topups-dbd-auric-cells",
@@ -8137,7 +8496,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "47"
  },
  {
   "id": "topups-delta-force-coins",
@@ -8153,7 +8513,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "233"
  },
  {
   "id": "topups-destiny-2-silver",
@@ -8169,7 +8530,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "44"
  },
  {
   "id": "topups-ea-play",
@@ -8185,7 +8547,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "270"
  },
  {
   "id": "topups-fc-points",
@@ -8201,7 +8564,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "142"
  },
  {
   "id": "topups-efootball-coins",
@@ -8217,7 +8581,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "183"
  },
  {
   "id": "topups-eso-crowns",
@@ -8233,7 +8598,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "3"
  },
  {
   "id": "topups-fortnite-vbucks",
@@ -8249,7 +8615,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "16"
  },
  {
   "id": "topups-forza-horizon-6-credits",
@@ -8265,7 +8632,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "414"
  },
  {
   "id": "topups-free-fire-top-up",
@@ -8281,7 +8649,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "46"
  },
  {
   "id": "topups-genshin-impact-top-up",
@@ -8297,7 +8666,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "39"
  },
  {
   "id": "topups-growtopia-top-up",
@@ -8313,7 +8683,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "99"
  },
  {
   "id": "topups-honkai-star-rail-top-up",
@@ -8329,7 +8700,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "137"
  },
  {
   "id": "topups-honor-of-kings-tokens",
@@ -8345,7 +8717,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "249"
  },
  {
   "id": "topups-idv-top-up",
@@ -8361,7 +8734,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "173"
  },
  {
   "id": "topups-league-of-legends-riot-points",
@@ -8377,7 +8751,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "17"
  },
  {
   "id": "topups-wild-rift-wild-cores",
@@ -8393,7 +8768,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "53"
  },
  {
   "id": "topups-marvel-rivals-lattice",
@@ -8409,7 +8785,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "227"
  },
  {
   "id": "topups-metin2-dragon-coins",
@@ -8425,7 +8802,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "335"
  },
  {
   "id": "topups-miliastra-wonderland-top-up",
@@ -8441,7 +8819,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "315"
  },
  {
   "id": "topups-buy-minecoins",
@@ -8457,7 +8836,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "61"
  },
  {
   "id": "topups-mobile-legends-diamonds",
@@ -8473,7 +8853,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "55"
  },
  {
   "id": "topups-neverness-to-everness-top-up",
@@ -8489,7 +8870,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "400"
  },
  {
   "id": "topups-nintendo-switch-online",
@@ -8505,7 +8887,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "242"
  },
  {
   "id": "topups-overwatch-coins",
@@ -8521,7 +8904,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "27"
  },
  {
   "id": "topups-path-of-exile-2-packs",
@@ -8537,7 +8921,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "220"
  },
  {
   "id": "topups-playstation-plus",
@@ -8553,7 +8938,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "104"
  },
  {
   "id": "topups-point-blank-tg",
@@ -8569,7 +8955,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "357"
  },
  {
   "id": "topups-pokemon-go-pokecoins",
@@ -8585,7 +8972,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "57"
  },
  {
   "id": "topups-pokemon-tcg-pocket-gold",
@@ -8601,7 +8989,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "226"
  },
  {
   "id": "topups-poppo-live-coins",
@@ -8617,7 +9006,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "273"
  },
  {
   "id": "topups-pubg-g-coins",
@@ -8633,7 +9023,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "45"
  },
  {
   "id": "topups-pubg-mobile-uc-top-up",
@@ -8649,7 +9040,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "21"
  },
  {
   "id": "topups-buy-r6-credits",
@@ -8665,7 +9057,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "48"
  },
  {
   "id": "topups-top-up-roblox",
@@ -8681,7 +9074,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "70"
  },
  {
   "id": "topups-rocket-league-credits",
@@ -8697,7 +9091,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "1"
  },
  {
   "id": "topups-run-a-restaurant-diamonds",
@@ -8713,7 +9108,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "466"
  },
  {
   "id": "topups-rust-coins",
@@ -8729,7 +9125,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "37"
  },
  {
   "id": "topups-sea-of-thieves-ancient-coins",
@@ -8745,7 +9142,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "82"
  },
  {
   "id": "topups-silkroad-online-turkiye-silk",
@@ -8761,7 +9159,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "362"
  },
  {
   "id": "topups-sniper-duels-gems",
@@ -8777,7 +9176,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "384"
  },
  {
   "id": "topups-spotify-premium",
@@ -8793,7 +9193,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "252"
  },
  {
   "id": "topups-super-sus-goldstars",
@@ -8809,7 +9210,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "274"
  },
  {
   "id": "topups-seven-deadly-sins-origin-top-up",
@@ -8825,7 +9227,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "390"
  },
  {
   "id": "topups-tiktok-coins",
@@ -8841,7 +9244,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "254"
  },
  {
   "id": "topups-valorant-points",
@@ -8857,7 +9261,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "32"
  },
  {
   "id": "topups-where-winds-meet-top-up",
@@ -8873,7 +9278,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "323"
  },
  {
   "id": "topups-whiteout-survival-frost-stars",
@@ -8889,7 +9295,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "208"
  },
  {
   "id": "topups-wolfteam-cash",
@@ -8905,7 +9312,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "343"
  },
  {
   "id": "topups-buy-wow-token",
@@ -8921,7 +9329,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "0"
  },
  {
   "id": "topups-wuthering-waves-top-up",
@@ -8937,7 +9346,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "190"
  },
  {
   "id": "topups-xbox-game-pass",
@@ -8953,7 +9363,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "103"
  },
  {
   "id": "topups-yalla-ludo-diamond-purchase",
@@ -8969,7 +9380,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "378"
  },
  {
   "id": "topups-zenless-zone-zero-top-up",
@@ -8985,7 +9397,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "194"
  },
  {
   "id": "topups-zepeto-zem",
@@ -9001,7 +9414,8 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "272"
  },
  {
   "id": "topups-zula-gold",
@@ -9017,6 +9431,7 @@
   "top_seller_reviews": null,
   "note": null,
   "observed_at": null,
-  "source": null
+  "source": null,
+  "game_id": "334"
  }
 ]

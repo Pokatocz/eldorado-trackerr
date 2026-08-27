@@ -20,7 +20,7 @@ HISTORY = os.path.join(ROOT, 'data', 'history.json')
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
 MAX_PER_RUN = int(os.environ.get('MAX_PER_RUN', '120'))   # kolik kategorií za běh (šetrné k Eldoradu)
 DELAY = float(os.environ.get('DELAY', '2.5'))               # pauza mezi požadavky v sekundách
-PRIORITY_TYPES = ['currency', 'items', 'accounts', 'boosting']  # top-upy/gift karty jsou arbitráž, netáhneme
+PRIORITY_TYPES = ['currency', 'items', 'accounts', 'boosting', 'topups', 'giftcards']  # sledujeme vše
 
 def fetch(url):
     req = Request(url, headers={'User-Agent': UA, 'Accept-Language': 'en-US,en;q=0.9', 'Accept': 'text/html'})
