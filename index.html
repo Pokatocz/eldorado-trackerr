@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eldorado Tracker — živé ceny všech kategorií</title>
+<meta name="description" content="Sledování cen, nabídek a skóre výhodnosti pro všech 555 kategorií na Eldorado.gg. Data se aktualizují automaticky.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#17142B;--surface:#211D38;--surface2:#2A2547;--line:#3A3560;--line2:#4A4478;--text:#F1EEF7;--muted:#A39DC3;--dim:#6F6996;--gold:#E8B84A;--gold2:#FFD97A;--mint:#7FD9B8;--coral:#FF6B5A;--sky:#8FB8FF;--plum:#B58CFF;--display:'Syne',system-ui,sans-serif;--body:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--sky);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button{font:inherit;cursor:pointer}
+.top{position:sticky;top:0;z-index:40;background:rgba(23,20,43,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top__in{max-width:1400px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:-.02em;white-space:nowrap}.brand em{font-style:normal;color:var(--gold)}
+.status{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--mint);display:inline-block;box-shadow:0 0 0 3px rgba(127,217,184,.18)}
+.status i.stale{background:var(--gold)}.status i.old{background:var(--coral)}
+.spacer{flex:1}
+.wrap{max-width:1400px;margin:0 auto;padding:18px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;align-items:stretch;margin-bottom:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(24px,3.4vw,40px);line-height:1.05;letter-spacing:-.03em;margin:0 0 8px}h1 span{color:var(--gold)}
+.lead{color:var(--muted);margin:0;max-width:64ch}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.kpi{background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.kpi b{display:block;font-family:var(--display);font-size:22px;color:var(--gold2);letter-spacing:-.02em}.kpi span{font-size:12px;color:var(--muted)}
+.movers h3,.card h3{font-family:var(--display);font-size:15px;margin:0 0 10px}
+.mv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
+.mv:first-of-type{border-top:0}.mv b{font-weight:600}.mv .d{font-family:var(--mono)}.up{color:var(--mint)}.dn{color:var(--coral)}.flat{color:var(--dim)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 10px}
+.tools input,.tools select{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 12px;font:inherit}
+.tools input{min-width:240px;flex:1;max-width:420px}
+.chip{background:var(--surface);border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:7px 12px;font-family:var(--mono);font-size:12px}
+.chip.on{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.hint{font-family:var(--mono);font-size:12px;color:var(--dim);margin-left:auto}
+.tbl{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:13px}
+th,td{padding:9px 10px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line)}
+th{position:sticky;top:0;background:var(--surface2);font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;z-index:1;cursor:pointer;user-select:none;white-space:nowrap}
+th::after{content:' ↕';color:var(--dim)}th.asc::after{content:' ↑';color:var(--gold)}th.desc::after{content:' ↓';color:var(--gold)}
+tbody tr{cursor:pointer}tbody tr:hover{background:rgba(255,255,255,.03)}tbody tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);white-space:nowrap}td.muted{color:var(--muted)}
+.typ{display:inline-block;font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.typ.currency{color:var(--gold2);border-color:rgba(232,184,74,.5)}.typ.items{color:var(--plum);border-color:rgba(181,140,255,.5)}.typ.accounts{color:var(--sky);border-color:rgba(143,184,255,.5)}.typ.boosting{color:var(--mint);border-color:rgba(127,217,184,.5)}
+.score{display:inline-flex;align-items:center;gap:8px}.score b{font-family:var(--display);font-size:15px;min-width:28px}
+.bar{width:70px;height:6px;background:var(--line);border-radius:3px;overflow:hidden}.bar i{display:block;height:100%}
+.s-hi{color:var(--mint)}.s-mid{color:var(--gold2)}.s-lo{color:var(--coral)}
+.bar .s-hi{background:var(--mint)}.bar .s-mid{background:var(--gold)}.bar .s-lo{background:var(--coral)}
+.star{background:none;border:0;color:var(--dim);font-size:16px;padding:0 4px}.star.on{color:var(--gold)}
+canvas.spark{width:90px;height:26px;display:block}
+.nodata{color:var(--dim);font-family:var(--mono);font-size:12px}
+/* drawer */
+.drawer{position:fixed;top:0;right:0;height:100vh;width:min(560px,100vw);background:var(--surface);border-left:1px solid var(--line);transform:translateX(105%);transition:transform .25s;z-index:60;overflow:auto;padding:18px 20px 40px}
+.drawer.open{transform:none}
+.drawer h2{font-family:var(--display);font-size:22px;margin:6px 0 4px;letter-spacing:-.02em}
+.drawer .close{position:absolute;top:12px;right:12px;background:var(--surface2);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 10px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.kv div{background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+.kv span{display:block;font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em}.kv b{font-size:15px}
+canvas.big{width:100%;height:180px;background:var(--surface2);border:1px solid var(--line);border-radius:10px}
+.scorebox{margin-top:12px;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--muted)}
+.scorebox b{color:var(--text)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}.scrim.show{opacity:1;pointer-events:auto}
+.foot{color:var(--dim);font-size:12px;padding:24px 0 40px;font-family:var(--mono)}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr 1fr}.tools input{min-width:0}}
+@media (prefers-reduced-motion:reduce){.drawer,.scrim{transition:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top__in">
+  <div class="brand">ELDORADO <em>TRACKER</em></div>
+  <div class="status"><i id="dot"></i><span id="upd">načítám…</span></div>
+  <div class="spacer"></div>
+  <div class="status" id="cnt"></div>
+</div></div>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="card">
+      <h1>Živá tabule <span>všech 555 kategorií</span> Eldorada</h1>
+      <p class="lead">Nejnižší cena, počet nabídek, dominance top prodejce a poplatek – přepočítané do skóre <strong>„jak je to teď dobré pro prodejce"</strong>. Data obnovuje robot každých 6 hodin; u každé řádky vidíš, jak jsou stará.</p>
+      <div class="kpis">
+        <div class="kpi"><b id="k1">–</b><span>kategorií s živou cenou</span></div>
+        <div class="kpi"><b id="k2">–</b><span>kategorií celkem (6 typů)</span></div>
+        <div class="kpi"><b id="k3">–</b><span>nejlepší skóre teď</span></div>
+      </div>
+    </div>
+    <div class="card movers">
+      <h3>Největší pohyby ceny (od minulého snímku)</h3>
+      <div id="movers"><div class="nodata">Zatím jen jeden snímek – pohyby se ukážou po první automatické aktualizaci.</div></div>
+    </div>
+  </section>
+
+  <div class="tools">
+    <input id="q" type="search" placeholder="Hledat hru, kategorii, prodejce…" aria-label="Hledat">
+    <select id="typ" aria-label="Typ produktu">
+      <option value="">Všechny typy</option><option value="currency">Currency (měna)</option><option value="items">Items (předměty)</option><option value="accounts">Accounts (účty)</option><option value="boosting">Boosting (služby)</option><option value="topups">Top-upy</option><option value="giftcards">Gift karty</option>
+    </select>
+    <button class="chip" id="onlyPriced">jen s cenou</button>
+    <button class="chip" id="onlyWatch">★ watchlist</button>
+    <span class="hint" id="hint"></span>
+  </div>
+
+  <div class="tbl"><table id="t">
+    <thead><tr>
+      <th data-k="watch" style="cursor:default">★</th>
+      <th data-k="game">Hra / kategorie</th>
+      <th data-k="type">Typ</th>
+      <th data-k="unit" style="cursor:default">Jednotka</th>
+      <th data-k="price">Nejnižší cena</th>
+      <th data-k="net">Netto pro prodejce</th>
+      <th data-k="chg">Změna</th>
+      <th data-k="listings">Nabídek</th>
+      <th data-k="reviews">Top prodejce</th>
+      <th data-k="fee">Fee</th>
+      <th data-k="score">Skóre</th>
+      <th data-k="age">Stáří dat</th>
+      <th style="cursor:default">Trend</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table></div>
+  <p class="foot">Skóre 0–100 = 35 % cenový trend (7 d) + 25 % hloubka trhu (počet nabídek, log) − 20 % dominance top prodejce (recenze, log) − 20 % poplatek. Vyšší = lepší chvíle na prodej. Ceny jsou nejnižší nabídky na 1. stránce kategorie, tedy cena, na kterou musí nový prodejce jít. Zdroj: veřejné stránky eldorado.gg, žádné API ani boty ve hrách.</p>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <button class="close" id="close">Zavřít ✕</button>
+  <div id="dbody"></div>
+</aside>
+
+<script>
+const FMT = n => n==null ? '—' : (n>=1000 ? n.toLocaleString('cs-CZ') : n);
+const USD = n => n==null ? '—' : '$' + (n<0.01 ? n.toFixed(5) : n<1 ? n.toFixed(3) : n.toFixed(2)).replace('.', ',');
+const TYP = {currency:'Currency',items:'Items',accounts:'Accounts',boosting:'Boosting',topups:'Top-up',giftcards:'Gift karta'};
+let CAT=[], HIST={series:{}}, sortK='score', sortD='desc', onlyPriced=true, onlyWatch=false;
+let WATCH = new Set(JSON.parse(localStorage.getItem('watch')||'[]'));
+
+function series(id){ return (HIST.series[id]||[]).filter(p=>p.price!=null); }
+function change7d(id){
+  const s=series(id); if(s.length<2) return null;
+  const last=s[s.length-1]; const t0=new Date(last.t).getTime()-7*864e5;
+  let base=s[0]; for(const p of s){ if(new Date(p.t).getTime()<=t0) base=p; }
+  if(base===last) base=s[s.length-2];
+  return base.price ? (last.price-base.price)/base.price : null;
+}
+function ageHours(c){ if(!c.observed_at) return null; const s=series(c.id); const t=s.length? s[s.length-1].t : c.observed_at+'T12:00:00Z'; return (Date.now()-new Date(t).getTime())/36e5; }
+function score(c){
+  if(c.price_low_usd==null) return null;
+  const chg=change7d(c.id); const trend = chg==null ? 0.5 : Math.max(0,Math.min(1, 0.5+chg/0.4));
+  const depth = c.listings==null ? 0.5 : Math.max(0,Math.min(1, Math.log10(c.listings+1)/5));       // víc nabídek = víc kupců, ale i konkurence
+  const domin = c.top_seller_reviews==null ? 0.5 : Math.max(0,Math.min(1, Math.log10(c.top_seller_reviews+1)/6));
+  const fee = (c.fee_pct||0)/30;
+  return Math.round(100*(0.35*trend + 0.25*depth + 0.20*(1-domin) + 0.20*(1-fee)));
+}
+function cls(s){ return s>=60?'s-hi':s>=40?'s-mid':'s-lo'; }
+function net(c){ return c.price_low_usd==null?null:c.price_low_usd*(1-(c.fee_pct||0)/100); }
+
+function spark(canvas, s, w=90, h=26){
+  const dpr=window.devicePixelRatio||1; canvas.width=w*dpr; canvas.height=h*dpr; const x=canvas.getContext('2d'); x.scale(dpr,dpr);
+  const v=s.map(p=>p.price); if(v.length<2){ x.fillStyle='#4A4478'; x.fillRect(0,h/2,w,1); return; }
+  const mn=Math.min(...v), mx=Math.max(...v); const up=v[v.length-1]>=v[0];
+  x.strokeStyle= up?'#7FD9B8':'#FF6B5A'; x.lineWidth=1.5; x.beginPath();
+  v.forEach((val,i)=>{ const px=i/(v.length-1)*(w-2)+1; const py=h-2-((val-mn)/((mx-mn)||1))*(h-4); i?x.lineTo(px,py):x.moveTo(px,py); }); x.stroke();
+}
+function bigChart(canvas, s){
+  const w=canvas.clientWidth||520, h=180, dpr=window.devicePixelRatio||1; canvas.width=w*dpr; canvas.height=h*dpr; const x=canvas.getContext('2d'); x.scale(dpr,dpr);
+  x.clearRect(0,0,w,h);
+  if(s.length<2){ x.fillStyle='#A39DC3'; x.font='12px IBM Plex Mono, monospace'; x.fillText('Zatím jen jeden snímek – graf se vykreslí po dalších aktualizacích.',12,h/2); return; }
+  const v=s.map(p=>p.price), mn=Math.min(...v), mx=Math.max(...v), pad=28;
+  x.strokeStyle='#3A3560'; x.lineWidth=1; for(let i=0;i<4;i++){ const y=pad+(h-2*pad)*i/3; x.beginPath(); x.moveTo(pad,y); x.lineTo(w-8,y); x.stroke(); }
+  x.fillStyle='#A39DC3'; x.font='10px IBM Plex Mono, monospace'; x.fillText(USD(mx),2,pad+4); x.fillText(USD(mn),2,h-pad+4);
+  x.strokeStyle='#E8B84A'; x.lineWidth=2; x.beginPath();
+  v.forEach((val,i)=>{ const px=pad+i/(v.length-1)*(w-pad-8); const py=h-pad-((val-mn)/((mx-mn)||1))*(h-2*pad); i?x.lineTo(px,py):x.moveTo(px,py); }); x.stroke();
+  x.fillStyle='#6F6996'; x.fillText(s[0].t.slice(0,10),pad,h-8); const t2=s[s.length-1].t.slice(0,10); x.fillText(t2,w-8-x.measureText(t2).width,h-8);
+}
+
+function render(){
+  const q=(document.getElementById('q').value||'').toLowerCase().trim(); const typ=document.getElementById('typ').value;
+  let rows=CAT.filter(c=>(!typ||c.type===typ)&&(!onlyPriced||c.price_low_usd!=null)&&(!onlyWatch||WATCH.has(c.id))&&(!q||[c.game,c.slug,c.top_seller||'',c.unit||'',TYP[c.type]].join(' ').toLowerCase().includes(q)));
+  const val=c=>({game:c.game.toLowerCase(),type:c.type,price:c.price_low_usd,net:net(c),chg:change7d(c.id),listings:c.listings,reviews:c.top_seller_reviews,fee:c.fee_pct,score:score(c),age:ageHours(c)})[sortK];
+  rows.sort((a,b)=>{ let va=val(a),vb=val(b); const na=va==null, nb=vb==null; if(na&&nb) return 0; if(na) return 1; if(nb) return -1; if(typeof va==='string') return sortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs'); return sortD==='asc'?va-vb:vb-va; });
+  document.querySelectorAll('th[data-k]').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===sortK) th.classList.add(sortD);});
+  const tb=document.querySelector('#t tbody'); tb.innerHTML='';
+  const frag=document.createDocumentFragment();
+  for(const c of rows){
+    const tr=document.createElement('tr'); const sc=score(c); const chg=change7d(c.id); const age=ageHours(c);
+    tr.innerHTML=`<td><button class="star ${WATCH.has(c.id)?'on':''}" data-id="${c.id}" aria-label="Sledovat">${WATCH.has(c.id)?'★':'☆'}</button></td>
+      <td><b>${c.game}</b><div class="muted" style="font-size:11.5px;color:var(--dim);font-family:var(--mono)">${c.slug}</div></td>
+      <td><span class="typ ${c.type}">${TYP[c.type]}</span></td>
+      <td class="muted">${c.unit||'—'}</td>
+      <td class="num">${USD(c.price_low_usd)}</td>
+      <td class="num">${USD(net(c))}</td>
+      <td class="num ${chg==null?'flat':chg>0?'up':chg<0?'dn':'flat'}">${chg==null?'—':(chg>0?'+':'')+(chg*100).toFixed(1).replace('.',',')+' %'}</td>
+      <td class="num">${FMT(c.listings)}</td>
+      <td>${c.top_seller?`<div>${c.top_seller}</div><div class="num" style="font-size:11px;color:var(--dim)">${FMT(c.top_seller_reviews)} rec.</div>`:'—'}</td>
+      <td class="num">${c.fee_pct} %</td>
+      <td>${sc==null?'<span class="nodata">bez ceny</span>':`<span class="score ${cls(sc)}"><b>${sc}</b><span class="bar"><i class="${cls(sc)}" style="width:${sc}%"></i></span></span>`}</td>
+      <td class="num ${age==null?'':age>30?'dn':age>8?'':'up'}">${age==null?'—':age<1?'< 1 h':age<48?Math.round(age)+' h':Math.round(age/24)+' d'}</td>
+      <td><canvas class="spark" data-id="${c.id}"></canvas></td>`;
+    tr.dataset.id=c.id; frag.appendChild(tr);
+  }
+  tb.appendChild(frag);
+  tb.querySelectorAll('canvas.spark').forEach(cv=>spark(cv,series(cv.dataset.id)));
+  document.getElementById('hint').textContent=rows.length+' řádků';
+}
+
+function openDrawer(id){
+  const c=CAT.find(x=>x.id===id); if(!c) return; const s=series(id); const sc=score(c); const chg=change7d(c.id);
+  document.getElementById('dbody').innerHTML=`<span class="typ ${c.type}">${TYP[c.type]}</span><h2>${c.game}</h2>
+   <a href="${c.url}" target="_blank" rel="noopener">${c.url.replace('https://www.','')}</a>
+   <div class="kv">
+     <div><span>Nejnižší cena</span><b>${USD(c.price_low_usd)}${c.unit?' / '+c.unit:''}</b></div>
+     <div><span>Netto po fee ${c.fee_pct} %</span><b>${USD(net(c))}</b></div>
+     <div><span>Nabídek</span><b>${FMT(c.listings)}</b></div>
+     <div><span>Top prodejce</span><b>${c.top_seller||'—'}${c.top_seller_reviews?' · '+FMT(c.top_seller_reviews)+' rec.':''}</b></div>
+     <div><span>Změna 7 d</span><b class="${chg==null?'':chg>0?'up':'dn'}">${chg==null?'—':(chg>0?'+':'')+(chg*100).toFixed(1)+' %'}</b></div>
+     <div><span>Snímků v historii</span><b>${s.length}</b></div>
+   </div>
+   <canvas class="big" id="bigc"></canvas>
+   <div class="scorebox"><b>Skóre ${sc==null?'—':sc}/100.</b> ${sc==null?'Kategorie zatím nemá staženou cenu – robot ji doplní při dalším běhu.':(sc>=60?'Dobrá chvíle: cena drží nebo roste a trh není ovládaný jedním prodejcem.':sc>=40?'Průměr: bez výrazného trendu nebo vyšší poplatek/konkurence.':'Slabé: cena padá, silná dominance velkého prodejce nebo vysoký poplatek.')}${c.note?'<br><br>'+c.note:''}${c.last_error?'<br><br><span class="dn">Poslední pokus o aktualizaci selhal: '+c.last_error+'</span>':''}</div>`;
+  document.getElementById('drawer').classList.add('open'); document.getElementById('drawer').setAttribute('aria-hidden','false'); document.getElementById('scrim').classList.add('show');
+  requestAnimationFrame(()=>bigChart(document.getElementById('bigc'), s));
+}
+function closeDrawer(){ document.getElementById('drawer').classList.remove('open'); document.getElementById('drawer').setAttribute('aria-hidden','true'); document.getElementById('scrim').classList.remove('show'); }
+
+async function load(){
+  const [c,h]=await Promise.all([fetch('data/catalog.json?'+Date.now()).then(r=>r.json()), fetch('data/history.json?'+Date.now()).then(r=>r.json()).catch(()=>({series:{}}))]);
+  CAT=c; HIST=h;
+  const priced=CAT.filter(x=>x.price_low_usd!=null);
+  document.getElementById('k1').textContent=priced.length; document.getElementById('k2').textContent=CAT.length;
+  const best=priced.map(x=>({x,s:score(x)})).filter(o=>o.s!=null).sort((a,b)=>b.s-a.s)[0];
+  document.getElementById('k3').textContent=best?best.s+' · '+best.x.game:'—';
+  const upd=h.updated_at?new Date(h.updated_at):null; const ageH=upd?(Date.now()-upd.getTime())/36e5:null;
+  document.getElementById('upd').textContent=upd?'aktualizováno '+upd.toLocaleString('cs-CZ',{dateStyle:'short',timeStyle:'short'})+(ageH<1?' (před chvílí)':ageH<48?' (před '+Math.round(ageH)+' h)':' (před '+Math.round(ageH/24)+' dny)'):'bez dat';
+  const dot=document.getElementById('dot'); dot.className= ageH==null?'old':ageH>30?'old':ageH>8?'stale':'';
+  document.getElementById('cnt').textContent=CAT.length+' kategorií · '+Object.keys(h.series||{}).length+' sledovaných řad';
+  // movers
+  const mv=priced.map(x=>({x,c:change7d(x.id)})).filter(o=>o.c!=null&&o.c!==0).sort((a,b)=>Math.abs(b.c)-Math.abs(a.c)).slice(0,7);
+  if(mv.length) document.getElementById('movers').innerHTML=mv.map(o=>`<div class="mv"><b>${o.x.game} <span class="typ ${o.x.type}">${TYP[o.x.type]}</span></b><span class="d ${o.c>0?'up':'dn'}">${(o.c>0?'+':'')+(o.c*100).toFixed(1)} % · ${USD(o.x.price_low_usd)}</span></div>`).join('');
+  render();
+}
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('typ').addEventListener('change',render);
+document.getElementById('onlyPriced').addEventListener('click',e=>{onlyPriced=!onlyPriced;e.target.classList.toggle('on',onlyPriced);render();});
+document.getElementById('onlyWatch').addEventListener('click',e=>{onlyWatch=!onlyWatch;e.target.classList.toggle('on',onlyWatch);render();});
+document.getElementById('onlyPriced').classList.add('on');
+document.querySelectorAll('th[data-k]').forEach(th=>{ if(th.dataset.k==='watch'||th.dataset.k==='unit') return; th.addEventListener('click',()=>{ const k=th.dataset.k; if(sortK===k) sortD=sortD==='asc'?'desc':'asc'; else { sortK=k; sortD=(k==='game'||k==='type'||k==='fee'||k==='age')?'asc':'desc'; } render(); }); });
+document.querySelector('#t tbody').addEventListener('click',e=>{ const st=e.target.closest('.star'); if(st){ const id=st.dataset.id; WATCH.has(id)?WATCH.delete(id):WATCH.add(id); localStorage.setItem('watch',JSON.stringify([...WATCH])); render(); return; } const tr=e.target.closest('tr'); if(tr) openDrawer(tr.dataset.id); });
+document.getElementById('close').addEventListener('click',closeDrawer); document.getElementById('scrim').addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer(); });
+load().catch(err=>{ document.getElementById('upd').textContent='chyba načtení dat: '+err.message; });
+</script>
+</body>
+</html>
