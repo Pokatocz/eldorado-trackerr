@@ -14,7 +14,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "77"
+  "game_id": "77",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-99-nights-in-the-forest-accounts",
@@ -31,7 +32,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "265"
+  "game_id": "265",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-adopt-me-accounts-for-sale",
@@ -48,7 +50,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "201"
+  "game_id": "201",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-afk-journey-accounts",
@@ -65,7 +68,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "426"
+  "game_id": "426",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-aion-2-accounts",
@@ -82,7 +86,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "360"
+  "game_id": "360",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-albion-online-accounts",
@@ -99,7 +104,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "41"
+  "game_id": "41",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-all-star-tower-defense-x-accounts",
@@ -116,7 +122,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "261"
+  "game_id": "261",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-anime-expeditions-accounts-for-sale",
@@ -133,7 +140,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "440"
+  "game_id": "440",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-anime-vanguards-accounts",
@@ -150,7 +158,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "212"
+  "game_id": "212",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-apex-legends-accounts",
@@ -167,7 +176,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "33"
+  "game_id": "33",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-arc-raiders-accounts",
@@ -184,7 +194,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "319"
+  "game_id": "319",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-arena-breakout-accounts",
@@ -201,7 +212,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "321"
+  "game_id": "321",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-arena-breakout-infinite-accounts",
@@ -218,7 +230,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "320"
+  "game_id": "320",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-ark-survival-ascended-accounts",
@@ -235,7 +248,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "34"
+  "game_id": "34",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-arknights-accounts",
@@ -252,7 +266,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "166"
+  "game_id": "166",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-arknights-endfield-accounts",
@@ -269,7 +284,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "358"
+  "game_id": "358",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-aotr-accounts-for-sale",
@@ -286,7 +302,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "345"
+  "game_id": "345",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-battlefield-accounts",
@@ -303,7 +320,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "248"
+  "game_id": "248",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-battlenet-accounts",
@@ -320,7 +338,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "124"
+  "game_id": "124",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bee-swarm-simulator-accounts-for-sale",
@@ -337,7 +356,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "347"
+  "game_id": "347",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bgmi-accounts-for-sale",
@@ -354,7 +374,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "382"
+  "game_id": "382",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bdo-accounts-for-sale",
@@ -371,7 +392,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "24"
+  "game_id": "24",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bleach-brave-souls-accounts",
@@ -388,7 +410,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "138"
+  "game_id": "138",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bleach-soul-resonance-accounts",
@@ -405,7 +428,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "353"
+  "game_id": "353",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-blockspin-accounts",
@@ -422,7 +446,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "369"
+  "game_id": "369",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-blood-strike-accounts",
@@ -439,7 +464,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "271"
+  "game_id": "271",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bloodlines-roblox-account",
@@ -456,7 +482,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "386"
+  "game_id": "386",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-blox-fruits-accounts",
@@ -473,7 +500,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "202"
+  "game_id": "202",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-brawl-stars-accounts",
@@ -490,7 +518,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "56"
+  "game_id": "56",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-bridger-western-accounts",
@@ -507,7 +536,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "399"
+  "game_id": "399",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-call-of-duty-accounts",
@@ -524,7 +554,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "35"
+  "game_id": "35",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-call-of-duty-mobile-accounts",
@@ -541,7 +572,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "59"
+  "game_id": "59",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-captain-tsubasa-dream-team-accounts",
@@ -558,7 +590,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "425"
+  "game_id": "425",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-car-parking-multiplayer-accounts",
@@ -575,7 +608,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "339"
+  "game_id": "339",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-chaos-zero-nightmare-accounts",
@@ -592,7 +626,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "316"
+  "game_id": "316",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-clash-of-clans-account-for-sale",
@@ -602,14 +637,15 @@
   "slug": "clash-of-clans-account-for-sale",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": null,
+  "price_low_usd": 20.0,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": null,
-  "source": null,
-  "game_id": "18"
+  "observed_at": "2026-08-28",
+  "source": "eldorado.gg",
+  "game_id": "18",
+  "last_error": null
  },
  {
   "id": "accounts-clash-royale-accounts",
@@ -626,7 +662,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "52"
+  "game_id": "52",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-cookie-run-kingdom-accounts",
@@ -643,7 +680,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "247"
+  "game_id": "247",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-cs2-accounts",
@@ -660,7 +698,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "20"
+  "game_id": "20",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-crunchyroll-accounts",
@@ -677,7 +716,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "253"
+  "game_id": "253",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dark-and-darker-accounts",
@@ -694,7 +734,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "128"
+  "game_id": "128",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-darkorbit-accounts",
@@ -711,7 +752,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "344"
+  "game_id": "344",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dayz-accounts",
@@ -728,7 +770,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "75"
+  "game_id": "75",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dead-by-daylight-accounts",
@@ -738,14 +781,15 @@
   "slug": "dead-by-daylight-accounts",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": null,
+  "price_low_usd": 14.0,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": null,
-  "source": null,
-  "game_id": "47"
+  "observed_at": "2026-08-28",
+  "source": "eldorado.gg",
+  "game_id": "47",
+  "last_error": null
  },
  {
   "id": "accounts-dead-rails-accounts",
@@ -762,7 +806,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "258"
+  "game_id": "258",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-deadlock-accounts",
@@ -779,7 +824,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "214"
+  "game_id": "214",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-delta-force-accounts",
@@ -796,7 +842,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "233"
+  "game_id": "233",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-destiny-accounts",
@@ -813,7 +860,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "44"
+  "game_id": "44",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-diablo-4-accounts",
@@ -830,7 +878,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "132"
+  "game_id": "132",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-diablo-immortal-accounts",
@@ -847,7 +896,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "115"
+  "game_id": "115",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-discord-accounts",
@@ -864,7 +914,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "217"
+  "game_id": "217",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-cheap-disney-plus",
@@ -881,7 +932,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "383"
+  "game_id": "383",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-donut-smp-accounts",
@@ -898,7 +950,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "278"
+  "game_id": "278",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dota-accounts",
@@ -915,7 +968,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "43"
+  "game_id": "43",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dragon-ball-legends-accounts",
@@ -932,7 +986,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "130"
+  "game_id": "130",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-dbz-dokkan-battle-accounts",
@@ -949,7 +1004,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "156"
+  "game_id": "156",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-driving-empire-accounts-for-sale",
@@ -966,7 +1022,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "439"
+  "game_id": "439",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-ea-fc-accounts",
@@ -983,7 +1040,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "142"
+  "game_id": "142",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-fc-mobile-accounts",
@@ -1000,7 +1058,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "188"
+  "game_id": "188",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-efootball-accounts",
@@ -1017,7 +1076,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "183"
+  "game_id": "183",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-elden-ring-accounts",
@@ -1034,7 +1094,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "111"
+  "game_id": "111",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-eso-accounts-for-sale",
@@ -1051,7 +1112,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "3"
+  "game_id": "3",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-epic-games-accounts",
@@ -1068,7 +1130,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "108"
+  "game_id": "108",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-epic-seven-accounts",
@@ -1085,7 +1148,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "134"
+  "game_id": "134",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-escape-from-tarkov-accounts",
@@ -1102,7 +1166,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "19"
+  "game_id": "19",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-etheria-restart-accounts",
@@ -1119,7 +1184,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "266"
+  "game_id": "266",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-fallout-accounts-for-sale",
@@ -1136,7 +1202,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "22"
+  "game_id": "22",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-fate-grand-order-accounts",
@@ -1153,7 +1220,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "133"
+  "game_id": "133",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-fisch-accounts",
@@ -1170,7 +1238,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "219"
+  "game_id": "219",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-fortnite-accounts-for-sale",
@@ -1204,7 +1273,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "106"
+  "game_id": "106",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-forza-horizon-6-accounts",
@@ -1221,7 +1291,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "414"
+  "game_id": "414",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-free-fire-accounts",
@@ -1238,7 +1309,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "46"
+  "game_id": "46",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-genshin-impact-accounts",
@@ -1255,7 +1327,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "39"
+  "game_id": "39",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-girls-frontline-2-accounts",
@@ -1272,7 +1345,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "251"
+  "game_id": "251",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-goddess-of-victory-nikke-accounts",
@@ -1289,7 +1363,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "143"
+  "game_id": "143",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-gta-5-modded-accounts",
@@ -1323,7 +1398,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "467"
+  "game_id": "467",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-roblox-grow-a-garden-accounts",
@@ -1340,7 +1416,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "243"
+  "game_id": "243",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-grow-a-garden-2-accounts-for-sale",
@@ -1357,7 +1434,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "430"
+  "game_id": "430",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-growtopia-accounts",
@@ -1374,7 +1452,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "99"
+  "game_id": "99",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-hay-day-accounts",
@@ -1391,7 +1470,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "139"
+  "game_id": "139",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-hearthstone-account-for-sale",
@@ -1408,7 +1488,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "424"
+  "game_id": "424",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-honkai-impact-3rd-accounts",
@@ -1425,7 +1506,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "154"
+  "game_id": "154",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-honkai-star-rail-accounts",
@@ -1442,7 +1524,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "137"
+  "game_id": "137",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-hytale-accounts",
@@ -1459,7 +1542,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "363"
+  "game_id": "363",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-jailbreak-accounts",
@@ -1476,7 +1560,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "236"
+  "game_id": "236",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-jujutsu-infinite-accounts",
@@ -1493,7 +1578,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "231"
+  "game_id": "231",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-jujutsu-phanpara-accounts",
@@ -1510,7 +1596,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "179"
+  "game_id": "179",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-kaiju-no-8-accounts",
@@ -1527,7 +1614,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "287"
+  "game_id": "287",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-king-legacy-accounts",
@@ -1544,7 +1632,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "223"
+  "game_id": "223",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-kingshot-accounts-for-sale",
@@ -1561,7 +1650,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "374"
+  "game_id": "374",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-knight-online-accounts",
@@ -1578,7 +1668,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "338"
+  "game_id": "338",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-last-island-of-survival-accounts",
@@ -1595,7 +1686,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "342"
+  "game_id": "342",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-last-war-accounts-for-sale",
@@ -1612,7 +1704,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "279"
+  "game_id": "279",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-league-of-legends-accounts-for-sale",
@@ -1629,7 +1722,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "17"
+  "game_id": "17",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-lol-wild-rift-accounts",
@@ -1646,7 +1740,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "53"
+  "game_id": "53",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-lords-mobile-accounts",
@@ -1663,7 +1758,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "74"
+  "game_id": "74",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-maplestory-accounts-for-sale",
@@ -1680,7 +1776,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "120"
+  "game_id": "120",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-marvel-contest-of-champions-accounts",
@@ -1697,7 +1794,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "331"
+  "game_id": "331",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-marvel-rivals-accounts",
@@ -1714,7 +1812,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "227"
+  "game_id": "227",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-metin2-accounts",
@@ -1731,7 +1830,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "335"
+  "game_id": "335",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-minecraft-accounts",
@@ -1741,14 +1841,15 @@
   "slug": "minecraft-accounts",
   "unit": null,
   "fee_pct": 10,
-  "price_low_usd": null,
+  "price_low_usd": 5.0,
   "listings": null,
   "top_seller": null,
   "top_seller_reviews": null,
   "note": null,
-  "observed_at": null,
-  "source": null,
-  "game_id": "61"
+  "observed_at": "2026-08-28",
+  "source": "eldorado.gg",
+  "game_id": "61",
+  "last_error": null
  },
  {
   "id": "accounts-moco-accounts",
@@ -1765,7 +1866,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "241"
+  "game_id": "241",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-mobile-legends-accounts",
@@ -1782,7 +1884,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "55"
+  "game_id": "55",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-monster-hunter-now-accounts",
@@ -1799,7 +1902,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "175"
+  "game_id": "175",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-monster-strike-accounts",
@@ -1816,7 +1920,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "149"
+  "game_id": "149",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-mortal-kombat-mobile-accounts",
@@ -1833,7 +1938,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "423"
+  "game_id": "423",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-mm2-accounts-for-sale",
@@ -1850,7 +1956,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "204"
+  "game_id": "204",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-netflix-accounts",
@@ -1867,7 +1974,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "255"
+  "game_id": "255",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-neverness-to-everness-accounts",
@@ -1884,7 +1992,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "400"
+  "game_id": "400",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-osrs-accounts-for-sale",
@@ -1901,7 +2010,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "10"
+  "game_id": "10",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-one-piece-bounty-rush-accounts",
@@ -1918,7 +2028,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "135"
+  "game_id": "135",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-one-piece-treasure-cruise-accounts",
@@ -1935,7 +2046,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "184"
+  "game_id": "184",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-origin-accounts",
@@ -1952,7 +2064,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "64"
+  "game_id": "64",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-overwatch-accounts",
@@ -1969,7 +2082,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "27"
+  "game_id": "27",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-path-of-exile-accounts",
@@ -1986,7 +2100,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "2"
+  "game_id": "2",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-path-of-exile-2-accounts",
@@ -2003,7 +2118,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "220"
+  "game_id": "220",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-psn-accounts",
@@ -2020,7 +2136,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "104"
+  "game_id": "104",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-pokemon-go-accounts",
@@ -2037,7 +2154,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "57"
+  "game_id": "57",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-pokemon-tcg-pocket-accounts",
@@ -2054,7 +2172,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "226"
+  "game_id": "226",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-project-sekai-accounts",
@@ -2071,7 +2190,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "185"
+  "game_id": "185",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-pubg-accounts",
@@ -2088,7 +2208,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "45"
+  "game_id": "45",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-pubg-mobile-accounts-for-sale",
@@ -2105,7 +2226,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "21"
+  "game_id": "21",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-raid-shadow-legends-accounts",
@@ -2122,7 +2244,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "73"
+  "game_id": "73",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-rainbow-six-siege-accounts",
@@ -2139,7 +2262,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "48"
+  "game_id": "48",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-rise-of-kingdoms-accounts-for-sale",
@@ -2156,7 +2280,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "94"
+  "game_id": "94",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-roblox-accounts-for-sale",
@@ -2173,7 +2298,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "70"
+  "game_id": "70",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-roblox-rivals-accounts-for-sale",
@@ -2190,7 +2316,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "207"
+  "game_id": "207",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-rocket-league-accounts-for-sale",
@@ -2207,7 +2334,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "1"
+  "game_id": "1",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-royale-online-accounts",
@@ -2224,7 +2352,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "341"
+  "game_id": "341",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-runescape-accounts-for-sale",
@@ -2241,7 +2370,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "9"
+  "game_id": "9",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-rust-accounts",
@@ -2258,7 +2388,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "37"
+  "game_id": "37",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-sailor-piece-accounts",
@@ -2275,7 +2406,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "380"
+  "game_id": "380",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-sd-gundam-g-generation-eternal-accounts",
@@ -2292,7 +2424,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "244"
+  "game_id": "244",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-sea-of-thieves-accounts",
@@ -2309,7 +2442,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "82"
+  "game_id": "82",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-seven-knights-re-birth-accounts",
@@ -2326,7 +2460,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "286"
+  "game_id": "286",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-sky-children-of-the-light-accounts",
@@ -2343,7 +2478,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "177"
+  "game_id": "177",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-spotify-accounts",
@@ -2360,7 +2496,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "252"
+  "game_id": "252",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-standoff-2-accounts",
@@ -2377,7 +2514,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "340"
+  "game_id": "340",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-star-citizen-accounts-for-sale",
@@ -2394,7 +2532,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "141"
+  "game_id": "141",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-steal-a-brainrot-accounts",
@@ -2411,7 +2550,8 @@
   "note": null,
   "observed_at": null,
   "source": null,
-  "game_id": "259"
+  "game_id": "259",
+  "last_error": "2026-08-28T02:10:12Z: ValueError: nic nevyparsováno (Cloudflare/blok?)"
  },
  {
   "id": "accounts-steal-an-egg-accounts",
