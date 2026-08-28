@@ -11,7 +11,7 @@
 <body>
 <header class="topbar"><div class="topbar__in">
   <a class="brand" href="index.html">ELDORADO <span>TERMINAL</span></a>
-  <nav class="nav"><a href="index.html#vydelek">Výdělek</a><a href="index.html#hry">Hry</a><a href="#ceny">Ceny</a><a href="#nabidky">Nabídky</a><a href="#met">Metody</a></nav>
+  <nav class="nav"><a href="index.html#vydelek">Výdělek</a><a href="index.html#hry">Hry</a><a href="#ceny">Ceny</a><a href="#nabidky">Nabídky</a><a href="#met">Metody</a><a href="index.html#overeni">Ověření</a></nav>
   <div class="spacer"></div>
   <input class="search" id="q" type="search" placeholder="Přejít na jinou hru…" list="gamelist" aria-label="Hledat hru"><datalist id="gamelist"></datalist>
   <div class="stamp"><i id="dot"></i><span id="upd">načítám…</span></div>
@@ -123,7 +123,7 @@ function renderMeth(){
       if(r&&r.kind==='per') return `<b class="s-mid">${r.text}</b><div class="sub">jednorázově</div>`;
       return `<span class="nodata">${r?r.text:'—'}</span>`;})()}</td>
     <td class="num">${T.chgHtml(T.earnTrend(o.m))}</td>
-    <td><b>${o.m.method}</b>${o.flag?` <span class="tag ${o.flag.cls}">${o.flag.text}</span>`:''}<div class="sub" style="white-space:normal;max-width:46ch">${o.m.description||''}</div></td>
+    <td><b>${o.m.method}</b>${o.flag?` <span class="tag ${o.flag.cls}">${o.flag.text}</span>`:''}${T.verified(o.m)?' <span class="tag g">ověřeno</span>':''}<div class="sub" style="white-space:normal;max-width:46ch">${o.m.description||''}</div></td>
     <td class="num muted">${o.m.rate_value!=null?T.FMT(o.m.rate_value)+' '+(o.m.rate_unit||''):(o.m.rate_unit||'—')}</td>
     <td class="muted">${o.m.requirements||'—'}</td><td>${T.dots(o.m.afk_score,'afk')}</td>
 <td><span class="tag ${o.sr.cls}">${o.sr.t}</span>${o.sr.label?`<div class="sub">${o.sr.label}</div>`:''}</td>
@@ -172,7 +172,7 @@ T.load().then(D=>{
   $('ladder-note').textContent=earns.length?`Počítáno z ceny ${T.USD(earns[0].cat.price_low_usd)} za ${earns[0].cat.unit} minus ${earns[0].cat.fee_pct} % poplatek.`:'';
 
   $('tcats').querySelector('tbody').innerHTML=cats.map(c=>{const sc=T.score(c);
-    return `<tr><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td><td><b>${c.game}</b><div class="sub">${c.slug}</div></td>
+    return `<tr><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td><td><b>${c.game}</b>${T.verified(c)?' <span class="tag g">ověřeno</span>':''}<div class="sub">${c.slug}</div></td>
     <td class="muted">${c.unit||'—'}</td><td class="num">${T.USD(c.price_low_usd)}</td><td class="num">${T.USD(T.net(c))}</td>
     <td class="num">${T.chgHtml(T.change7d(c.id))}</td><td class="num">${T.FMT(c.listings)}</td>
     <td>${c.top_seller?c.top_seller+'<div class="sub">'+T.FMT(c.top_seller_reviews)+' rec.</div>':'—'}</td>

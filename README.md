@@ -67,6 +67,27 @@ peníze je zakázán" — takže sloupec ukazoval pořád „vysoké" a nic neř
 
 Rozložení napříč metodami: 13 legální cesta · 5 slabé · 119 běžné · 142 ban vlny · 101 permaban.
 
+## Ověřování dat
+
+`data/audit.json` drží výsledek poslední nezávislé kontroly dat proti veřejným zdrojům. Web ji ukazuje
+v sekci **Ověření** a u ověřených položek dává štítek „ověřeno".
+
+Kontrola z 28. 8. 2026: **34 potvrzeno, 13 opraveno, 48 neověřeno**. Nejzávažnější nálezy:
+
+1. **ESO metoda č. 1** — výnos 2 M zlata/h byl přiřazen k *farmení overland setů*. Podle AlcastHQ ho ale
+   dává jen *překupnictví u guild traderů*; farmení setů dělá ~200k/h. Metoda rozdělena na dvě, ESO farmení
+   spadlo z $10,56/h na $1,06/h.
+2. **Scraper bral featured nabídku, ne nejlevnější.** Eldorado řadí podle „Recommended" a ta často není
+   nejlevnější. `update.py` teď počítá minimum z rozparsovaných nabídek a featured ukládá zvlášť
+   (`price_featured_usd`). Tohle způsobilo většinu cenových chyb.
+3. **Šest chybných cen** — Warframe (+42 %), Albion (−21 %), FFXIV (−18 %), Diablo 4 (+16 %),
+   WoW Classic Era (+13 %), Hypixel (+11 %).
+4. **Delta Force** — tvrzení „statisíce sankcí týdně" nesedí; reporty Team Jade ukazují jednotky tisíc až
+   ~20 000 a míří hlavně na cheaty, ne na RMT. Úroveň rizika snížena z 5 na 4.
+
+Co se potvrdilo: celá struktura poplatků, výběrové poplatky, ban pravidla Jagexu, Riotu, Throne & Liberty
+a DonutSMP, sazby Roblox DevEx, a ceny ESO, EVE, Star Citizen, PoE, Tibia i WoW retail.
+
 ## Nasazení
 
 1. Nahraj obsah složky do GitHub repozitáře. Soubor `.github/workflows/update.yml` vytvoř přes

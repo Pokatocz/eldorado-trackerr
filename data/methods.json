@@ -2081,16 +2081,18 @@
  },
  {
   "method": "Farmení overland setů",
-  "description": "Farmi žádané set-piecy a prodávej v trading guildě – nejvyšší strop.",
-  "rate_value": 2000000,
-  "rate_unit": "gold/h (špička)",
+  "description": "Farmení žádaných set-piecí v otevřeném světě a prodej v trading guildě. Sběrné farmení, ne překupnictví.",
+  "rate_value": 200000,
+  "rate_unit": "gold/h",
   "usd_per_hour_net": 10.56,
-  "requirements": "Speed build, znalost trhu",
+  "requirements": "Speed build, znalost lokací setů",
   "afk_score": 2,
   "ban_risk_note": "Prodej za reálné peníze = ban (ZeniMax ToS).",
-  "source": "https://boostmatch.gg/blog/the-elder-scrolls/articles/eso-gold-cp-farm-guide-2026",
-  "source_date": "2026",
-  "game_id": "3"
+  "source": "https://alcasthq.com/easy-gold-farming-guide-for-eso/",
+  "source_date": "2026-01-07",
+  "game_id": "3",
+  "verified_at": "2026-08-28",
+  "note": "Opraveno 28.8.2026: dřív k této metodě chybně patřil výnos 2 M gold/h, který podle AlcastHQ platí jen pro překupnictví u guild traderů, ne pro farmení setů."
  },
  {
   "method": "Master writy",
@@ -3660,10 +3662,11 @@
   "usd_per_hour_net": 0.43,
   "requirements": "Operator L3 (AH)",
   "afk_score": 0,
-  "ban_risk_note": "Team Jade masivně banuje RMT a automatizaci (statisíce postihů týdně, bany až 10 let).",
+  "ban_risk_note": "Team Jade banuje automatizaci a cheaty, bany až 10 let. Týdenní reporty ukazují jednotky tisíc až ~20 000 zásahů (ne statisíce) a míří hlavně na cheaty, ne cíleně na RMT.",
   "source": "https://overgear.com/games/delta-force/tekniq-alloy",
   "source_date": "2026",
-  "game_id": "233"
+  "game_id": "233",
+  "verified_at": "2026-08-28"
  },
  {
   "method": "Contracts (HVT)",
@@ -3673,10 +3676,11 @@
   "usd_per_hour_net": null,
   "requirements": "in-raid",
   "afk_score": 0,
-  "ban_risk_note": "Team Jade masivně banuje RMT a automatizaci (statisíce postihů týdně, bany až 10 let).",
+  "ban_risk_note": "Team Jade banuje automatizaci a cheaty, bany až 10 let. Týdenní reporty ukazují jednotky tisíc až ~20 000 zásahů (ne statisíce) a míří hlavně na cheaty, ne cíleně na RMT.",
   "source": "https://boosting-ground.com/delta-force/boosting/tekniq-alloy",
   "source_date": "2026",
-  "game_id": "233"
+  "game_id": "233",
+  "verified_at": "2026-08-28"
  },
  {
   "method": "Collector Missions",
@@ -3686,10 +3690,11 @@
   "usd_per_hour_net": null,
   "requirements": "daily refresh",
   "afk_score": 0,
-  "ban_risk_note": "Team Jade masivně banuje RMT a automatizaci (statisíce postihů týdně, bany až 10 let).",
+  "ban_risk_note": "Team Jade banuje automatizaci a cheaty, bany až 10 let. Týdenní reporty ukazují jednotky tisíc až ~20 000 zásahů (ne statisíce) a míří hlavně na cheaty, ne cíleně na RMT.",
   "source": "https://news.bittopup.com/news/delta-force-3x3-safebox-cost-complete-2026-guide",
   "source_date": "2026",
-  "game_id": "233"
+  "game_id": "233",
+  "verified_at": "2026-08-28"
  },
  {
   "method": "Auction House flipping",
@@ -3699,10 +3704,11 @@
   "usd_per_hour_net": null,
   "requirements": "Operator L3",
   "afk_score": 1,
-  "ban_risk_note": "Team Jade masivně banuje RMT a automatizaci (statisíce postihů týdně, bany až 10 let).",
+  "ban_risk_note": "Team Jade banuje automatizaci a cheaty, bany až 10 let. Týdenní reporty ukazují jednotky tisíc až ~20 000 zásahů (ne statisíce) a míří hlavně na cheaty, ne cíleně na RMT.",
   "source": "https://boosting-ground.com/delta-force/boosting/tekniq-alloy",
   "source_date": "2026",
-  "game_id": "233"
+  "game_id": "233",
+  "verified_at": "2026-08-28"
  },
  {
   "method": "Weekly Care Package",
@@ -4938,5 +4944,19 @@
   "source": "https://buyboosting.com/rl-boosting/",
   "source_date": "2026",
   "game_id": "1"
+ },
+ {
+  "game_id": "3",
+  "method": "Překupnictví u guild traderů (flipping/sniping)",
+  "description": "Vykupování podhodnocených položek u guild traderů a přeprodej. Podle AlcastHQ jediná metoda, která v ESO stabilně dá 2 M zlata za hodinu.",
+  "rate_value": 2000000,
+  "rate_unit": "gold/h",
+  "usd_per_hour_net": null,
+  "requirements": "Kapitál, Master Merchant / TTC, znalost cen",
+  "afk_score": 2,
+  "ban_risk_note": "Překupnictví ve hře je legální; prodej zlata za reálné peníze porušuje ToS ZeniMax.",
+  "source": "https://alcasthq.com/eso-gold-farming-guide/",
+  "source_date": "2026-01-07",
+  "verified_at": "2026-08-28"
  }
 ]

@@ -17,10 +17,10 @@ const T = {
     if(T.data) return T.data;
     const v=Math.floor(Date.now()/120000);                       // cache-buster po 2 min
     const j=p=>fetch(p+'?v='+v).then(r=>r.ok?r.json():null).catch(()=>null);
-    const [catalog,history,games,methods,items,ranking,listings,units,earn,risk]=await Promise.all(
-      ['catalog','history','games','methods','items','ranking','listings','units','earnings','risk'].map(n=>j('data/'+n+'.json')));
+    const [catalog,history,games,methods,items,ranking,listings,units,earn,risk,audit]=await Promise.all(
+      ['catalog','history','games','methods','items','ranking','listings','units','earnings','risk','audit'].map(n=>j('data/'+n+'.json')));
     T.data={catalog:catalog||[],history:history||{series:{}},games:games||[],methods:methods||[],
-            items:items||[],ranking:ranking||[],listings:(listings&&listings.by_category)||{},units:units||{},earnHist:(earn&&earn.series)||{},risk:risk||{}};
+            items:items||[],ranking:ranking||[],listings:(listings&&listings.by_category)||{},units:units||{},earnHist:(earn&&earn.series)||{},risk:risk||{},audit:audit||null};
     T.data.byId=Object.fromEntries(T.data.catalog.map(c=>[c.id,c]));
     T.data.gameById=Object.fromEntries(T.data.games.map(g=>[g.id,g]));
     T.index();
@@ -187,6 +187,7 @@ const T = {
   ageHtml(a){ return a==null?'—':a<1?'< 1 h':a<48?Math.round(a)+' h':Math.round(a/24)+' d'; },
   dots(n,cls){ if(n==null) return '—';
     return `<span class="dwrap"><span class="dots ${cls}">`+[0,1,2,3,4].map(i=>`<i class="${i<n?'on':''}"></i>`).join('')+`</span><span class="n">${n}</span></span>`; },
+  verified(x){ return x && x.verified_at ? x.verified_at : null; },
   offers(id){ const o=T.data.listings[id]; return o&&o.offers?o.offers:[]; },
   gameOffers(g){ const out=[]; for(const id of g.cats){ const c=T.data.byId[id]; if(!c) continue;
     for(const o of T.offers(id)) out.push({...o,cat:c}); } return out.sort((a,b)=>(b.price??0)-(a.price??0)); },

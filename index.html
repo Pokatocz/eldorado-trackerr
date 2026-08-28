@@ -13,7 +13,7 @@
 <header class="topbar"><div class="topbar__in">
   <a class="brand" href="index.html">ELDORADO <span>TERMINAL</span></a>
   <nav class="nav">
-    <a href="#vydelek" class="on">Výdělek</a><a href="#hry">Hry</a><a href="#trh">Trh</a><a href="#metody">Metody</a><a href="#jak">Jak to počítám</a>
+    <a href="#vydelek" class="on">Výdělek</a><a href="#hry">Hry</a><a href="#trh">Trh</a><a href="#metody">Metody</a><a href="#overeni">Ověření</a><a href="#jak">Jak to počítám</a>
   </nav>
   <div class="spacer"></div>
   <input class="search" id="q" type="search" placeholder="Hledat hru, kategorii, prodejce…" aria-label="Hledat" list="gamelist">
@@ -124,6 +124,20 @@
     </tr></thead><tbody></tbody></table></div>
   </section>
 
+  <!-- ===== OVĚŘENÍ ===== -->
+  <section id="overeni">
+    <div class="eyebrow">Kontrola dat</div>
+    <h2>Co je ověřené a co jsem opravil</h2>
+    <p class="lead" id="aud-lead">Data se nezávisle porovnávají s veřejnými stránkami Eldorada, herními wiki a oznámeními vydavatelů. Tady je poslední kontrola i s nálezy — včetně chyb, které jsem v datech našel a opravil.</p>
+    <div class="metrics" id="aud-metrics" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="panel"><h3>Opraveno při poslední kontrole</h3>
+        <div class="tbl" style="border:0"><table id="aud-fix"><thead><tr><th>Co</th><th>Bylo</th><th>Je</th><th>Závažnost</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel"><h3>Ověřeno jako správné</h3><ul id="aud-ok" style="margin:0;padding-left:16px;color:var(--muted);font-size:13px;line-height:1.75"></ul></div>
+    </div>
+    <div class="note" id="aud-note"></div>
+  </section>
+
   <!-- ===== JAK ===== -->
   <section id="jak">
     <div class="eyebrow">Metodika</div>
@@ -209,7 +223,7 @@ function renderCats(){
   $('tcats').querySelector('tbody').innerHTML=rows.slice(0,300).map(c=>{const sc=T.score(c),age=T.ageHours(c);
     return `<tr class="link" data-g="${c.game_id}">
     <td><button class="star ${WATCH.has(c.id)?'on':''}" data-id="${c.id}" aria-label="Sledovat">${WATCH.has(c.id)?'★':'☆'}</button></td>
-    <td><b>${c.game}</b><div class="sub">${c.slug}</div></td><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td>
+    <td><b>${c.game}</b>${T.verified(c)?' <span class="tag g">ověřeno</span>':''}<div class="sub">${c.slug}</div></td><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td>
     <td class="muted">${c.unit||'—'}</td><td class="num">${T.USD(c.price_low_usd)}</td><td class="num">${T.USD(T.net(c))}</td>
     <td class="num">${T.chgHtml(T.change7d(c.id))}</td><td class="num">${T.FMT(c.listings)}</td>
     <td>${c.top_seller?c.top_seller+'<div class="sub">'+T.FMT(c.top_seller_reviews)+' rec.</div>':'—'}</td>
@@ -279,6 +293,21 @@ T.load().then(D=>{
     <span class="rung__val" style="font-size:13px">${T.chgHtml(o.x)}</span></a>`).join('');
 
   GS=D.games.map(gstat).sort((a,b)=>b.vol-a.vol||b.methods-a.methods);
+  // ---- audit ----
+  const A=D.audit;
+  if(A){
+    $('aud-metrics').innerHTML=`
+      <div class="metric"><b>${A.summary.confirmed}</b><span>potvrzeno</span></div>
+      <div class="metric"><b class="s-lo">${A.summary.corrected}</b><span>opraveno</span></div>
+      <div class="metric"><b class="muted" style="color:var(--muted)">${A.summary.unverified}</b><span>neověřeno</span></div>`;
+    const sev={'kritická':'r','vysoká':'r','střední':'a','nízká':''};
+    $('aud-fix').querySelector('tbody').innerHTML=A.corrections.map(c=>`<tr>
+      <td><b>${c.what}</b><div class="sub" style="white-space:normal;max-width:30ch">${c.why}</div></td>
+      <td class="muted">${c.was}</td><td>${c.now}</td>
+      <td><span class="tag ${sev[c.severity]||''}">${c.severity}</span></td></tr>`).join('');
+    $('aud-ok').innerHTML=A.confirmed_highlights.map(t=>`<li>${t}</li>`).join('');
+    $('aud-note').innerHTML=`<b>Poslední kontrola ${new Date(A.checked_at).toLocaleDateString('cs-CZ')}.</b> ${A.unverified_note}`;
+  } else { document.getElementById('overeni').style.display='none'; }
   renderLadder(); renderGames(); renderCats(); renderMeth();
 }).catch(e=>{const el=$('upd'); if(el) el.textContent='chyba dat: '+e.message;});
 

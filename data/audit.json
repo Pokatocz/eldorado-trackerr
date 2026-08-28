@@ -1,0 +1,140 @@
+{
+ "checked_at": "2026-08-28",
+ "scope": "Nezávislé ověření cen, poplatků, výnosů a pravidel proti veřejným zdrojům.",
+ "summary": {
+  "confirmed": 34,
+  "corrected": 13,
+  "unverified": 48
+ },
+ "corrections": [
+  {
+   "what": "ESO metoda č. 1",
+   "was": "farmení overland setů = 2 M zlata/h",
+   "now": "farmení setů 200k/h; 2 M/h patří překupnictví u guild traderů",
+   "why": "AlcastHQ: 2 M/h dává jen flipping, ne sběr setů",
+   "severity": "kritická",
+   "source": "https://alcasthq.com/eso-gold-farming-guide/"
+  },
+  {
+   "what": "Warframe platina",
+   "was": "$0,014/plat",
+   "now": "$0,01994/plat",
+   "why": "web bral featured nabídku, ne nejnižší",
+   "severity": "vysoká",
+   "source": "https://www.eldorado.gg/warframe-buy-platinum/g/11-0-0"
+  },
+  {
+   "what": "Albion silver",
+   "was": "$0,2524/M",
+   "now": "$0,20/M",
+   "why": "nejnižší nabídka",
+   "severity": "vysoká",
+   "source": "https://www.eldorado.gg/albion-online-silver/g/41-2-0"
+  },
+  {
+   "what": "FFXIV gil",
+   "was": "$0,42/M",
+   "now": "$0,346/M",
+   "why": "nejnižší nabídka",
+   "severity": "vysoká",
+   "source": "https://www.eldorado.gg/ffxiv-gil/g/7-0-0"
+  },
+  {
+   "what": "Diablo 4 gold",
+   "was": "$0,043/B",
+   "now": "$0,05/B",
+   "why": "nejnižší nabídka",
+   "severity": "střední",
+   "source": "https://www.eldorado.gg/diablo-4-gold/g/132-0-0"
+  },
+  {
+   "what": "WoW Classic Era",
+   "was": "$0,0092",
+   "now": "$0,01039",
+   "why": "nejnižší nabídka",
+   "severity": "střední",
+   "source": "https://www.eldorado.gg/wow-classic-gold/g/92-0-0"
+  },
+  {
+   "what": "Hypixel coins",
+   "was": "$0,0315/M",
+   "now": "$0,03499/M",
+   "why": "nejnižší nabídka",
+   "severity": "střední",
+   "source": "https://www.eldorado.gg/minecraft-hypixel-coins/g/61-0-0"
+  },
+  {
+   "what": "SWTOR credits",
+   "was": "$0,1151/M (featured)",
+   "now": "$0,11342/M",
+   "why": "web bral featured, ne nejnižší",
+   "severity": "nízká",
+   "source": "https://www.eldorado.gg/swtor-credits/g/69-0-0"
+  },
+  {
+   "what": "DonutSMP money",
+   "was": "$0,0179/M, 124 nabídek, top LootPlug",
+   "now": "$0,0184/M, 110 nabídek, top CNLTeam",
+   "why": "aktuální stav trhu",
+   "severity": "nízká",
+   "source": "https://www.eldorado.gg/donutsmp-money/g/278"
+  },
+  {
+   "what": "OSRS gold",
+   "was": "$0,255/M, 70 nabídek",
+   "now": "$0,2579/M, 65 nabídek",
+   "why": "aktuální stav trhu",
+   "severity": "nízká",
+   "source": "https://www.eldorado.gg/osrs-gold/g/10-0-0"
+  },
+  {
+   "what": "Fortnite účty",
+   "was": "nejnižší $14,00",
+   "now": "nejnižší $15,91",
+   "why": "aktuální stav trhu",
+   "severity": "nízká",
+   "source": "https://www.eldorado.gg/fortnite-accounts-for-sale/a/16-1-0"
+  },
+  {
+   "what": "Delta Force – vymáhání",
+   "was": "statisíce sankcí týdně, úroveň 5",
+   "now": "jednotky tisíc až ~20 000 týdně, míří na cheaty; úroveň 4",
+   "why": "týdenní reporty Team Jade",
+   "severity": "vysoká",
+   "source": "https://www.gamespot.com/"
+  },
+  {
+   "what": "Logika scraperu",
+   "was": "brala se cena z hrubého skenu stránky",
+   "now": "bere se nejnižší z rozparsovaných nabídek",
+   "why": "Eldorado řadí podle Recommended, featured často není nejlevnější",
+   "severity": "vysoká",
+   "source": "scripts/update.py"
+  }
+ ],
+ "confirmed_highlights": [
+  "Poplatky prodejce: 1,5 % OSRS/RS3/WoW gold · 3 % Warframe/Lost Ark/New World · 5 % měny · 10 % předměty/účty/boosting · 15 % Roblox a LoL/Valorant/Brawl Stars účty · 20 % boosting LoL/CoD/OSRS a účty Fortnite/CoD/R6 · 30 % GTA5 · 0 % top-upy a gift karty",
+  "Kupující platí 8 % + $0,30",
+  "Výběry: Payoneer 4 %+$2 · SEPA 4 %+$5 · Skrill 5 %+$1 · BTC a USDC 6 %+$20",
+  "Záruka účtu 5 dní zdarma, dle kategorie až 14 dní",
+  "Jagex od 16. 9. 2025 banuje i poprvé přistižené včetně kupujících a konfiskuje předměty",
+  "Riot: tresty se od patche 25.23 (19. 11. 2025) přenášejí na všechny propojené účty; sankcionováno ~400 tis. smurfů a ~4 mil. účtů",
+  "Valorant patch 11.09: permanentní ban koupených a boostovaných účtů",
+  "Throne and Liberty: lucent se stahuje do záporu a blokuje se aukce",
+  "DonutSMP: /pay účtu s nízkým playtimem smaže OBA účty",
+  "Roblox DevEx: $0,0038 za Robux standard, $0,0054 pro US 18+ od 8. 6. 2026, minimum 30 000 Earned Robux",
+  "Ceny sedící přesně: ESO $5,55955/M · EVE $4,10998/B · Star Citizen $0,00064/K · PoE $0,02/Divine · Tibia $1,93/M · WoW retail $0,0449/K",
+  "Výnosy sedící: OSRS Doom of Mokhaiotl 17,2 M gp/h (OSRS Wiki) · RS3 Zamorak 140 M/h · EVE C5 sleepeři 1–3 mld ISK/h · OSRS Zulrah 3,3 M a Vorkath 3,6 M"
+ ],
+ "unverified_note": "Zhruba 48 tvrzení se v rozpočtu ověření nepodařilo potvrdit ani vyvrátit — hlavně ceny menších her a část výnosových sazeb (SWTOR, Star Citizen, MapleStory, FFXIV crafting, Albion, Hypixel). U žádného nebyl nalezen důkaz chyby.",
+ "sources": [
+  "https://support.eldorado.gg/en/articles/8409025-seller-fees",
+  "https://alcasthq.com/eso-gold-farming-guide/",
+  "https://oldschool.runescape.wiki/w/Update:A_Message_about_Real_World_Trading",
+  "https://www.leagueoflegends.com/en-us/news/dev/dev-account-linking-and-streamer-mode/",
+  "https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-09/",
+  "https://donut.today/wiki/rules",
+  "https://en.help.roblox.com/hc/en-us/articles/13061189551124-Developer-Exchange-Help-and-Information-Page",
+  "https://www.pcgamesn.com/throne-and-liberty/real-money-trading-punishment"
+ ]
+}

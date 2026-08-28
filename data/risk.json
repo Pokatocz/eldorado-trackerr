@@ -25,9 +25,9 @@
   "detail": "NCSoft stáhne nakoupený lucent do mínusu, zablokuje aukci a eskaluje k permanentnímu banu."
  },
  "233": {
-  "level": 5,
-  "label": "masové bany",
-  "detail": "Team Jade konfiskuje nelegálně získané Delta Coins a banuje až na 10 let; statisíce postihů týdně."
+  "level": 4,
+  "label": "bany až 10 let",
+  "detail": "Team Jade banuje automatizaci a cheaty (jednotky tisíc až ~20 000 zásahů týdně) a konfiskuje nelegálně získané Delta Coins. Vymáhání míří hlavně na cheaty, ne cíleně na RMT — proto úroveň 4, ne 5."
  },
  "10": {
   "level": 5,

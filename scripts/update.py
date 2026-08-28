@@ -57,7 +57,7 @@ def clean_name(raw):
 
 def parse(text):
     """Vrátí souhrn kategorie + seznam jednotlivých nabídek."""
-    out = {'listings': None, 'price_low': None, 'top_seller': None, 'reviews': None, 'offers': []}
+    out = {'listings': None, 'price_low': None, 'price_featured': None, 'top_seller': None, 'reviews': None, 'offers': []}
     m = re.search(r'([\d,]+)\s+items? found', text)
     if m:
         out['listings'] = int(m.group(1).replace(',', ''))
@@ -82,10 +82,17 @@ def parse(text):
         if len(out['offers']) >= MAX_LISTINGS:
             break
 
-    prices = [float(p.replace(',', '')) for p in re.findall(r'\$\s?([\d,]+(?:\.\d+)?)', block)]
-    prices = [p for p in prices if 0 < p < 100000]
-    if prices:
-        out['price_low'] = min(prices)
+    # POZOR: Eldorado řadí podle "Recommended", takže první (featured) nabídka
+    # často NENÍ nejlevnější. Bereme proto minimum ze všech rozparsovaných nabídek,
+    # a teprve když se žádná neparsuje, spadneme na hrubý sken cen na stránce.
+    if out['offers']:
+        out['price_low'] = min(o['price'] for o in out['offers'])
+        out['price_featured'] = out['offers'][0]['price']
+    else:
+        prices = [float(p.replace(',', '')) for p in re.findall(r'\$\s?([\d,]+(?:\.\d+)?)', block)]
+        prices = [p for p in prices if 0 < p < 100000]
+        if prices:
+            out['price_low'] = min(prices)
     best = None
     for mm in re.finditer(r'([A-Za-z0-9_\-\.]{3,32})\s*(?:\d{1,3}(?:\.\d)?%)\s*\(([\d,]+)\)', block):
         rv = int(mm.group(2).replace(',', ''))
@@ -120,6 +127,7 @@ def main():
             if d['price_low'] is None and d['listings'] is None:
                 raise ValueError('nic nevyparsováno (Cloudflare/blok?)')
             if d['price_low'] is not None: c['price_low_usd'] = d['price_low']
+            if d.get('price_featured') is not None: c['price_featured_usd'] = d['price_featured']
             if d['listings'] is not None:  c['listings'] = d['listings']
             if d['top_seller']:
                 c['top_seller'] = d['top_seller']; c['top_seller_reviews'] = d['reviews']
