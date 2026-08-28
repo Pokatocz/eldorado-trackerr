@@ -16,7 +16,18 @@ Cenu za jednotku dává `data/units.json`, které říká, kolik základních je
 Když měna metody nesedí na žádnou prodejnou kategorii hry (Sollant v Throne and Liberty, syndikátní
 standing ve Warframe), metoda **záměrně nedostane $/h** — takový výnos se totiž zpeněžit nedá.
 
-Pasivní farmy (AFK ≥ 4) počítám 24 h/den, aktivní 8 h/den. U týdenních 168 / 40 h.
+Pasivní farmy (AFK ≥ 4) počítám 24 h/den, aktivní 8 h/den. U týdenních 168 / 40 h. Metody, jejichž výnos
+je za kus (jeden raid, jeden totem, jeden riven), dostanou místo $/h **hodnotu jednoho výstupu** — přepočítává
+se stejně živě.
+
+Kde $/h chybí, tabulka ukazuje důvod, ne prázdnou buňku:
+
+| Důvod | Znamená |
+|---|---|
+| bez číselného výnosu | research nenašel spolehlivé číslo (189 metod) |
+| výnos není za čas | metoda dává kusy, ne hodinovku — vedle je hodnota za kus |
+| … se neprodává | ta měna (Sollant, syndikátní standing, Favor) se na Eldoradu zpeněžit nedá |
+| hra nemá cenu měny | robot pro tu hru ještě nestáhl cenu |
 
 ## Jak se metody udržují aktuální
 
@@ -35,6 +46,26 @@ Nový text metody přidáš do `data/methods.json`:
 ```
 
 `game_id` je číslo hry z adresy Eldorada (`/g/278` → `"278"`). `usd_per_hour_net` se nevyplňuje — počítá se.
+
+## Riziko: dvě různé věci
+
+Dřív se riziko hádalo z textu poznámky u metody. Jenže ta u skoro každé hry říká totéž — „prodej za reálné
+peníze je zakázán" — takže sloupec ukazoval pořád „vysoké" a nic neříkal. Teď se rozlišuje:
+
+- **Hraní** — je samotná činnost ve hře v pořádku? U legitimních mechanik ano. Výjimkou je boosting,
+  kde se sdílí účet.
+- **Riziko prodeje** — jak tvrdě vydavatel zákaz **reálně vymáhá**. Data jsou v `data/risk.json`,
+  úroveň 1–5 podle doložených ban vln:
+
+| Úroveň | Znamená | Příklady |
+|---|---|---|
+| 1 | legální cesta | CS2, TF2, Rust — prodej přes Steam Market (peníze zůstanou v peněžence) |
+| 2 | slabé vymáhání | Elden Ring — proti ToS, ale Bandai Namco banuje výjimečně |
+| 3 | běžné bany | ESO, FFXIV, Lost Ark, GW2, Tibia, Warframe |
+| 4 | aktivní ban vlny | WoW, Fortnite, R6, Tarkov, PoE, EA FC, všechny Roblox hry |
+| 5 | permaban / konfiskace | DonutSMP (wipe účtů), Hypixel, EVE (odebrání ISK do mínusu), Albion, OSRS, Riot, Supercell |
+
+Rozložení napříč metodami: 13 legální cesta · 5 slabé · 119 běžné · 142 ban vlny · 101 permaban.
 
 ## Nasazení
 

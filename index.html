@@ -110,16 +110,17 @@
   <section id="metody">
     <div class="eyebrow">Metody · <span id="meth-live">–</span> s živým přepočtem</div>
     <h2>Všechny výdělkové metody</h2>
-    <p class="lead">Jen legitimní herní mechaniky — žádní boti, makra ani exploity. <b>AFK</b> říká, jak moc to běží bez tebe. <b>Riziko</b> vychází z pravidel vydavatele. Štítek <span class="tag a">ověřit</span> se objeví, když se cena od zápisu metody výrazně pohnula nebo zdroj zestárl.</p>
+    <p class="lead">Jen legitimní herní mechaniky — žádní boti, makra ani exploity. <b>AFK</b> říká, jak moc to běží bez tebe. <b>Riziko prodeje</b> je podle toho, jak tvrdě vydavatel zákaz reálně vymáhá — od legální cesty (Steam Market) po permaban a konfiskaci. <b>Hraní</b> říká, jestli je samotná činnost ve hře v pořádku. Štítek <span class="tag a">ověřit</span> se objeví, když se cena od zápisu metody výrazně pohnula nebo zdroj zestárl.</p>
     <div class="tools">
       <input id="mq" type="search" placeholder="Filtrovat metody, hry…" aria-label="Filtrovat metody">
       <button class="chip on" data-f="all">vše</button><button class="chip" data-f="usd">jen s $/h</button>
       <button class="chip" data-f="afk">AFK ≥ 3</button><button class="chip" data-f="flag">k ověření</button>
       <span class="hint" id="meth-n"></span>
     </div>
+    <p class="hint" style="margin:0 0 8px">$/h se počítá z aktuální ceny. Kde chybí, je uvedený důvod: <b>bez číselného výnosu</b> = research nenašel spolehlivé číslo · <b>výnos není za čas</b> = metoda dává kusy, ne hodinovku · <b>… se neprodává</b> = ta měna nejde na Eldoradu zpeněžit.</p>
     <div class="tbl scroll"><table class="wide" id="tmeth"><thead><tr>
       <th class="s desc" data-k="usd">$/h čistý</th><th>Trend $/h</th><th class="s" data-k="game" data-d="asc">Hra</th><th class="s" data-k="method" data-d="asc">Metoda</th>
-      <th class="s" data-k="rate">Výnos ve hře</th><th>Požadavky</th><th class="s" data-k="afk">AFK</th><th class="s" data-k="risk">Riziko</th><th>Zdroj</th>
+      <th class="s" data-k="rate">Výnos ve hře</th><th>Požadavky</th><th class="s" data-k="afk">AFK</th><th class="s" data-k="risk">Riziko prodeje</th><th>Hraní</th><th>Zdroj</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
@@ -223,21 +224,24 @@ function renderCats(){
 const msort=T.sorter('#tmeth',(o,k)=>({usd:o.usd,game:(o.game?o.game.name:'').toLowerCase(),method:o.m.method.toLowerCase(),rate:o.m.rate_value,afk:o.m.afk_score,risk:o.riskN}[k]),()=>renderMeth());
 function renderMeth(){
   const s=($('mq').value||'').toLowerCase().trim();
-  const RN={'velmi vysoké':4,'vysoké':3,'střední':2,'nízké':1,'—':0};
-  let rows=T.data.methods.map(m=>{const e=T.liveEarn(m),g=T.data.gameById[m.game_id],r=T.risk(m.ban_risk_note);
-    return {m,game:g,usd:e?e.usd:null,e,risk:r,riskN:RN[r.t],flag:T.flag(m)};});
+  let rows=T.data.methods.map(m=>{const e=T.liveEarn(m),g=T.data.gameById[m.game_id],sr=T.sellRisk(m.game_id);
+    return {m,game:g,usd:e?e.usd:null,e,sr,pr:T.playRisk(m),riskN:sr.level??0,flag:T.flag(m)};});
   rows=rows.filter(o=>(!s||[o.m.method,o.m.description||'',o.game?o.game.name:'',o.m.requirements||''].join(' ').toLowerCase().includes(s))
     &&(methFilter!=='usd'||o.usd!=null)&&(methFilter!=='afk'||(o.m.afk_score??0)>=3)&&(methFilter!=='flag'||o.flag));
   rows.sort((a,b)=>(b.usd??-1)-(a.usd??-1));
   $('tmeth').querySelector('tbody').innerHTML=msort(rows).slice(0,400).map(o=>`<tr class="link" data-g="${o.m.game_id}">
-    <td class="num">${o.usd!=null?`<b class="up">${T.USD(o.usd)}</b>`:'<span class="nodata">—</span>'}</td>
+    <td class="num">${(()=>{const e=T.liveEarn(o.m),r=T.noEarnReason(o.m);
+      if(e&&e.usd!=null) return `<b class="up">${T.USD(e.usd)}</b><div class="sub">${T.FMT(Math.round(e.unitsPerHour))} ${e.base}/h</div>`;
+      if(r&&r.kind==='per') return `<b class="s-mid">${r.text}</b><div class="sub">jednorázově</div>`;
+      return `<span class="nodata">${r?r.text:'—'}</span>`;})()}</td>
     <td class="num">${T.chgHtml(T.earnTrend(o.m))}</td>
     <td><b>${o.game?o.game.name:'—'}</b></td>
     <td><b>${o.m.method}</b>${o.flag?` <span class="tag ${o.flag.cls}">${o.flag.text}</span>`:''}<div class="sub" style="white-space:normal;max-width:44ch">${o.m.description||''}</div></td>
     <td class="num muted">${o.m.rate_value!=null?T.FMT(o.m.rate_value)+' '+(o.m.rate_unit||''):(o.m.rate_unit||'—')}</td>
     <td class="muted">${o.m.requirements||'—'}</td>
     <td>${T.dots(o.m.afk_score,'afk')}</td>
-    <td><span class="tag ${o.risk.cls}">${o.risk.t}</span></td>
+<td><span class="tag ${o.sr.cls}">${o.sr.t}</span>${o.sr.label?`<div class="sub">${o.sr.label}</div>`:''}</td>
+    <td><span class="tag ${o.pr.cls}">${o.pr.t}</span></td>
     <td>${/^https?:/.test(o.m.source||'')?`<a href="${o.m.source}" target="_blank" rel="noopener">zdroj</a>`:'<span class="muted">—</span>'}<div class="sub">${o.m.source_date||''}</div></td></tr>`).join('');
   $('meth-n').textContent=rows.length+' z '+T.data.methods.length+' metod';
 }

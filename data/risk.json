@@ -1,0 +1,337 @@
+{
+ "278": {
+  "level": 5,
+  "label": "permaban + wipe",
+  "detail": "DonutSMP TOS §3.3 zakazuje IRL trading; /pay účtu s nízkým playtimem = wipe obou účtů."
+ },
+ "61": {
+  "level": 5,
+  "label": "permaban",
+  "detail": "Hypixel banuje nákup i prodej coinů natrvalo; porušuje i Mojang EULA."
+ },
+ "4": {
+  "level": 5,
+  "label": "konfiskace ISK",
+  "detail": "CCP odebírá ISK a PLEX i do záporného zůstatku a banuje všechny účty hráče. Legální je jen PLEX (peníze→ISK)."
+ },
+ "41": {
+  "level": 5,
+  "label": "permaban obou stran",
+  "detail": "SBI banuje prodejce i kupce v ban vlnách bez varování, nový účet nepomůže."
+ },
+ "171": {
+  "level": 5,
+  "label": "záporný lucent + ban",
+  "detail": "NCSoft stáhne nakoupený lucent do mínusu, zablokuje aukci a eskaluje k permanentnímu banu."
+ },
+ "233": {
+  "level": 5,
+  "label": "masové bany",
+  "detail": "Team Jade konfiskuje nelegálně získané Delta Coins a banuje až na 10 let; statisíce postihů týdně."
+ },
+ "10": {
+  "level": 5,
+  "label": "bany i za první přestupek",
+  "detail": "Jagex od 16. 9. 2025 banuje i kupující a konfiskuje předměty; ban vlny 2026."
+ },
+ "9": {
+  "level": 5,
+  "label": "bany i za první přestupek",
+  "detail": "Jagex od 16. 9. 2025 banuje i kupující a konfiskuje předměty."
+ },
+ "17": {
+  "level": 5,
+  "label": "tresty na propojené účty",
+  "detail": "Riot od 19. 11. 2025 přenáší trest na všechny propojené účty; 400 tis. smurfů a 4 mil. účtů sankcionováno."
+ },
+ "32": {
+  "level": 5,
+  "label": "ban boostovaných účtů",
+  "detail": "Riot od patche 11.09 permanentně banuje koupené a boostované účty i hráče, kteří z nich těží."
+ },
+ "18": {
+  "level": 5,
+  "label": "permaban",
+  "detail": "Supercell ToS výslovně zakazuje koupi, prodej i darování účtu."
+ },
+ "56": {
+  "level": 5,
+  "label": "permaban",
+  "detail": "Supercell ToS výslovně zakazuje koupi, prodej i darování účtu."
+ },
+ "57": {
+  "level": 5,
+  "label": "three-strike politika",
+  "detail": "Niantic: prodej a výměna účtů = cheating; 7 dní → 30 dní → trvalý ban, někdy rovnou trvalý."
+ },
+ "24": {
+  "level": 5,
+  "label": "RMT + sdílení účtu",
+  "detail": "BDO nemá legální převod silveru; dodání jde jen přes sdílení účtu, což je druhé porušení ToS."
+ },
+ "0": {
+  "level": 4,
+  "label": "ban vlny",
+  "detail": "Blizzard: odebrání zlata a trvalé pozastavení účtu. Legální je jen WoW Token (peníze→zlato)."
+ },
+ "92": {
+  "level": 4,
+  "label": "ban vlny",
+  "detail": "Blizzard banuje RMT; Classic Era nemá Token, takže legální cesta neexistuje."
+ },
+ "14": {
+  "level": 4,
+  "label": "ban vlny",
+  "detail": "Blizzard banuje RMT; MoP Classic nemá Token."
+ },
+ "132": {
+  "level": 4,
+  "label": "ban vlny",
+  "detail": "Blizzard zakazuje obchod přes třetí strany, žádný oficiální RMAH neexistuje."
+ },
+ "27": {
+  "level": 4,
+  "label": "ban vlny",
+  "detail": "Blizzard zakazuje sdílení účtu, win-trading i placený boosting; detekce výkonnostních skoků."
+ },
+ "16": {
+  "level": 4,
+  "label": "ban obou stran",
+  "detail": "Epic ToS zakazuje převod účtů a obsahu; doložené žaloby i bany (Epic v. Strock, 2025)."
+ },
+ "48": {
+  "level": 4,
+  "label": "ban + odebrání odměn",
+  "detail": "Ubisoft Code of Conduct zakazuje sdílení účtu a boosting; hrozí i rollback zisků."
+ },
+ "35": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Activision SLA a Battle.net EULA zakazují převod účtů."
+ },
+ "19": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Battlestate Games banuje RMT; účty s koupenými rubly padají v ban vlnách."
+ },
+ "2": {
+  "level": 4,
+  "label": "ban",
+  "detail": "GGG aktivně banuje RMT a maže zisky."
+ },
+ "220": {
+  "level": 4,
+  "label": "ban",
+  "detail": "GGG aktivně banuje RMT a maže zisky."
+ },
+ "142": {
+  "level": 4,
+  "label": "coin wipe nebo ban",
+  "detail": "EA detekuje převody coinů; hrozí smazání coinů, blokace trhu i celého účtu."
+ },
+ "39": {
+  "level": 4,
+  "label": "terminace účtu",
+  "detail": "HoYoverse zakazuje převod i prodej účtu."
+ },
+ "335": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Gameforge banuje RMT i botting; yang scéna je pod dohledem."
+ },
+ "338": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Webzen banuje RMT i botting."
+ },
+ "120": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Nexon banuje RMT; Reboot měna je navíc neobchodovatelná."
+ },
+ "25": {
+  "level": 4,
+  "label": "ban + recovery",
+  "detail": "Rockstar EULA zakazuje převod; Take-Two soudně stíhá tržiště s účty."
+ },
+ "70": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej mimo platformu. Legální je jen DevEx (výplata z tvorby her)."
+ },
+ "201": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "202": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "203": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "219": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "236": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "243": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "430": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "259": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "204": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "199": {
+  "level": 4,
+  "label": "ban účtu",
+  "detail": "Roblox ToU zakazuje prodej za reálné peníze mimo platformu."
+ },
+ "99": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Ubisoft/Growtopia zakazuje RMT."
+ },
+ "422": {
+  "level": 4,
+  "label": "ban",
+  "detail": "Pravidla serveru RMT zakazují (obdoba DonutSMP)."
+ },
+ "141": {
+  "level": 4,
+  "label": "ban + wipe aUEC",
+  "detail": "CIG zakazuje prodej aUEC; navíc se aUEC maže s každým velkým patchem."
+ },
+ "3": {
+  "level": 3,
+  "label": "ban při odhalení",
+  "detail": "ZeniMax zakazuje prodej zlata; vymáhání je méně agresivní než u Jagexu."
+ },
+ "7": {
+  "level": 3,
+  "label": "ban při odhalení",
+  "detail": "Square Enix má nulovou toleranci k RMT, ale bany jsou spíš cílené než plošné."
+ },
+ "50": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Amazon/Smilegate zakazují RMT; obchodovatelné zlato je navíc limitované na 6 postav týdně."
+ },
+ "36": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Amazon Code of Conduct zakazuje prodej; hra navíc končí (poslední content 2025)."
+ },
+ "51": {
+  "level": 3,
+  "label": "ban",
+  "detail": "ArenaNet zakazuje prodej třetí straně. Legální je oficiální směna gemů za zlato."
+ },
+ "78": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Ankama zakazuje RMT. Legální je oficiální Kama Exchange (kamas ↔ ogrines)."
+ },
+ "69": {
+  "level": 3,
+  "label": "ban",
+  "detail": "EA/Broadsword zakazují RMT; F2P účty mají navíc strop 1 M kreditů."
+ },
+ "371": {
+  "level": 3,
+  "label": "ban",
+  "detail": "CipSoft zakazuje RMT. Legální jsou Tibia Coins z oficiálního obchodu (převod po 6 měsících)."
+ },
+ "98": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Gamigo zakazuje RMT."
+ },
+ "31": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Crema zakazuje RMT; malý trh, málo doložených případů."
+ },
+ "216": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Star Vault zakazuje RMT."
+ },
+ "187": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Eleventh Hour Games zakazuje RMT; obchod je navíc jen pro frakci Merchant's Guild."
+ },
+ "128": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Ironmace zakazuje RMT. In-game marketplace je legální."
+ },
+ "319": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Embark Studios zakazuje prodej coinů."
+ },
+ "22": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Bethesda zakazuje prodej caps; ekonomika je navíc tvrdě zastropovaná."
+ },
+ "354": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Pravidla Rise Online zakazují RMT."
+ },
+ "11": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Digital Extremes zakazuje prodej platinum za peníze. Obchod platinum ve hře je legální."
+ },
+ "111": {
+  "level": 2,
+  "label": "slabé vymáhání",
+  "detail": "Prodej run porušuje ToS, ale Bandai Namco banuje výjimečně. Riziko je spíš v modovaných runách."
+ },
+ "20": {
+  "level": 1,
+  "label": "legální přes Steam",
+  "detail": "Prodej skinů na Steam Community Marketu je legální; peníze ale zůstanou ve Steam peněžence."
+ },
+ "113": {
+  "level": 1,
+  "label": "legální přes Steam",
+  "detail": "Prodej na Steam Community Marketu je legální; výběr jen do Steam peněženky."
+ },
+ "37": {
+  "level": 1,
+  "label": "legální přes Steam",
+  "detail": "Twitch dropy i prodej skinů přes Steam Market jsou legální; výběr jen do peněženky."
+ },
+ "1": {
+  "level": 3,
+  "label": "ban",
+  "detail": "Rocket League Code of Conduct zakazuje boosting i deranking; bany se sdílejí přes propojené platformy."
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-28T09:00:00Z",
+ "updated_at": "2026-08-28T15:00:00Z",
  "by_category": {
   "items-donutsmp-store": {
    "t": "2026-08-27T14:00:00Z",
@@ -276,21 +276,133 @@
    ]
   },
   "items-fortnite-skins": {
-   "t": "2026-08-27T14:00:00Z",
+   "t": "2026-08-28T15:00:00Z",
    "offers": [
     {
-     "name": "OG účet (základní)",
-     "seller": "Ezsmurfshop",
-     "rating": null,
-     "reviews": 200219,
-     "price": 14.99
+     "name": "Sprites Gold Tails (iOS)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 3.99
     },
     {
-     "name": "OG účet (vzácné skiny)",
+     "name": "Sprites Gold Crown (Xbox)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 3.99
+    },
+    {
+     "name": "Sprites Klombo (PlayStation)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 4.99
+    },
+    {
+     "name": "Sprites Gold Bush (Switch)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 4.99
+    },
+    {
+     "name": "Sprites Gold Clombo (Switch)",
+     "seller": "SpriteNada",
+     "rating": 99.9,
+     "reviews": 2706,
+     "price": 4.99
+    },
+    {
+     "name": "Sprites Klombo (Xbox)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 4.99
+    },
+    {
+     "name": "Sprites Gold Bush (Android)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 4.99
+    },
+    {
+     "name": "Sprites Bush Sprite (PC)",
+     "seller": "SpriteNada",
+     "rating": 99.9,
+     "reviews": 2706,
+     "price": 6.99
+    },
+    {
+     "name": "Sprites Bush Sprite (PlayStation)",
+     "seller": "SpriteNada",
+     "rating": 99.9,
+     "reviews": 2706,
+     "price": 6.99
+    },
+    {
+     "name": "Sprites Gold 8-Bit (Android)",
+     "seller": "TheLuckyShop",
+     "rating": 100.0,
+     "reviews": 13323,
+     "price": 6.99
+    },
+    {
+     "name": "Sprites Bush Sprite (Android)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 6.99
+    },
+    {
+     "name": "Sprites Bush Sprite (Switch)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 6.99
+    },
+    {
+     "name": "Sprites Klombo (PC)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 7.99
+    },
+    {
+     "name": "Sprites Klombo (Xbox)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 7.99
+    },
+    {
+     "name": "Sprites Klombo (iOS)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 7.99
+    },
+    {
+     "name": "Sprites Klombo (Android)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 7.99
+    },
+    {
+     "name": "Sprites Klombo (Switch)",
+     "seller": "SpriteCEO-UNH",
+     "rating": 99.9,
+     "reviews": 4651,
+     "price": 7.99
+    },
+    {
+     "name": "Fortnite Crew (1 měsíc)",
      "seller": null,
      "rating": null,
      "reviews": null,
-     "price": 1648.0
+     "price": 7.0
     }
    ]
   },

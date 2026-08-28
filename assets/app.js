@@ -17,10 +17,10 @@ const T = {
     if(T.data) return T.data;
     const v=Math.floor(Date.now()/120000);                       // cache-buster po 2 min
     const j=p=>fetch(p+'?v='+v).then(r=>r.ok?r.json():null).catch(()=>null);
-    const [catalog,history,games,methods,items,ranking,listings,units,earn]=await Promise.all(
-      ['catalog','history','games','methods','items','ranking','listings','units','earnings'].map(n=>j('data/'+n+'.json')));
+    const [catalog,history,games,methods,items,ranking,listings,units,earn,risk]=await Promise.all(
+      ['catalog','history','games','methods','items','ranking','listings','units','earnings','risk'].map(n=>j('data/'+n+'.json')));
     T.data={catalog:catalog||[],history:history||{series:{}},games:games||[],methods:methods||[],
-            items:items||[],ranking:ranking||[],listings:(listings&&listings.by_category)||{},units:units||{},earnHist:(earn&&earn.series)||{}};
+            items:items||[],ranking:ranking||[],listings:(listings&&listings.by_category)||{},units:units||{},earnHist:(earn&&earn.series)||{},risk:risk||{}};
     T.data.byId=Object.fromEntries(T.data.catalog.map(c=>[c.id,c]));
     T.data.gameById=Object.fromEntries(T.data.games.map(g=>[g.id,g]));
     T.index();
@@ -89,8 +89,10 @@ const T = {
     if(/nenalezeno|variabiln|claim|odhad|rng|dle |bonus|recenz|nabíd|%|týden\/postav/.test(u)) return null;
     let per=null;
     if(/\/\s*(h|hod|hour|hr)\b/.test(u)) per='h';
+    else if(/\/\s*(min)\b/.test(u)) per='min';
     else if(/\/\s*(den|day)\b/.test(u)) per='den';
     else if(/\/\s*(týden|tyden|week)\b/.test(u)) per='týden';
+    else if(/\/\s*(raid|běh|beh|run|clear|kill|kus|ks|kill|totem|hlav|spawner|barrel|item)/.test(u)) per='kus';
     if(!per) return null;
     const head=u.split('/')[0];
     let mag=1; const mm=head.match(/(?:^|\s)(mld|bil|mil|tis|[kmbt])\s/); if(mm) mag=T.MAG[mm[1]]||1;
@@ -99,7 +101,7 @@ const T = {
   },
   // Kolik hodin hraní je jeden „den"/„týden": pasivní farmy běží samy (24/168),
   // aktivní jen když u toho sedíš (8/40). Vysvětleno v UI.
-  hoursIn(per,afk){ if(per==='h') return 1;
+  hoursIn(per,afk){ if(per==='h') return 1; if(per==='min') return 1/60;
     const passive=(afk??0)>=4;
     return per==='den' ? (passive?24:8) : (passive?168:40); },
   liveEarn(m){
@@ -107,16 +109,22 @@ const T = {
     const opts=T.data.priceCats[m.game_id]; if(!opts||!opts.length) return null;
     const pick=opts.find(o=>o.base===r.base);          // měna musí sedět, jinak se nedá zpeněžit
     if(!pick) return null;
+    const fee=1-(pick.cat.fee_pct||0)/100;
+    if(r.per==='kus'){                      // hodnota jednoho výstupu, ne za hodinu
+      const per=r.units*pick.unitPrice*fee;
+      if(!isFinite(per)||per<=0) return null;
+      return {usd:null, perOutput:per, cat:pick.cat, unitPrice:pick.unitPrice, base:r.base, per:'kus'};
+    }
     const hours=T.hoursIn(r.per,m.afk_score);
     const unitsPerHour=r.units/hours;
-    const usd=unitsPerHour*pick.unitPrice*(1-(pick.cat.fee_pct||0)/100);
+    const usd=unitsPerHour*pick.unitPrice*fee;
     if(!isFinite(usd)||usd<=0) return null;
     return {usd, cat:pick.cat, unitPrice:pick.unitPrice, unitsPerHour, per:r.per, hours, base:r.base};
   },
   earnings(){
     if(T._earn) return T._earn;
     const out=[];
-    for(const m of T.data.methods){ const e=T.liveEarn(m); if(!e) continue;
+    for(const m of T.data.methods){ const e=T.liveEarn(m); if(!e||e.usd==null) continue;
       out.push({m,...e,game:T.data.gameById[m.game_id]}); }
     out.sort((a,b)=>b.usd-a.usd);
     return (T._earn=out);
@@ -124,6 +132,19 @@ const T = {
   earnSeries(m){ return T.data.earnHist[m.game_id+'|'+m.method]||[]; },
   earnTrend(m){ const s=T.earnSeries(m); if(s.length<2||!s[0].usd) return null;
     return (s[s.length-1].usd-s[0].usd)/s[0].usd; },
+
+  // Proč metoda nemá $/h. Uživatel má vidět důvod, ne prázdnou buňku.
+  noEarnReason(m){
+    const e=T.liveEarn(m);
+    if(e&&e.usd!=null) return null;
+    if(e&&e.perOutput!=null) return {kind:'per', text:T.USD(e.perOutput)+' / kus'};
+    if(m.rate_value==null||!m.rate_unit) return {kind:'norate', text:'bez číselného výnosu'};
+    const r=T.parseRate(m);
+    if(!r) return {kind:'noperiod', text:'výnos není za čas'};
+    if(!T.data.priceCats[m.game_id]) return {kind:'noprice', text:'hra nemá cenu měny'};
+    if(!T.data.priceCats[m.game_id].some(o=>o.base===r.base)) return {kind:'notsell', text:r.base+' se neprodává'};
+    return {kind:'other', text:'nelze spočítat'};
+  },
 
   /* ---- hlídání mety: kdy metodu ověřit --------------------------------- */
   flag(m){
@@ -135,12 +156,28 @@ const T = {
     if(d&&(Date.now()-d.getTime())/864e5>270) return {kind:'age', cls:'a', text:'zdroj '+m.source_date};
     return null;
   },
-  risk(note){ if(!note) return {cls:'',t:'—'};
-    const n=note.toLowerCase();
-    if(/perman|konfisk|wipe/.test(n)) return {cls:'r',t:'velmi vysoké'};
-    if(/zakáz|zakaz|banuje|ban vln|ban\b/.test(n)) return {cls:'r',t:'vysoké'};
-    if(/legáln|povolen|toleruj|tolerov/.test(n)) return {cls:'g',t:'nízké'};
-    return {cls:'a',t:'střední'}; },
+  /* ---- riziko -----------------------------------------------------------
+     Dřív se riziko hádalo z textu poznámky, jenže ta u skoro každé hry říká
+     totéž ("RMT zakázáno"), takže sloupec ukazoval pořád "vysoké".
+     Teď rozlišujeme dvě různé věci:
+       hraní  — je ta činnost ve hře v pořádku? (u legitimních mechanik ano)
+       prodej — jak tvrdě vydavatel reálně vymáhá zákaz prodeje za peníze
+                (data/risk.json, úrovně 1–5 podle doložených ban vln)            */
+  RISK_LV:{1:{t:'legální cesta',cls:'g'},2:{t:'slabé vymáhání',cls:'g'},3:{t:'běžné bany',cls:'a'},
+           4:{t:'aktivní ban vlny',cls:'r'},5:{t:'permaban / konfiskace',cls:'r'}},
+  sellRisk(gameId){
+    const r=T.data.risk[gameId];
+    if(!r) return {level:null,t:'neurčeno',cls:'',detail:'Pro tuhle hru zatím nemám ověřené informace o vymáhání.'};
+    return {level:r.level, t:T.RISK_LV[r.level].t, cls:T.RISK_LV[r.level].cls, label:r.label, detail:r.detail};
+  },
+  playRisk(m){                        // riziko samotné činnosti ve hře
+    const n=(m.ban_risk_note||'').toLowerCase();
+    if(/vyloučeno/.test(n)) return {t:'porušuje pravidla',cls:'r'};
+    if(/sdílení účtu|account shar|piloted/.test(n)) return {t:'sdílení účtu',cls:'a'};
+    if((m.method||'').toLowerCase().includes('boost')) return {t:'sdílení účtu',cls:'a'};
+    return {t:'v pořádku',cls:'g'};
+  },
+
 
   /* ---- prezentace ------------------------------------------------------- */
   cls(s){ return s>=60?'s-hi':s>=40?'s-mid':'s-lo'; },

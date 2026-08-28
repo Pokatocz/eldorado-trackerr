@@ -64,11 +64,12 @@
   <section id="met">
     <div class="eyebrow">Výdělkové metody</div>
     <h2>Jak se v téhle hře vydělává</h2>
-    <p class="lead">Jen legitimní herní mechaniky. <b>$/h</b> se počítá z aktuální ceny na Eldoradu, takže se mění spolu s trhem. <b>AFK</b> 0 = musíš u toho být, 5 = běží samo.</p>
+    <p class="lead">Jen legitimní herní mechaniky. <b>$/h</b> se počítá z aktuální ceny na Eldoradu, takže se mění spolu s trhem. <b>AFK</b> 0 = musíš u toho být, 5 = běží samo. <b>Riziko prodeje</b> je podle skutečného vymáhání vydavatele, ne podle toho, co má v pravidlech.</p>
     <div class="tools"><button class="chip on" data-f="all">vše</button><button class="chip" data-f="usd">jen s $/h</button><button class="chip" data-f="afk">AFK ≥ 3</button><span class="hint" id="mhint"></span></div>
+    <p class="hint" style="margin:0 0 8px">$/h se počítá z aktuální ceny. Kde chybí, je uvedený důvod: <b>bez číselného výnosu</b> = research nenašel spolehlivé číslo · <b>výnos není za čas</b> = metoda dává kusy, ne hodinovku · <b>… se neprodává</b> = ta měna nejde na Eldoradu zpeněžit.</p>
     <div class="tbl scroll"><table class="wide" id="tmeth"><thead><tr>
       <th class="s desc" data-k="usd">$/h čistý</th><th>Trend</th><th class="s" data-k="method" data-d="asc">Metoda</th><th class="s" data-k="rate">Výnos ve hře</th>
-      <th>Požadavky</th><th class="s" data-k="afk">AFK</th><th>Riziko</th><th>Zdroj</th>
+      <th>Požadavky</th><th class="s" data-k="afk">AFK</th><th>Riziko prodeje</th><th>Hraní</th><th>Zdroj</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
@@ -113,16 +114,20 @@ function renderLive(){
 function renderMeth(){
   const ms=T.data.methods.filter(m=>m.game_id===GID), sec=$('met');
   if(!ms.length){ sec.querySelector('.tbl').innerHTML='<div class="panel"><p class="lead">Metody pro tuhle hru zatím nejsou zpracované. Přidávají se do <code>data/methods.json</code>.</p></div>'; $('mhint').textContent=''; return; }
-  let rows=ms.map(m=>{const e=T.liveEarn(m); return {m,e,usd:e?e.usd:null,risk:T.risk(m.ban_risk_note),flag:T.flag(m)};})
+  let rows=ms.map(m=>{const e=T.liveEarn(m); return {m,e,usd:e?e.usd:null,sr:T.sellRisk(m.game_id),pr:T.playRisk(m),flag:T.flag(m)};})
     .filter(o=>(methFilter!=='usd'||o.usd!=null)&&(methFilter!=='afk'||(o.m.afk_score??0)>=3));
   rows.sort((a,b)=>(b.usd??-1)-(a.usd??-1));
   $('tmeth').querySelector('tbody').innerHTML=msort(rows).map(o=>`<tr>
-    <td class="num">${o.usd!=null?`<b class="up">${T.USD(o.usd)}</b><div class="sub">${T.FMT(Math.round(o.e.unitsPerHour))} ${o.e.base}/h</div>`:'<span class="nodata">—</span>'}</td>
+    <td class="num">${(()=>{const e=T.liveEarn(o.m),r=T.noEarnReason(o.m);
+      if(e&&e.usd!=null) return `<b class="up">${T.USD(e.usd)}</b><div class="sub">${T.FMT(Math.round(e.unitsPerHour))} ${e.base}/h</div>`;
+      if(r&&r.kind==='per') return `<b class="s-mid">${r.text}</b><div class="sub">jednorázově</div>`;
+      return `<span class="nodata">${r?r.text:'—'}</span>`;})()}</td>
     <td class="num">${T.chgHtml(T.earnTrend(o.m))}</td>
     <td><b>${o.m.method}</b>${o.flag?` <span class="tag ${o.flag.cls}">${o.flag.text}</span>`:''}<div class="sub" style="white-space:normal;max-width:46ch">${o.m.description||''}</div></td>
     <td class="num muted">${o.m.rate_value!=null?T.FMT(o.m.rate_value)+' '+(o.m.rate_unit||''):(o.m.rate_unit||'—')}</td>
     <td class="muted">${o.m.requirements||'—'}</td><td>${T.dots(o.m.afk_score,'afk')}</td>
-    <td><span class="tag ${o.risk.cls}">${o.risk.t}</span></td>
+<td><span class="tag ${o.sr.cls}">${o.sr.t}</span>${o.sr.label?`<div class="sub">${o.sr.label}</div>`:''}</td>
+    <td><span class="tag ${o.pr.cls}">${o.pr.t}</span></td>
     <td>${/^https?:/.test(o.m.source||'')?`<a href="${o.m.source}" target="_blank" rel="noopener">zdroj</a>`:'<span class="muted">—</span>'}<div class="sub">${o.m.source_date||''}</div></td></tr>`).join('');
   $('mhint').textContent=rows.length+' z '+ms.length+' metod';
 }
@@ -197,7 +202,11 @@ T.load().then(D=>{
 
   const risks=[...new Set(methods.map(m=>m.ban_risk_note).filter(Boolean))];
   const srcs=[...new Set([...methods.map(m=>m.source),...items.map(i=>i.source)].filter(s=>/^https?:/.test(s||'')))];
-  $('notes').innerHTML=`<div class="panel"><h3>Pravidla a riziko</h3>${risks.length?risks.map(r=>`<p class="lead" style="margin:0 0 8px">${r}</p>`).join(''):'<p class="lead">Pro tuhle hru zatím nejsou zpracované metody.</p>'}</div>
+  const sr=T.sellRisk(GID);
+  $('notes').innerHTML=`<div class="panel"><h3>Riziko prodeje</h3>
+    <p class="lead"><span class="tag ${sr.cls}">${sr.t}</span>${sr.label?' <b>'+sr.label+'</b>':''}</p>
+    <p class="lead" style="margin-top:8px">${sr.detail}</p>
+    ${risks.length?'<p class="lead" style="margin-top:10px;font-size:12.5px;color:var(--dim)">Poznámky z jednotlivých metod: '+risks.join(' · ')+'</p>':''}</div>
     <div class="panel"><h3>Zdroje</h3>${srcs.length?'<ul style="margin:0;padding-left:16px;color:var(--muted);font-size:13px">'+srcs.slice(0,14).map(s=>`<li><a href="${s}" target="_blank" rel="noopener">${s.replace(/^https?:\/\//,'').slice(0,64)}</a></li>`).join('')+'</ul>':'<p class="lead">Kategorie Eldorada výše.</p>'}</div>`;
 
   renderLive(); renderMeth();
