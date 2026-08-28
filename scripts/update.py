@@ -21,10 +21,10 @@ from urllib.error import HTTPError, URLError
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = lambda n: os.path.join(ROOT, 'data', n)
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
-MAX_PER_RUN = int(os.environ.get('MAX_PER_RUN', '150'))
-DELAY = float(os.environ.get('DELAY', '2.5'))
+MAX_PER_RUN = int(os.environ.get('MAX_PER_RUN', '190'))
+DELAY = float(os.environ.get('DELAY', '1.8'))
 TYPES = ['currency', 'items', 'accounts', 'boosting', 'topups', 'giftcards']
-MAX_LISTINGS = 24          # kolik nabídek si u kategorie pamatovat
+MAX_LISTINGS = 40          # kolik nabídek si u kategorie pamatovat
 HISTORY_CAP = 2000         # max bodů v jedné časové řadě
 
 def fetch(url):

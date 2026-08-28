@@ -1,188 +1,304 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eldorado Tracker — živé ceny, hry, výdělkové metody</title>
-<meta name="description" content="Sledování cen a skóre výhodnosti pro 329 her a 555 kategorií na Eldorado.gg, s výdělkovými metodami pro každou hru.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eldorado Terminal — kde se teď vyplatí prodávat</title>
+<meta name="description" content="Živé ceny 555 kategorií na Eldorado.gg, žebříček výdělkových metod přepočtený z aktuálních cen a skóre výhodnosti pro 329 her.">
+<meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="top"><div class="top__in">
-  <a class="brand" href="index.html">ELDORADO <em>TRACKER</em></a>
-  <nav class="nav"><a href="#top100" class="on">Top 100</a><a href="#tabule">Tabule</a><a href="#hry">Hry</a><a href="#zebricek">Žebříček</a><a href="#jak">Jak to funguje</a></nav>
+<header class="topbar"><div class="topbar__in">
+  <a class="brand" href="index.html">ELDORADO <span>TERMINAL</span></a>
+  <nav class="nav">
+    <a href="#vydelek" class="on">Výdělek</a><a href="#hry">Hry</a><a href="#trh">Trh</a><a href="#metody">Metody</a><a href="#jak">Jak to počítám</a>
+  </nav>
   <div class="spacer"></div>
-  <input class="search" id="q" type="search" placeholder="Hledat hru, kategorii, prodejce…" aria-label="Hledat">
-  <div class="status"><i id="dot"></i><span id="upd">načítám…</span></div>
-</div></div>
+  <input class="search" id="q" type="search" placeholder="Hledat hru, kategorii, prodejce…" aria-label="Hledat" list="gamelist">
+  <datalist id="gamelist"></datalist>
+  <div class="stamp"><i id="dot"></i><span id="upd">načítám…</span></div>
+</div></header>
 
 <main class="wrap">
-  <section class="grid g2">
-    <div class="card">
-      <div class="eyebrow">Eldorado.gg · pohled prodejce · aktualizuje robot</div>
-      <h1>Kde se teď <span>vyplatí prodávat</span></h1>
-      <p class="lead">Živé ceny, počty nabídek, dominance top prodejce a poplatky pro každou kategorii Eldorada, přepočítané do skóre výhodnosti. Klikni na hru – uvnitř najdeš ceny položek, výdělkové metody s AFK skóre a rizikem, graf a zdroje.</p>
-      <div class="grid g4" style="margin-top:14px">
-        <div class="kpi"><b id="k-games">–</b><span>her</span></div>
-        <div class="kpi"><b id="k-cats">–</b><span>kategorií</span></div>
-        <div class="kpi"><b id="k-priced">–</b><span>s živou cenou</span></div>
-        <div class="kpi"><b id="k-methods">–</b><span>výdělkových metod</span></div>
+
+  <!-- ===== HERO + SIGNATURE: výdělkový žebřík ===== -->
+  <section id="vydelek">
+    <div class="grid g2">
+      <div>
+        <div class="eyebrow">Eldorado.gg · pohled prodejce · přepočet z aktuálních cen</div>
+        <h1>Co se dnes vyplatí <em>farmit</em></h1>
+        <p class="lead">Herní výnos je daný mechanikou hry. Dolary ne — ty určuje cena, za kterou to na Eldoradu právě někdo koupí. Proto se <b>$/h přepočítává při každém načtení</b> z posledních stažených cen: když cena spadne, metoda v žebříčku klesne sama.</p>
+        <div class="metrics">
+          <div class="metric"><b id="m-games">–</b><span>her</span></div>
+          <div class="metric"><b id="m-cats">–</b><span>kategorií</span></div>
+          <div class="metric"><b id="m-priced">–</b><span>živých cen</span></div>
+          <div class="metric"><b id="m-methods">–</b><span>metod</span></div>
+          <div class="metric"><b id="m-offers">–</b><span>nabídek</span></div>
+        </div>
+        <div class="links" style="margin-top:14px">
+          <a href="#hry">Přehled her</a><a href="#trh">Živý trh</a><a href="#metody">Všechny metody</a><a href="#jak">Jak se to počítá</a>
+        </div>
+        <div class="panel panel--flush" style="margin-top:16px">
+          <div style="padding:13px 16px 8px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+            <h3 style="margin:0">Právě na trhu</h3><span class="hint" id="feed-n"></span>
+          </div>
+          <div id="feed"></div>
+        </div>
       </div>
-      <div class="typelinks" style="margin-top:12px"><a href="#top100">TOP 100 her ↓</a><a href="#tabule">Živá tabule ↓</a><a href="#zebricek">Žebříček metod ↓</a></div>
-    </div>
-    <div class="card">
-      <h3>Největší pohyby ceny</h3>
-      <div id="movers"><div class="nodata">Zatím jeden snímek – pohyby se ukážou po dalších bězích robota.</div></div>
-      <h3 style="margin-top:16px">Nejlepší skóre teď</h3>
-      <div id="best"></div>
+
+      <div class="panel panel--flush">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 10px">
+          <h3 style="margin:0">Nejvyšší výdělek teď</h3>
+          <span class="hint" id="ladder-n"></span>
+        </div>
+        <div class="ladder" id="ladder"></div>
+        <div style="padding:10px 16px;border-top:1px solid var(--line)">
+          <span class="hint">Čistý výdělek po poplatku Eldorada. Pasivní farmy počítám 24 h/den, aktivní 8 h/den.</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="tabule">
-    <div class="eyebrow">Živá tabule</div>
-    <h2>Všechny kategorie</h2>
+  <!-- ===== HRY ===== -->
+  <section id="hry">
+    <div class="eyebrow">Hry · seřazeno podle objemu na Eldoradu</div>
+    <h2>Kde je největší trh</h2>
+    <p class="lead">Objem počítám z počtu nabídek a recenzí největšího prodejce. Klik otevře hru: ceny po typech, živé nabídky, výdělkové metody a zdroje.</p>
     <div class="tools">
-      <select id="typ" aria-label="Typ"><option value="">Všechny typy</option><option value="currency">Currency</option><option value="items">Items</option><option value="accounts">Accounts</option><option value="boosting">Boosting</option><option value="topups">Top-upy</option><option value="giftcards">Gift karty</option></select>
+      <select id="typ" aria-label="Typ produktu"><option value="">Všechny typy</option><option value="currency">Měna</option><option value="items">Předměty</option><option value="accounts">Účty</option><option value="boosting">Boosting</option><option value="topups">Top-up</option><option value="giftcards">Gift karty</option></select>
+      <button class="chip on" id="onlyData">jen s daty</button>
+      <button class="chip" id="onlyEarn">jen s $/h</button>
+      <span class="hint" id="games-n"></span>
+    </div>
+    <div class="tbl scroll"><table class="wide" id="tgames"><thead><tr>
+      <th class="s" data-k="rank" data-d="asc">#</th><th class="s" data-k="name" data-d="asc">Hra</th><th>Nabízí</th>
+      <th class="s" data-k="price">Nejnižší cena</th><th class="s desc" data-k="listings">Nabídek</th>
+      <th class="s" data-k="reviews">Top prodejce</th><th class="s" data-k="earn">Nejlepší $/h</th>
+      <th class="s" data-k="methods">Metod</th><th class="s" data-k="score">Skóre</th><th>Vývoj</th>
+    </tr></thead><tbody></tbody></table></div>
+    <div class="gamegrid" id="cards" style="margin-top:14px"></div>
+  </section>
+
+  <!-- ===== TRH ===== -->
+  <section id="trh">
+    <div class="eyebrow">Živý trh</div>
+    <h2>Ceny kategorií a co je právě v nabídce</h2>
+    <div class="grid g2" style="margin-top:12px">
+      <div class="panel"><h3>Nejvýhodnější kategorie</h3>
+        <p class="lead" style="font-size:13px;margin-bottom:6px">Nejvyšší skóre = cena drží, trh je hluboký a neovládá ho jeden prodejce.</p>
+        <div id="best"></div></div>
+      <div class="panel"><h3>Největší pohyby ceny</h3>
+        <p class="lead" style="font-size:13px;margin-bottom:6px">Změna za 7 dní. Velký propad obvykle znamená, že se změnila meta ve hře.</p>
+        <div id="movers"><div class="nodata">Zatím jeden snímek. Pohyby se ukážou po dalších bězích robota.</div></div></div>
+    </div>
+    <div class="tools" style="margin-top:16px">
       <button class="chip on" id="onlyPriced">jen s cenou</button>
-      <button class="chip" id="onlyWatch">★ watchlist</button>
-      <span class="hint" id="hint"></span>
+      <button class="chip" id="onlyWatch">★ sledované</button>
+      <span class="hint" id="cats-n"></span>
     </div>
-    <div class="tbl"><table class="wide" id="t"><thead><tr>
-      <th>★</th><th class="sortable" data-k="game" data-d="asc">Hra / kategorie</th><th class="sortable" data-k="type" data-d="asc">Typ</th><th>Jednotka</th>
-      <th class="sortable" data-k="price">Nejnižší cena</th><th class="sortable" data-k="net">Netto</th><th class="sortable" data-k="chg">Změna 7 d</th>
-      <th class="sortable" data-k="listings">Nabídek</th><th class="sortable" data-k="reviews">Top prodejce</th><th class="sortable" data-k="fee" data-d="asc">Fee</th>
-      <th class="sortable desc" data-k="score">Skóre</th><th class="sortable" data-k="age" data-d="asc">Stáří</th><th>Trend</th>
+    <div class="tbl scroll"><table class="wide" id="tcats"><thead><tr>
+      <th>★</th><th class="s" data-k="game" data-d="asc">Hra / kategorie</th><th class="s" data-k="type" data-d="asc">Typ</th><th>Jednotka</th>
+      <th class="s" data-k="price">Nejnižší cena</th><th class="s" data-k="net">Netto</th><th class="s" data-k="chg">Změna 7 d</th>
+      <th class="s" data-k="listings">Nabídek</th><th class="s" data-k="reviews">Top prodejce</th><th class="s" data-k="fee" data-d="asc">Fee</th>
+      <th class="s desc" data-k="score">Skóre</th><th class="s" data-k="age" data-d="asc">Stáří</th><th>Vývoj</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
-  <section class="section" id="top100">
-    <div class="eyebrow">Top 100</div>
-    <h2>Nejsledovanější hry</h2>
-    <p class="lead">Seřazeno podle objemu na Eldoradu (nabídky + recenze top prodejce). Sloupec „metody" ukazuje, kolik výdělkových postupů je pro hru zpracovaných. Hry označené <span class="nodata">čeká</span> robot doplní při dalších bězích – celý katalog 555 kategorií obejde zhruba za den.</p>
-    <div class="tbl scroll" style="margin-top:12px"><table class="wide" id="top"><thead><tr>
-      <th class="sortable" data-k="rank" data-d="asc">#</th><th class="sortable" data-k="name" data-d="asc">Hra</th><th>Kategorie</th>
-      <th class="sortable" data-k="price">Nejnižší cena</th><th class="sortable desc" data-k="listings">Nabídek</th>
-      <th class="sortable" data-k="reviews">Top prodejce</th><th class="sortable" data-k="methods">Metody</th><th class="sortable" data-k="score">Skóre</th><th>Trend</th>
+  <!-- ===== METODY ===== -->
+  <section id="metody">
+    <div class="eyebrow">Metody · <span id="meth-live">–</span> s živým přepočtem</div>
+    <h2>Všechny výdělkové metody</h2>
+    <p class="lead">Jen legitimní herní mechaniky — žádní boti, makra ani exploity. <b>AFK</b> říká, jak moc to běží bez tebe. <b>Riziko</b> vychází z pravidel vydavatele. Štítek <span class="tag a">ověřit</span> se objeví, když se cena od zápisu metody výrazně pohnula nebo zdroj zestárl.</p>
+    <div class="tools">
+      <input id="mq" type="search" placeholder="Filtrovat metody, hry…" aria-label="Filtrovat metody">
+      <button class="chip on" data-f="all">vše</button><button class="chip" data-f="usd">jen s $/h</button>
+      <button class="chip" data-f="afk">AFK ≥ 3</button><button class="chip" data-f="flag">k ověření</button>
+      <span class="hint" id="meth-n"></span>
+    </div>
+    <div class="tbl scroll"><table class="wide" id="tmeth"><thead><tr>
+      <th class="s desc" data-k="usd">$/h čistý</th><th>Trend $/h</th><th class="s" data-k="game" data-d="asc">Hra</th><th class="s" data-k="method" data-d="asc">Metoda</th>
+      <th class="s" data-k="rate">Výnos ve hře</th><th>Požadavky</th><th class="s" data-k="afk">AFK</th><th class="s" data-k="risk">Riziko</th><th>Zdroj</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
-  <section class="section" id="hry">
-    <div class="eyebrow">Hry</div>
-    <h2>Všechny hry na Eldoradu</h2>
-    <p class="lead">Karty jsou seřazené podle nejlepšího skóre v rámci hry; hry bez stažené ceny jsou dole. Klikem otevřeš detail.</p>
-    <div class="gamecards" id="cards" style="margin-top:12px"></div>
-  </section>
-
-  <section class="section" id="zebricek">
-    <div class="eyebrow">Žebříček</div>
-    <h2>25 výdělkových metod napříč hrami</h2>
-    <p class="lead">Z analýzy pro prodejce z EU. Kompozit = AFK×0,40 + výdělek×0,35 + alty/riziko×0,25. Klikni na hlavičku pro řazení.</p>
-    <div class="tbl" style="margin-top:12px"><table class="wide" id="rank"><thead><tr>
-      <th class="sortable asc" data-k="rank" data-d="asc">#</th><th class="sortable" data-k="name" data-d="asc">Metoda · proč</th><th class="sortable" data-k="usd_n">$/den čistý</th><th class="sortable" data-k="afk">AFK</th><th class="sortable" data-k="auto">Automatizace</th><th>Alty</th><th class="sortable" data-k="ban" data-d="asc">Ban</th><th>Start</th><th class="sortable" data-k="comp">Kompozit</th>
-    </tr></thead><tbody></tbody></table></div>
-  </section>
-
-  <section class="section" id="jak">
-    <div class="eyebrow">Jak to funguje</div>
-    <h2>Skóre, data, aktualizace</h2>
+  <!-- ===== JAK ===== -->
+  <section id="jak">
+    <div class="eyebrow">Metodika</div>
+    <h2>Jak se čísla počítají</h2>
     <div class="grid g3" style="margin-top:12px">
-      <div class="card"><h3>Skóre 0–100</h3><p class="lead">35 % cenový trend za 7 dní + 25 % hloubka trhu (log počtu nabídek) − 20 % dominance top prodejce (log recenzí) − 20 % poplatek. Vyšší = lepší chvíle na prodej. Vzorec je v <code>assets/app.js</code>.</p></div>
-      <div class="card"><h3>Odkud jsou ceny</h3><p class="lead">Nejnižší nabídka na první stránce kategorie Eldorada – cena, pod kterou musí jít nový prodejce. Položky a metody pocházejí z analýz (research srpen 2026) a živých stránek.</p></div>
-      <div class="card"><h3>Aktualizace</h3><p class="lead">Robot na GitHubu obejde každých 6 hodin až 140 kategorií (celý katalog za den). Metody a položky upravíš v <code>data/methods.json</code> a <code>data/items.json</code> – návod je v README.</p></div>
+      <div class="panel"><h3>$/h se počítá živě</h3><p class="lead">U metody je uložený jen herní výnos (17,2 M gp/h). Dolary vzniknou až v prohlížeči: <b>výnos × aktuální cena za jednotku × (1 − poplatek)</b>. Když robot stáhne novou cenu, žebříček se přeskládá sám — nic se nepřepisuje ručně.</p></div>
+      <div class="panel"><h3>Skóre kategorie 0–100</h3><p class="lead">35 % cenový trend za 7 dní + 25 % hloubka trhu (počet nabídek) − 20 % dominance největšího prodejce − 20 % poplatek. Vyšší skóre = lepší chvíle na prodej.</p></div>
+      <div class="panel"><h3>Kdy metodu ověřit</h3><p class="lead">Robot hlídá, jak se cena hnula od chvíle, kdy metodu zapsal research. Posun nad 25 % nebo zdroj starší než 9 měsíců označí metodu jako <b>k ověření</b> — to je signál, že se změnila meta.</p></div>
     </div>
-    <div class="note warn" style="margin-top:14px"><b>Upozornění:</b> prodej herních statků za reálné peníze porušuje podmínky většiny her (Roblox, Hypixel, DonutSMP, Jagex, Blizzard…). Web je analýza trhu; neobsahuje návody na boty, makra ani obcházení banů.</div>
+    <div class="note warn"><b>Pozor na pravidla.</b> Prodej herních statků za reálné peníze porušuje podmínky většiny her a u některých (DonutSMP, Hypixel, Riot, Supercell) vede k trvalému banu. Legální cesty jsou jen WoW Token, EVE PLEX, Roblox DevEx a Steam Market. Web je analýza trhu, ne návod na obcházení pravidel.</div>
   </section>
-  <p class="foot">Eldorado Tracker · data z veřejných stránek eldorado.gg a herních guidů · ceny se mění denně</p>
+
+  <p class="foot">Eldorado Terminal · ceny z veřejných stránek eldorado.gg, robot je obnovuje každé 2 hodiny<br>Výdělkové metody z herních wiki a komunitních guidů (research srpen 2026) · $/h přepočteno z aktuálních cen</p>
 </main>
 
 <script src="assets/app.js"></script>
 <script>
-let onlyPriced=true,onlyWatch=false,WATCH=new Set(JSON.parse(localStorage.getItem('watch')||'[]')),sortK='score',sortD='desc';
-const q=document.getElementById('q');
-function rowVal(c,k){ return ({game:c.game.toLowerCase(),type:c.type,price:c.price_low_usd,net:T.net(c),chg:T.change7d(c.id),listings:c.listings,reviews:c.top_seller_reviews,fee:c.fee_pct,score:T.score(c),age:T.ageHours(c)})[k]; }
-function renderBoard(){
-  const D=T.data, s=(q.value||'').toLowerCase().trim(), typ=document.getElementById('typ').value;
-  let rows=D.catalog.filter(c=>(!typ||c.type===typ)&&(!onlyPriced||c.price_low_usd!=null)&&(!onlyWatch||WATCH.has(c.id))&&(!s||[c.game,c.slug,c.top_seller||'',c.unit||''].join(' ').toLowerCase().includes(s)));
-  rows.sort((a,b)=>{let va=rowVal(a,sortK),vb=rowVal(b,sortK);const na=va==null,nb=vb==null;if(na&&nb)return 0;if(na)return 1;if(nb)return -1;if(typeof va==='string')return sortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return sortD==='asc'?va-vb:vb-va;});
-  const tb=document.querySelector('#t tbody'); tb.innerHTML=rows.map(c=>{const sc=T.score(c),chg=T.change7d(c.id),age=T.ageHours(c);return `<tr class="link" data-g="${c.game_id}">
-   <td><button class="star ${WATCH.has(c.id)?'on':''}" data-id="${c.id}">${WATCH.has(c.id)?'★':'☆'}</button></td>
-   <td><b>${c.game}</b><div class="sub">${c.slug}</div></td><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td><td class="muted">${c.unit||'—'}</td>
-   <td class="num">${T.USD(c.price_low_usd)}</td><td class="num">${T.USD(T.net(c))}</td><td class="num">${T.chgHtml(chg)}</td><td class="num">${T.FMT(c.listings)}</td>
-   <td>${c.top_seller?`${c.top_seller}<div class="sub">${T.FMT(c.top_seller_reviews)} rec.</div>`:'—'}</td><td class="num">${c.fee_pct} %</td><td>${T.scoreHtml(sc)}</td>
-   <td class="num ${age==null?'':age>30?'dn':age>8?'':'up'}">${T.ageHtml(age)}</td><td><canvas class="spark" data-id="${c.id}"></canvas></td></tr>`;}).join('');
-  tb.querySelectorAll('canvas.spark').forEach(cv=>T.spark(cv,T.series(cv.dataset.id)));
-  document.getElementById('hint').textContent=rows.length+' řádků';
-  document.querySelectorAll('#t th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===sortK) th.classList.add(sortD);});
+let onlyData=true,onlyEarn=false,onlyPriced=true,onlyWatch=false,methFilter='all';
+let WATCH=new Set(JSON.parse(localStorage.getItem('watch')||'[]'));
+const $=id=>document.getElementById(id);
+
+/* ---------- výdělkový žebřík (signature) ---------- */
+function renderLadder(){
+  const e=T.earnings().slice(0,10); const max=e.length?e[0].usd:1;
+  $('ladder').innerHTML=e.map((o,i)=>`<a class="rung" href="${T.gameHref(o.m.game_id)}">
+    <span class="rung__n">${String(i+1).padStart(2,'0')}</span>
+    <span style="min-width:0"><span class="rung__name">${o.m.method}</span>
+      <span class="sub">${o.game?o.game.name:''} · ${T.FMT(Math.round(o.unitsPerHour))} ${o.base}/h · ${T.USD(o.cat.price_low_usd)} za ${o.cat.unit}</span>
+      <span class="rung__bar"><i style="width:${Math.max(3,o.usd/max*100)}%"></i></span></span>
+    <span class="rung__val">${T.USD(o.usd)}<small>za hodinu</small></span></a>`).join('');
+  $('ladder-n').textContent=T.earnings().length+' metod s cenou';
 }
-let tSortK='listings', tSortD='desc';
-function gameStats(g){
-  const D=T.data, cats=g.cats.map(id=>D.byId[id]).filter(Boolean);
+
+/* ---------- hry ---------- */
+function gstat(g){
+  const cats=g.cats.map(id=>T.data.byId[id]).filter(Boolean);
   const priced=cats.filter(c=>c.price_low_usd!=null);
+  const scs=cats.map(T.score).filter(x=>x!=null);
+  const earns=T.earnings().filter(o=>o.m.game_id===g.id);
+  const top=cats.filter(c=>c.top_seller).sort((a,b)=>(b.top_seller_reviews||0)-(a.top_seller_reviews||0))[0];
   const listings=cats.reduce((s,c)=>s+(c.listings||0),0);
   const reviews=Math.max(0,...cats.map(c=>c.top_seller_reviews||0));
-  const scs=cats.map(T.score).filter(x=>x!=null);
-  const top=cats.filter(c=>c.top_seller).sort((a,b)=>(b.top_seller_reviews||0)-(a.top_seller_reviews||0))[0];
-  const main=priced.slice().sort((a,b)=>(b.listings||0)-(a.listings||0))[0];
-  return {g,cats,priced,listings,reviews,top,main,
-    price: priced.length?Math.min(...priced.map(c=>c.price_low_usd)):null,
-    score: scs.length?Math.max(...scs):null,
-    methods: D.methods.filter(m=>m.game_id===g.id).length,
-    volume: Math.log10(listings+1)*2 + Math.log10(reviews+1)};
+  return {g,cats,priced,top,listings,reviews,
+    price:priced.length?Math.min(...priced.map(c=>c.price_low_usd)):null,
+    score:scs.length?Math.max(...scs):null,
+    methods:T.data.methods.filter(m=>m.game_id===g.id).length,
+    earn:earns.length?earns[0].usd:null,
+    main:priced.slice().sort((a,b)=>(b.listings||0)-(a.listings||0))[0],
+    vol:Math.log10(listings+1)*2+Math.log10(reviews+1)};
 }
-function renderTop(){
-  // vždy 100 her: nejdřív ty s daty (podle objemu), pak čekající na robota (podle počtu kategorií)
-  const all=T.data.games.map(gameStats);
-  const withData=all.filter(o=>o.listings>0||o.price!=null||o.methods>0).sort((a,b)=>b.volume-a.volume||b.methods-a.methods);
-  const pending=all.filter(o=>!(o.listings>0||o.price!=null||o.methods>0)).sort((a,b)=>b.cats.length-a.cats.length||a.g.name.localeCompare(b.g.name,'cs'));
-  const rows=withData.concat(pending).slice(0,100).map((o,i)=>({...o,rank:i+1}));
-  const val=(o,k)=>({rank:o.rank,name:o.g.name.toLowerCase(),price:o.price,listings:o.listings,reviews:o.reviews,methods:o.methods,score:o.score}[k]);
-  const sorted=rows.slice().sort((a,b)=>{let va=val(a,tSortK),vb=val(b,tSortK);if(va==null)return 1;if(vb==null)return -1;if(typeof va==='string')return tSortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return tSortD==='asc'?va-vb:vb-va;});
-  document.querySelector('#top tbody').innerHTML=sorted.map(o=>`<tr class="link" data-g="${o.g.id}">
+let GS=[];
+const gsort=T.sorter('#tgames',(o,k)=>({rank:o.rank,name:o.g.name.toLowerCase(),price:o.price,listings:o.listings,reviews:o.reviews,earn:o.earn,methods:o.methods,score:o.score}[k]),()=>renderGames());
+function renderGames(){
+  const s=($('q').value||'').toLowerCase().trim(), typ=$('typ').value;
+  let rows=GS.filter(o=>(!typ||o.g.types[typ])&&(!s||o.g.name.toLowerCase().includes(s))
+    &&(!onlyData||o.listings>0||o.price!=null||o.methods>0)&&(!onlyEarn||o.earn!=null));
+  rows=rows.map((o,i)=>({...o,rank:i+1}));
+  $('tgames').querySelector('tbody').innerHTML=gsort(rows).map(o=>`<tr class="link" data-g="${o.g.id}">
     <td class="num">${o.rank}</td>
     <td><b>${o.g.name}</b><div class="sub">${o.main?o.main.unit||'':''}</div></td>
     <td>${Object.keys(o.g.types).map(t=>`<span class="typ ${t}">${T.TYP[t]}</span>`).join(' ')}</td>
     <td class="num">${T.USD(o.price)}</td>
     <td class="num">${o.listings?T.FMT(o.listings):'<span class="nodata">čeká</span>'}</td>
     <td>${o.top?o.top.top_seller+'<div class="sub">'+T.FMT(o.top.top_seller_reviews)+' rec.</div>':'—'}</td>
+    <td class="num ${o.earn?'up':''}">${o.earn?T.USD(o.earn):'—'}</td>
     <td class="num">${o.methods||'—'}</td>
     <td>${T.scoreHtml(o.score)}</td>
     <td>${o.main?`<canvas class="spark" data-id="${o.main.id}"></canvas>`:''}</td></tr>`).join('');
-  document.querySelectorAll('#top canvas.spark').forEach(cv=>T.spark(cv,T.series(cv.dataset.id)));
-  document.querySelectorAll('#top th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===tSortK) th.classList.add(tSortD);});
+  $('tgames').querySelectorAll('canvas.spark').forEach(cv=>T.spark(cv,T.series(cv.dataset.id)));
+  $('games-n').textContent=rows.length+' her';
+  $('cards').innerHTML=rows.slice(0,24).map(o=>`<a class="gcard" href="${T.gameHref(o.g.id)}"><b>${o.g.name}</b>
+    <div class="sub">${Object.keys(o.g.types).map(t=>T.TYP[t]).join(' · ')}</div>
+    <div class="row"><span class="hint">${o.earn?T.USD(o.earn)+'/h':(o.price!=null?T.USD(o.price):'bez ceny')}</span>${T.scoreHtml(o.score)}</div></a>`).join('');
 }
-function renderCards(){
-  const D=T.data, s=(q.value||'').toLowerCase().trim();
-  const gs=D.games.map(g=>{const cats=g.cats.map(id=>D.byId[id]).filter(Boolean); const scs=cats.map(T.score).filter(x=>x!=null); const best=scs.length?Math.max(...scs):null; const priced=cats.filter(c=>c.price_low_usd!=null); const m=D.methods.filter(x=>x.game_id===g.id).length; const it=D.items.filter(x=>x.game_id===g.id).length; return {g,cats,best,priced,m,it};})
-    .filter(o=>!s||o.g.name.toLowerCase().includes(s)).sort((a,b)=>(b.best??-1)-(a.best??-1)||(b.m-a.m)||a.g.name.localeCompare(b.g.name,'cs'));
-  document.getElementById('cards').innerHTML=gs.map(o=>`<a class="gc" href="${T.gameHref(o.g.id)}"><b>${o.g.name}</b><div class="sub">${Object.keys(o.g.types).map(t=>T.TYP[t]).join(' · ')}</div>
-    <div class="row"><span class="sub">${o.priced.length?T.USD(Math.min(...o.priced.map(c=>c.price_low_usd)))+' nejnižší':'bez ceny'}${o.m?' · '+o.m+' metod':''}${o.it?' · '+o.it+' položek':''}</span>${o.best!=null?T.scoreHtml(o.best):''}</div></a>`).join('');
+
+/* ---------- kategorie ---------- */
+const csort=T.sorter('#tcats',(c,k)=>({game:c.game.toLowerCase(),type:c.type,price:c.price_low_usd,net:T.net(c),chg:T.change7d(c.id),listings:c.listings,reviews:c.top_seller_reviews,fee:c.fee_pct,score:T.score(c),age:T.ageHours(c)}[k]),()=>renderCats());
+function renderCats(){
+  const s=($('q').value||'').toLowerCase().trim(), typ=$('typ').value;
+  let rows=T.data.catalog.filter(c=>(!typ||c.type===typ)&&(!onlyPriced||c.price_low_usd!=null)&&(!onlyWatch||WATCH.has(c.id))
+    &&(!s||[c.game,c.slug,c.top_seller||'',c.unit||''].join(' ').toLowerCase().includes(s)));
+  rows=csort(rows); if(!rows.length) rows=[];
+  $('tcats').querySelector('tbody').innerHTML=rows.slice(0,300).map(c=>{const sc=T.score(c),age=T.ageHours(c);
+    return `<tr class="link" data-g="${c.game_id}">
+    <td><button class="star ${WATCH.has(c.id)?'on':''}" data-id="${c.id}" aria-label="Sledovat">${WATCH.has(c.id)?'★':'☆'}</button></td>
+    <td><b>${c.game}</b><div class="sub">${c.slug}</div></td><td><span class="typ ${c.type}">${T.TYP[c.type]}</span></td>
+    <td class="muted">${c.unit||'—'}</td><td class="num">${T.USD(c.price_low_usd)}</td><td class="num">${T.USD(T.net(c))}</td>
+    <td class="num">${T.chgHtml(T.change7d(c.id))}</td><td class="num">${T.FMT(c.listings)}</td>
+    <td>${c.top_seller?c.top_seller+'<div class="sub">'+T.FMT(c.top_seller_reviews)+' rec.</div>':'—'}</td>
+    <td class="num">${c.fee_pct} %</td><td>${T.scoreHtml(sc)}</td>
+    <td class="num ${age==null?'':age>30?'dn':age>8?'':'up'}">${T.ageHtml(age)}</td>
+    <td><canvas class="spark" data-id="${c.id}"></canvas></td></tr>`;}).join('');
+  $('tcats').querySelectorAll('canvas.spark').forEach(cv=>T.spark(cv,T.series(cv.dataset.id)));
+  $('cats-n').textContent=rows.length+' kategorií';
 }
-function renderRank(){
-  const tb=document.querySelector('#rank tbody'); const rows=T.data.ranking.slice().sort((a,b)=>{let va=a[sortRK],vb=b[sortRK];if(typeof va==='string')return sortRD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return sortRD==='asc'?va-vb:vb-va;});
-  tb.innerHTML=rows.map(r=>`<tr><td class="num">${r.rank}</td><td><b>${r.name}</b><div class="sub">${r.game}</div><div style="color:var(--muted);font-size:12.5px;margin-top:3px">${r.why}</div></td><td class="num">${r.usd}</td><td>${T.dots(r.afk,'afk')}</td><td>${T.dots(r.auto,'auto')}</td><td><span class="tag">${r.alts}</span></td><td>${T.dots(r.ban,'ban')}</td><td class="muted">${r.start}</td><td><span class="score s-mid"><b>${r.comp.toFixed(1)}</b><span class="bar"><i class="s-mid" style="width:${r.comp*10}%"></i></span></span></td></tr>`).join('');
-  document.querySelectorAll('#rank th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===sortRK) th.classList.add(sortRD);});
+
+/* ---------- metody ---------- */
+const msort=T.sorter('#tmeth',(o,k)=>({usd:o.usd,game:(o.game?o.game.name:'').toLowerCase(),method:o.m.method.toLowerCase(),rate:o.m.rate_value,afk:o.m.afk_score,risk:o.riskN}[k]),()=>renderMeth());
+function renderMeth(){
+  const s=($('mq').value||'').toLowerCase().trim();
+  const RN={'velmi vysoké':4,'vysoké':3,'střední':2,'nízké':1,'—':0};
+  let rows=T.data.methods.map(m=>{const e=T.liveEarn(m),g=T.data.gameById[m.game_id],r=T.risk(m.ban_risk_note);
+    return {m,game:g,usd:e?e.usd:null,e,risk:r,riskN:RN[r.t],flag:T.flag(m)};});
+  rows=rows.filter(o=>(!s||[o.m.method,o.m.description||'',o.game?o.game.name:'',o.m.requirements||''].join(' ').toLowerCase().includes(s))
+    &&(methFilter!=='usd'||o.usd!=null)&&(methFilter!=='afk'||(o.m.afk_score??0)>=3)&&(methFilter!=='flag'||o.flag));
+  rows.sort((a,b)=>(b.usd??-1)-(a.usd??-1));
+  $('tmeth').querySelector('tbody').innerHTML=msort(rows).slice(0,400).map(o=>`<tr class="link" data-g="${o.m.game_id}">
+    <td class="num">${o.usd!=null?`<b class="up">${T.USD(o.usd)}</b>`:'<span class="nodata">—</span>'}</td>
+    <td class="num">${T.chgHtml(T.earnTrend(o.m))}</td>
+    <td><b>${o.game?o.game.name:'—'}</b></td>
+    <td><b>${o.m.method}</b>${o.flag?` <span class="tag ${o.flag.cls}">${o.flag.text}</span>`:''}<div class="sub" style="white-space:normal;max-width:44ch">${o.m.description||''}</div></td>
+    <td class="num muted">${o.m.rate_value!=null?T.FMT(o.m.rate_value)+' '+(o.m.rate_unit||''):(o.m.rate_unit||'—')}</td>
+    <td class="muted">${o.m.requirements||'—'}</td>
+    <td>${T.dots(o.m.afk_score,'afk')}</td>
+    <td><span class="tag ${o.risk.cls}">${o.risk.t}</span></td>
+    <td>${/^https?:/.test(o.m.source||'')?`<a href="${o.m.source}" target="_blank" rel="noopener">zdroj</a>`:'<span class="muted">—</span>'}<div class="sub">${o.m.source_date||''}</div></td></tr>`).join('');
+  $('meth-n').textContent=rows.length+' z '+T.data.methods.length+' metod';
 }
-let sortRK='rank',sortRD='asc';
-document.querySelectorAll('#top th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(tSortK===k) tSortD=tSortD==='asc'?'desc':'asc'; else {tSortK=k; tSortD=th.dataset.d||'desc';} renderTop();}));
-document.querySelector('#top tbody').addEventListener('click',e=>{const tr=e.target.closest('tr.link'); if(tr) location.href=T.gameHref(tr.dataset.g);});
-document.querySelectorAll('#rank th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(sortRK===k) sortRD=sortRD==='asc'?'desc':'asc'; else {sortRK=k; sortRD=th.dataset.d||'desc';} renderRank();}));
-document.querySelectorAll('#t th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(sortK===k) sortD=sortD==='asc'?'desc':'asc'; else {sortK=k; sortD=th.dataset.d||'desc';} renderBoard();}));
-document.querySelector('#t tbody').addEventListener('click',e=>{const st=e.target.closest('.star'); if(st){const id=st.dataset.id; WATCH.has(id)?WATCH.delete(id):WATCH.add(id); localStorage.setItem('watch',JSON.stringify([...WATCH])); renderBoard(); return;} const tr=e.target.closest('tr.link'); if(tr) location.href=T.gameHref(tr.dataset.g);});
-document.getElementById('typ').addEventListener('change',renderBoard);
-document.getElementById('onlyPriced').addEventListener('click',e=>{onlyPriced=!onlyPriced;e.target.classList.toggle('on',onlyPriced);renderBoard();});
-document.getElementById('onlyWatch').addEventListener('click',e=>{onlyWatch=!onlyWatch;e.target.classList.toggle('on',onlyWatch);renderBoard();});
-q.addEventListener('input',()=>{renderBoard();renderCards();});
+
+/* ---------- start ---------- */
 T.load().then(D=>{
-  T.status();
+  T.stamp();
   const priced=D.catalog.filter(c=>c.price_low_usd!=null);
-  document.getElementById('k-games').textContent=D.games.length; document.getElementById('k-cats').textContent=D.catalog.length; document.getElementById('k-priced').textContent=priced.length; document.getElementById('k-methods').textContent=D.methods.length;
-  const best=priced.map(c=>({c,s:T.score(c)})).sort((a,b)=>b.s-a.s).slice(0,5);
-  document.getElementById('best').innerHTML=best.map(o=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)"><a href="${T.gameHref(o.c.game_id)}"><b style="color:var(--text)">${o.c.game}</b> <span class="typ ${o.c.type}">${T.TYP[o.c.type]}</span></a>${T.scoreHtml(o.s)}</div>`).join('');
+  $('m-games').textContent=D.games.length; $('m-cats').textContent=D.catalog.length;
+  $('m-priced').textContent=priced.length; $('m-methods').textContent=D.methods.length;
+  $('m-offers').textContent=Object.values(D.listings).reduce((a,r)=>a+r.offers.length,0);
+  $('meth-live').textContent=T.earnings().length;
+  $('gamelist').innerHTML=D.games.map(g=>`<option value="${g.name}">`).join('');
+
+  // feed nabídek napříč hrami
+  const feed=[]; for(const [cid,rec] of Object.entries(D.listings)){const c=D.byId[cid]; if(!c) continue;
+    for(const o of rec.offers) feed.push({...o,cat:c,game:D.gameById[c.game_id]});}
+  feed.sort((a,b)=>(b.price??0)-(a.price??0));
+  $('feed').innerHTML=feed.length?feed.slice(0,6).map(o=>`<a class="rung" href="${T.gameHref(o.cat.game_id)}">
+      <span class="rung__n">·</span><span style="min-width:0"><span class="rung__name">${(o.name||'—').slice(0,52)}</span>
+      <span class="sub">${o.game?o.game.name:''} · <span class="typ ${o.cat.type}">${T.TYP[o.cat.type]}</span>${o.seller?' · '+o.seller:''}</span></span>
+      <span class="rung__val" style="font-size:13px">${T.USD(o.price)}</span></a>`).join('')
+    :'<div style="padding:14px 16px" class="nodata">Robot zatím nestáhl jednotlivé nabídky.</div>';
+  $('feed-n').textContent=feed.length+' nabídek';
+
+  const best=priced.map(c=>({c,s:T.score(c)})).filter(o=>o.s!=null).sort((a,b)=>b.s-a.s).slice(0,6);
+  $('best').innerHTML=best.map(o=>`<a class="rung" style="padding-left:0;padding-right:0" href="${T.gameHref(o.c.game_id)}">
+    <span class="rung__n">·</span><span style="min-width:0"><span class="rung__name">${o.c.game}</span>
+    <span class="sub">${T.TYP[o.c.type]} · ${T.USD(o.c.price_low_usd)} za ${o.c.unit||'ks'}</span></span>${T.scoreHtml(o.s)}</a>`).join('');
+
   const mv=priced.map(c=>({c,x:T.change7d(c.id)})).filter(o=>o.x!=null&&o.x!==0).sort((a,b)=>Math.abs(b.x)-Math.abs(a.x)).slice(0,6);
-  if(mv.length) document.getElementById('movers').innerHTML=mv.map(o=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)"><a href="${T.gameHref(o.c.game_id)}"><b style="color:var(--text)">${o.c.game}</b> <span class="typ ${o.c.type}">${T.TYP[o.c.type]}</span></a><span class="num">${T.chgHtml(o.x)} · ${T.USD(o.c.price_low_usd)}</span></div>`).join('');
-  renderBoard(); renderTop(); renderCards(); renderRank();
-}).catch(e=>{document.getElementById('upd').textContent='chyba dat: '+e.message;});
+  if(mv.length) $('movers').innerHTML=mv.map(o=>`<a class="rung" style="padding-left:0;padding-right:0" href="${T.gameHref(o.c.game_id)}">
+    <span class="rung__n">·</span><span style="min-width:0"><span class="rung__name">${o.c.game}</span>
+    <span class="sub">${T.TYP[o.c.type]} · ${T.USD(o.c.price_low_usd)}</span></span>
+    <span class="rung__val" style="font-size:13px">${T.chgHtml(o.x)}</span></a>`).join('');
+
+  GS=D.games.map(gstat).sort((a,b)=>b.vol-a.vol||b.methods-a.methods);
+  renderLadder(); renderGames(); renderCats(); renderMeth();
+}).catch(e=>{const el=$('upd'); if(el) el.textContent='chyba dat: '+e.message;});
+
+/* ---------- ovládání ---------- */
+$('q').addEventListener('input',()=>{renderGames();renderCats();});
+$('typ').addEventListener('change',()=>{renderGames();renderCats();});
+$('mq').addEventListener('input',renderMeth);
+$('onlyData').addEventListener('click',e=>{onlyData=!onlyData;e.target.classList.toggle('on',onlyData);renderGames();});
+$('onlyEarn').addEventListener('click',e=>{onlyEarn=!onlyEarn;e.target.classList.toggle('on',onlyEarn);renderGames();});
+$('onlyPriced').addEventListener('click',e=>{onlyPriced=!onlyPriced;e.target.classList.toggle('on',onlyPriced);renderCats();});
+$('onlyWatch').addEventListener('click',e=>{onlyWatch=!onlyWatch;e.target.classList.toggle('on',onlyWatch);renderCats();});
+document.querySelectorAll('#metody .chip[data-f]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#metody .chip[data-f]').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); methFilter=b.dataset.f; renderMeth();}));
+document.querySelectorAll('#tgames tbody,#tmeth tbody').forEach(tb=>tb.addEventListener('click',e=>{
+  const tr=e.target.closest('tr.link'); if(tr&&!e.target.closest('a')) location.href=T.gameHref(tr.dataset.g);}));
+$('tcats').querySelector('tbody').addEventListener('click',e=>{
+  const st=e.target.closest('.star');
+  if(st){const id=st.dataset.id; WATCH.has(id)?WATCH.delete(id):WATCH.add(id);
+    localStorage.setItem('watch',JSON.stringify([...WATCH])); renderCats(); return;}
+  const tr=e.target.closest('tr.link'); if(tr) location.href=T.gameHref(tr.dataset.g);});
+const links=[...document.querySelectorAll('.nav a')], secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),
+  {rootMargin:'-45% 0px -50% 0px'}).observe&&secs.forEach(s=>new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'}).observe(s));
 </script>
-</body>
-</html>
+</body></html>

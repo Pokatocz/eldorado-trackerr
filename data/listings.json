@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-27T14:00:00Z",
+ "updated_at": "2026-08-28T09:00:00Z",
  "by_category": {
   "items-donutsmp-store": {
    "t": "2026-08-27T14:00:00Z",
@@ -353,6 +353,179 @@
      "rating": null,
      "reviews": 7356,
      "price": 2.975
+    }
+   ]
+  },
+  "accounts-donut-smp-accounts": {
+   "t": "2026-08-28T09:00:00Z",
+   "offers": [
+    {
+     "name": "Java + Bedrock, full access",
+     "seller": "Qubee",
+     "rating": 95.2,
+     "reviews": 43844,
+     "price": 16.97
+    },
+    {
+     "name": "Java + Bedrock, 1–3 dny playtime, full access",
+     "seller": "Combos",
+     "rating": 100.0,
+     "reviews": 7392,
+     "price": 15.99
+    },
+    {
+     "name": "Java & Bedrock",
+     "seller": "ZyTi0ns",
+     "rating": 99.9,
+     "reviews": 83677,
+     "price": 14.9
+    },
+    {
+     "name": "Java Edition",
+     "seller": "ErikaFlow",
+     "rating": 99.6,
+     "reviews": 707,
+     "price": 8.97
+    },
+    {
+     "name": "40 dní playtime, Java & Bedrock, full access",
+     "seller": "NexusOnline",
+     "rating": 98.6,
+     "reviews": 424,
+     "price": 50.0
+    },
+    {
+     "name": "142 schematik: farmy, shulker systémy, stash base (bez účtu)",
+     "seller": "Ardion",
+     "rating": 97.7,
+     "reviews": 435,
+     "price": 1.07
+    },
+    {
+     "name": "Java & Bedrock",
+     "seller": "Flavio24z",
+     "rating": 100.0,
+     "reviews": 59,
+     "price": 14.98
+    },
+    {
+     "name": "Java & Bedrock",
+     "seller": "Qubee",
+     "rating": 95.2,
+     "reviews": 43844,
+     "price": 15.98
+    },
+    {
+     "name": "4písmenný nick na váš účet (není prodej účtu)",
+     "seller": "DrDonuttXD",
+     "rating": 97.8,
+     "reviews": 46,
+     "price": 1.0
+    },
+    {
+     "name": "Netherite axe",
+     "seller": "DayoniSells",
+     "rating": 100.0,
+     "reviews": 33,
+     "price": 4.99
+    },
+    {
+     "name": "Java + Bedrock, 3–7 dní playtime, full access",
+     "seller": "Combos",
+     "rating": 100.0,
+     "reviews": 7392,
+     "price": 19.99
+    },
+    {
+     "name": "Ancient Debris",
+     "seller": "Bella_Tatta",
+     "rating": 99.4,
+     "reviews": 309,
+     "price": 4.34
+    },
+    {
+     "name": "Elytra",
+     "seller": "Samiyoni",
+     "rating": 98.4,
+     "reviews": 189,
+     "price": 79.99
+    },
+    {
+     "name": "Java + Bedrock full access, unbanned Donut MFA",
+     "seller": "MrTikkaKhan",
+     "rating": 96.0,
+     "reviews": 526,
+     "price": 9.99
+    },
+    {
+     "name": "Java + Bedrock full access, unbanned Donut + Hypixel, s capes",
+     "seller": "SyncXWorld",
+     "rating": 98.0,
+     "reviews": 947,
+     "price": 9.99
+    },
+    {
+     "name": "Java + Bedrock, full access",
+     "seller": "Qubee",
+     "rating": 95.2,
+     "reviews": 43844,
+     "price": 17.97
+    },
+    {
+     "name": "Beacon",
+     "seller": "RobGamixieShop",
+     "rating": 100.0,
+     "reviews": 39,
+     "price": 4.99
+    },
+    {
+     "name": "Java + Bedrock",
+     "seller": "ErikaFlow",
+     "rating": 99.6,
+     "reviews": 707,
+     "price": 8.97
+    },
+    {
+     "name": "142 schematik: mega farmy, shulker loadery, stashe (bez účtu)",
+     "seller": "Zehlex",
+     "rating": 96.6,
+     "reviews": 59,
+     "price": 1.09
+    },
+    {
+     "name": "Java + Bedrock, 7–10 dní playtime, full access",
+     "seller": "Combos",
+     "rating": 100.0,
+     "reviews": 7392,
+     "price": 23.99
+    },
+    {
+     "name": "Java + Bedrock full access, 29–32 dní playtime",
+     "seller": "Spanish_Lover",
+     "rating": 98.7,
+     "reviews": 7119,
+     "price": 42.99
+    },
+    {
+     "name": "10 dní playtime, Java & Bedrock, full access",
+     "seller": "NexusOnline",
+     "rating": 98.6,
+     "reviews": 424,
+     "price": 20.0
+    },
+    {
+     "name": "192 schematik: farmy, shulker systémy, stash base (bez účtu)",
+     "seller": "Ardion",
+     "rating": 97.7,
+     "reviews": 435,
+     "price": 2.99
+    },
+    {
+     "name": "Java + Bedrock, game purchased account",
+     "seller": "Qubee",
+     "rating": 95.2,
+     "reviews": 43844,
+     "price": 16.87
     }
    ]
   }

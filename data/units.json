@@ -1,0 +1,237 @@
+{
+ "currency-albion-online-silver": {
+  "base": "silver",
+  "per": 1000000.0,
+  "unit": "1M silver"
+ },
+ "currency-arc-raiders-coins": {
+  "base": "coin",
+  "per": 1000000.0,
+  "unit": "1M coins"
+ },
+ "currency-bdo-silver": {
+  "base": "silver",
+  "per": 1000000000.0,
+  "unit": "1 mld silver"
+ },
+ "currency-blade-ball-tokens": {
+  "base": "token",
+  "per": 1000.0,
+  "unit": "1K tokens"
+ },
+ "currency-buy-dark-and-darker-gold": {
+  "base": "gold",
+  "per": 1000.0,
+  "unit": "1K gold"
+ },
+ "currency-delta-force-tekniq-alloy": {
+  "base": "alloy",
+  "per": 1000000.0,
+  "unit": "1M alloy"
+ },
+ "currency-diablo-4-gold": {
+  "base": "gold",
+  "per": 1000000000.0,
+  "unit": "1B gold"
+ },
+ "currency-dofus-kamas": {
+  "base": "kamas",
+  "per": 1000000.0,
+  "unit": "1M kamas"
+ },
+ "currency-donutsmp-money": {
+  "base": "money",
+  "per": 1000000.0,
+  "unit": "1M money"
+ },
+ "currency-ea-fc-coins": {
+  "base": "coin",
+  "per": 1000.0,
+  "unit": "1K coins"
+ },
+ "currency-elden-ring-runes": {
+  "base": "rune",
+  "per": 1000000000.0,
+  "unit": "1B runes"
+ },
+ "currency-eso-gold": {
+  "base": "gold",
+  "per": 1000000.0,
+  "unit": "1M gold"
+ },
+ "currency-escape-from-tarkov-roubles": {
+  "base": "rouble",
+  "per": 1000000.0,
+  "unit": "1M rublů"
+ },
+ "currency-eve-isk": {
+  "base": "isk",
+  "per": 1000000000.0,
+  "unit": "1B ISK"
+ },
+ "currency-fallout-76-caps": {
+  "base": "cap",
+  "per": 1000.0,
+  "unit": "1K caps"
+ },
+ "currency-ffxiv-gil": {
+  "base": "gil",
+  "per": 1000000.0,
+  "unit": "1M gil"
+ },
+ "currency-grow-a-garden-tokens": {
+  "base": "token",
+  "per": 1000.0,
+  "unit": "1K tokens"
+ },
+ "currency-buy-growtopia-diamond-locks": {
+  "base": "lock",
+  "per": 1,
+  "unit": "1 Blue Gem Lock"
+ },
+ "currency-buy-gw2-gold": {
+  "base": "gold",
+  "per": 1,
+  "unit": "1 gold"
+ },
+ "currency-knight-online-gb": {
+  "base": "noah",
+  "per": 100000000.0,
+  "unit": "1 GB (100M noah)"
+ },
+ "currency-last-epoch-gold": {
+  "base": "gold",
+  "per": 1000000.0,
+  "unit": "1M gold"
+ },
+ "currency-buy-lost-ark-gold": {
+  "base": "gold",
+  "per": 1000.0,
+  "unit": "1K gold"
+ },
+ "currency-maplestory-mesos": {
+  "base": "meso",
+  "per": 1000000.0,
+  "unit": "1M meso"
+ },
+ "currency-metin2-won-and-yang": {
+  "base": "yang",
+  "per": 100000000.0,
+  "unit": "1 Won (100M yang)"
+ },
+ "currency-minecraft-hypixel-coins": {
+  "base": "coin",
+  "per": 1000000.0,
+  "unit": "1M coins"
+ },
+ "currency-mortal-online-2-gold": {
+  "base": "gold",
+  "per": 1,
+  "unit": "1 gold"
+ },
+ "currency-new-world-coins": {
+  "base": "coin",
+  "per": 1000.0,
+  "unit": "1K coins"
+ },
+ "currency-osrs-gold": {
+  "base": "gold",
+  "per": 1000000.0,
+  "unit": "1M gold"
+ },
+ "currency-poe-2-currency": {
+  "base": "divine",
+  "per": 1,
+  "unit": "1 Divine Orb"
+ },
+ "currency-poe-currency": {
+  "base": "divine",
+  "per": 1,
+  "unit": "1 Divine Orb"
+ },
+ "currency-pet-simulator-99-gems": {
+  "base": "gem",
+  "per": 1000000000.0,
+  "unit": "1B gems"
+ },
+ "currency-rise-online-gb": {
+  "base": "coin",
+  "per": 1000000.0,
+  "unit": "1M coin"
+ },
+ "currency-buy-robux": {
+  "base": "robux",
+  "per": 1,
+  "unit": "1 Robux"
+ },
+ "currency-runescape-gold": {
+  "base": "gold",
+  "per": 1000000.0,
+  "unit": "1M gold"
+ },
+ "currency-star-citizen-auec": {
+  "base": "auec",
+  "per": 1000.0,
+  "unit": "1K aUEC"
+ },
+ "currency-swtor-credits": {
+  "base": "credit",
+  "per": 1000000.0,
+  "unit": "1M kreditů"
+ },
+ "currency-temtem-pansun": {
+  "base": "pansun",
+  "per": 1000.0,
+  "unit": "1K pansun"
+ },
+ "currency-throne-and-liberty-lucent": {
+  "base": "lucent",
+  "per": 1,
+  "unit": "1 Lucent"
+ },
+ "currency-tibia-gold": {
+  "base": "gold",
+  "per": 1000000.0,
+  "unit": "1M gold"
+ },
+ "currency-buy-trove-flux": {
+  "base": "flux",
+  "per": 1000000.0,
+  "unit": "1M flux"
+ },
+ "currency-warframe-buy-platinum": {
+  "base": "platinum",
+  "per": 1,
+  "unit": "1 platinum"
+ },
+ "currency-buy-wow-gold": {
+  "base": "gold",
+  "per": 1000.0,
+  "unit": "1K gold"
+ },
+ "currency-wow-classic-gold": {
+  "base": "gold",
+  "per": 1,
+  "unit": "1 gold"
+ },
+ "currency-wow-mists-of-pandaria-classic-gold": {
+  "base": "gold",
+  "per": 1000.0,
+  "unit": "1K gold"
+ },
+ "items-donutsmp-store": {
+  "base": "item",
+  "per": 1.0,
+  "unit": "item (elytra/spawner/money)"
+ },
+ "items-mm2-shop": {
+  "base": "godly",
+  "per": 1.0,
+  "unit": "godly/knife/pet"
+ },
+ "items-steal-a-brainrot-brainrots": {
+  "base": "brainrot",
+  "per": 1.0,
+  "unit": "brainrot"
+ }
+}
