@@ -7,8 +7,8 @@ const T = {
   async load(){
     if(T.data) return T.data;
     const j = p => fetch(p+'?v='+Math.floor(Date.now()/300000)).then(r=>r.ok?r.json():null).catch(()=>null);
-    const [catalog,history,games,methods,items,ranking] = await Promise.all([j('data/catalog.json'),j('data/history.json'),j('data/games.json'),j('data/methods.json'),j('data/items.json'),j('data/ranking.json')]);
-    T.data = {catalog:catalog||[],history:history||{series:{}},games:games||[],methods:methods||[],items:items||[],ranking:ranking||[]};
+    const [catalog,history,games,methods,items,ranking,listings] = await Promise.all([j('data/catalog.json'),j('data/history.json'),j('data/games.json'),j('data/methods.json'),j('data/items.json'),j('data/ranking.json'),j('data/listings.json')]);
+    T.data = {catalog:catalog||[],history:history||{series:{}},games:games||[],methods:methods||[],items:items||[],ranking:ranking||[],listings:(listings&&listings.by_category)||{}};
     T.data.byId = Object.fromEntries(T.data.catalog.map(c=>[c.id,c]));
     return T.data;
   },
@@ -51,6 +51,8 @@ const T = {
     x.fillStyle='#6F6996'; x.fillText(s[0].t.slice(0,10),pad+20,h-8); const t2=s[s.length-1].t.slice(0,10); x.fillText(t2,w-8-x.measureText(t2).width,h-8);
     if(label){x.fillStyle='#A8A2C6'; x.fillText(label,pad+20,16);}
   },
+  offers(catId){ const o=T.data.listings[catId]; return o&&o.offers?o.offers:[]; },
+  gameOffers(game){ const out=[]; for(const id of game.cats){ const c=T.data.byId[id]; if(!c) continue; for(const o of T.offers(id)) out.push({...o, cat:c}); } return out.sort((a,b)=>(b.price??0)-(a.price??0)); },
   gameHref(gid){ return 'game.html?g='+encodeURIComponent(gid); },
   gameOfCat(c){ return T.data.games.find(g=>g.id===c.game_id); },
   status(){

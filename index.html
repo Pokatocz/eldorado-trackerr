@@ -11,7 +11,7 @@
 <body>
 <div class="top"><div class="top__in">
   <a class="brand" href="index.html">ELDORADO <em>TRACKER</em></a>
-  <nav class="nav"><a href="#tabule" class="on">Tabule</a><a href="#hry">Hry</a><a href="#zebricek">Žebříček metod</a><a href="#jak">Jak to funguje</a></nav>
+  <nav class="nav"><a href="#top100" class="on">Top 100</a><a href="#tabule">Tabule</a><a href="#hry">Hry</a><a href="#zebricek">Žebříček</a><a href="#jak">Jak to funguje</a></nav>
   <div class="spacer"></div>
   <input class="search" id="q" type="search" placeholder="Hledat hru, kategorii, prodejce…" aria-label="Hledat">
   <div class="status"><i id="dot"></i><span id="upd">načítám…</span></div>
@@ -29,6 +29,7 @@
         <div class="kpi"><b id="k-priced">–</b><span>s živou cenou</span></div>
         <div class="kpi"><b id="k-methods">–</b><span>výdělkových metod</span></div>
       </div>
+      <div class="typelinks" style="margin-top:12px"><a href="#top100">TOP 100 her ↓</a><a href="#tabule">Živá tabule ↓</a><a href="#zebricek">Žebříček metod ↓</a></div>
     </div>
     <div class="card">
       <h3>Největší pohyby ceny</h3>
@@ -52,6 +53,17 @@
       <th class="sortable" data-k="price">Nejnižší cena</th><th class="sortable" data-k="net">Netto</th><th class="sortable" data-k="chg">Změna 7 d</th>
       <th class="sortable" data-k="listings">Nabídek</th><th class="sortable" data-k="reviews">Top prodejce</th><th class="sortable" data-k="fee" data-d="asc">Fee</th>
       <th class="sortable desc" data-k="score">Skóre</th><th class="sortable" data-k="age" data-d="asc">Stáří</th><th>Trend</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="section" id="top100">
+    <div class="eyebrow">Top 100</div>
+    <h2>Nejsledovanější hry</h2>
+    <p class="lead">Seřazeno podle objemu na Eldoradu (nabídky + recenze top prodejce). Sloupec „metody" ukazuje, kolik výdělkových postupů je pro hru zpracovaných. Hry označené <span class="nodata">čeká</span> robot doplní při dalších bězích – celý katalog 555 kategorií obejde zhruba za den.</p>
+    <div class="tbl scroll" style="margin-top:12px"><table class="wide" id="top"><thead><tr>
+      <th class="sortable" data-k="rank" data-d="asc">#</th><th class="sortable" data-k="name" data-d="asc">Hra</th><th>Kategorie</th>
+      <th class="sortable" data-k="price">Nejnižší cena</th><th class="sortable desc" data-k="listings">Nabídek</th>
+      <th class="sortable" data-k="reviews">Top prodejce</th><th class="sortable" data-k="methods">Metody</th><th class="sortable" data-k="score">Skóre</th><th>Trend</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
@@ -103,6 +115,42 @@ function renderBoard(){
   document.getElementById('hint').textContent=rows.length+' řádků';
   document.querySelectorAll('#t th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===sortK) th.classList.add(sortD);});
 }
+let tSortK='listings', tSortD='desc';
+function gameStats(g){
+  const D=T.data, cats=g.cats.map(id=>D.byId[id]).filter(Boolean);
+  const priced=cats.filter(c=>c.price_low_usd!=null);
+  const listings=cats.reduce((s,c)=>s+(c.listings||0),0);
+  const reviews=Math.max(0,...cats.map(c=>c.top_seller_reviews||0));
+  const scs=cats.map(T.score).filter(x=>x!=null);
+  const top=cats.filter(c=>c.top_seller).sort((a,b)=>(b.top_seller_reviews||0)-(a.top_seller_reviews||0))[0];
+  const main=priced.slice().sort((a,b)=>(b.listings||0)-(a.listings||0))[0];
+  return {g,cats,priced,listings,reviews,top,main,
+    price: priced.length?Math.min(...priced.map(c=>c.price_low_usd)):null,
+    score: scs.length?Math.max(...scs):null,
+    methods: D.methods.filter(m=>m.game_id===g.id).length,
+    volume: Math.log10(listings+1)*2 + Math.log10(reviews+1)};
+}
+function renderTop(){
+  // vždy 100 her: nejdřív ty s daty (podle objemu), pak čekající na robota (podle počtu kategorií)
+  const all=T.data.games.map(gameStats);
+  const withData=all.filter(o=>o.listings>0||o.price!=null||o.methods>0).sort((a,b)=>b.volume-a.volume||b.methods-a.methods);
+  const pending=all.filter(o=>!(o.listings>0||o.price!=null||o.methods>0)).sort((a,b)=>b.cats.length-a.cats.length||a.g.name.localeCompare(b.g.name,'cs'));
+  const rows=withData.concat(pending).slice(0,100).map((o,i)=>({...o,rank:i+1}));
+  const val=(o,k)=>({rank:o.rank,name:o.g.name.toLowerCase(),price:o.price,listings:o.listings,reviews:o.reviews,methods:o.methods,score:o.score}[k]);
+  const sorted=rows.slice().sort((a,b)=>{let va=val(a,tSortK),vb=val(b,tSortK);if(va==null)return 1;if(vb==null)return -1;if(typeof va==='string')return tSortD==='asc'?va.localeCompare(vb,'cs'):vb.localeCompare(va,'cs');return tSortD==='asc'?va-vb:vb-va;});
+  document.querySelector('#top tbody').innerHTML=sorted.map(o=>`<tr class="link" data-g="${o.g.id}">
+    <td class="num">${o.rank}</td>
+    <td><b>${o.g.name}</b><div class="sub">${o.main?o.main.unit||'':''}</div></td>
+    <td>${Object.keys(o.g.types).map(t=>`<span class="typ ${t}">${T.TYP[t]}</span>`).join(' ')}</td>
+    <td class="num">${T.USD(o.price)}</td>
+    <td class="num">${o.listings?T.FMT(o.listings):'<span class="nodata">čeká</span>'}</td>
+    <td>${o.top?o.top.top_seller+'<div class="sub">'+T.FMT(o.top.top_seller_reviews)+' rec.</div>':'—'}</td>
+    <td class="num">${o.methods||'—'}</td>
+    <td>${T.scoreHtml(o.score)}</td>
+    <td>${o.main?`<canvas class="spark" data-id="${o.main.id}"></canvas>`:''}</td></tr>`).join('');
+  document.querySelectorAll('#top canvas.spark').forEach(cv=>T.spark(cv,T.series(cv.dataset.id)));
+  document.querySelectorAll('#top th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===tSortK) th.classList.add(tSortD);});
+}
 function renderCards(){
   const D=T.data, s=(q.value||'').toLowerCase().trim();
   const gs=D.games.map(g=>{const cats=g.cats.map(id=>D.byId[id]).filter(Boolean); const scs=cats.map(T.score).filter(x=>x!=null); const best=scs.length?Math.max(...scs):null; const priced=cats.filter(c=>c.price_low_usd!=null); const m=D.methods.filter(x=>x.game_id===g.id).length; const it=D.items.filter(x=>x.game_id===g.id).length; return {g,cats,best,priced,m,it};})
@@ -116,6 +164,8 @@ function renderRank(){
   document.querySelectorAll('#rank th.sortable').forEach(th=>{th.classList.remove('asc','desc'); if(th.dataset.k===sortRK) th.classList.add(sortRD);});
 }
 let sortRK='rank',sortRD='asc';
+document.querySelectorAll('#top th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(tSortK===k) tSortD=tSortD==='asc'?'desc':'asc'; else {tSortK=k; tSortD=th.dataset.d||'desc';} renderTop();}));
+document.querySelector('#top tbody').addEventListener('click',e=>{const tr=e.target.closest('tr.link'); if(tr) location.href=T.gameHref(tr.dataset.g);});
 document.querySelectorAll('#rank th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(sortRK===k) sortRD=sortRD==='asc'?'desc':'asc'; else {sortRK=k; sortRD=th.dataset.d||'desc';} renderRank();}));
 document.querySelectorAll('#t th.sortable').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; if(sortK===k) sortD=sortD==='asc'?'desc':'asc'; else {sortK=k; sortD=th.dataset.d||'desc';} renderBoard();}));
 document.querySelector('#t tbody').addEventListener('click',e=>{const st=e.target.closest('.star'); if(st){const id=st.dataset.id; WATCH.has(id)?WATCH.delete(id):WATCH.add(id); localStorage.setItem('watch',JSON.stringify([...WATCH])); renderBoard(); return;} const tr=e.target.closest('tr.link'); if(tr) location.href=T.gameHref(tr.dataset.g);});
@@ -131,7 +181,7 @@ T.load().then(D=>{
   document.getElementById('best').innerHTML=best.map(o=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)"><a href="${T.gameHref(o.c.game_id)}"><b style="color:var(--text)">${o.c.game}</b> <span class="typ ${o.c.type}">${T.TYP[o.c.type]}</span></a>${T.scoreHtml(o.s)}</div>`).join('');
   const mv=priced.map(c=>({c,x:T.change7d(c.id)})).filter(o=>o.x!=null&&o.x!==0).sort((a,b)=>Math.abs(b.x)-Math.abs(a.x)).slice(0,6);
   if(mv.length) document.getElementById('movers').innerHTML=mv.map(o=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)"><a href="${T.gameHref(o.c.game_id)}"><b style="color:var(--text)">${o.c.game}</b> <span class="typ ${o.c.type}">${T.TYP[o.c.type]}</span></a><span class="num">${T.chgHtml(o.x)} · ${T.USD(o.c.price_low_usd)}</span></div>`).join('');
-  renderBoard(); renderCards(); renderRank();
+  renderBoard(); renderTop(); renderCards(); renderRank();
 }).catch(e=>{document.getElementById('upd').textContent='chyba dat: '+e.message;});
 </script>
 </body>

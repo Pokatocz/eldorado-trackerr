@@ -12,7 +12,10 @@
 ## Jak to aktualizovat
 
 ### Ceny a nabídky (automaticky)
-`scripts/update.py` obejde každých 6 hodin až 150 kategorií (všech 6 typů, nejdřív ty s nejstaršími daty) a zapíše do `data/catalog.json` (aktuální hodnoty) a `data/history.json` (časové řady). Robota spustíš i ručně v záložce Actions. Když Eldorado stránku zablokuje, zůstane poslední hodnota a v detailu hry uvidíš chybu. Interval změníš v `.github/workflows/update.yml` (řádek `cron`); pod 3 hodiny nedoporučuji.
+`scripts/update.py` obejde každých 6 hodin až 150 kategorií (všech 6 typů, nejdřív ty s nejstaršími daty) a zapíše:
+- `data/catalog.json` – aktuální nejnižší cena, počet nabídek, top prodejce,
+- `data/history.json` – časové řady pro grafy a výpočet změny,
+- `data/listings.json` – **až 24 jednotlivých nabídek z každé kategorie** (název položky, prodejce, cena). Z toho web skládá sekci „Co se právě prodává" na stránce každé hry — díky tomu se živě sledují konkrétní itemy, měny i účty, ne jen kategorie. Robota spustíš i ručně v záložce Actions. Když Eldorado stránku zablokuje, zůstane poslední hodnota a v detailu hry uvidíš chybu. Interval změníš v `.github/workflows/update.yml` (řádek `cron`); pod 3 hodiny nedoporučuji.
 
 ### Výdělkové metody (`data/methods.json`)
 Jeden objekt = jedna metoda. Klíč `game_id` je číslo hry z URL Eldorada (např. `/g/278` → `"278"` DonutSMP, `/i/259` → `"259"` Steal a Brainrot, `/g/11-0-0` → `"11"` Warframe). Pole:
@@ -37,7 +40,7 @@ V `assets/app.js`, funkce `score()`: 35 % trend 7 d + 25 % hloubka trhu − 20 %
 
 ## Soubory
 - `index.html` – hlavní stránka; `game.html?g=<id>` – detail hry; `assets/style.css`, `assets/app.js` – sdílený vzhled a logika
-- `data/catalog.json` (555 kategorií), `data/games.json` (329 her), `data/history.json`, `data/methods.json` (90 metod, 24 her), `data/items.json` (49 položek), `data/ranking.json` (25)
+- `data/catalog.json` (555 kategorií), `data/games.json` (329 her), `data/history.json` (časové řady), `data/listings.json` (živé jednotlivé nabídky), `data/methods.json` (380 metod, 67 her), `data/items.json` (ručně ověřené položky), `data/ranking.json` (žebříček 25)
 - `scripts/update.py`, `.github/workflows/update.yml`, `netlify.toml`
 
 Prodej herních statků za reálné peníze porušuje podmínky většiny her; web je analýza trhu a neobsahuje boty, makra ani obcházení banů.

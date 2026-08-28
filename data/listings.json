@@ -1,0 +1,360 @@
+{
+ "updated_at": "2026-08-27T14:00:00Z",
+ "by_category": {
+  "items-donutsmp-store": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Elytra",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 9.14
+    },
+    {
+     "name": "Skeleton spawner",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 0.25
+    },
+    {
+     "name": "Iron golem spawner",
+     "seller": "OPTeam",
+     "rating": null,
+     "reviews": 2198,
+     "price": 0.98
+    },
+    {
+     "name": "Netherite block",
+     "seller": "LootNova",
+     "rating": null,
+     "reviews": 25174,
+     "price": 2.15
+    },
+    {
+     "name": "Netherite PvP kit",
+     "seller": "LunaSells",
+     "rating": null,
+     "reviews": 15984,
+     "price": 3.38
+    },
+    {
+     "name": "Ancient debris",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 0.25
+    },
+    {
+     "name": "Dragon head",
+     "seller": "LootNova",
+     "rating": null,
+     "reviews": 25174,
+     "price": 2.37
+    },
+    {
+     "name": "Beacon",
+     "seller": "LunaSells",
+     "rating": null,
+     "reviews": 15984,
+     "price": 0.1
+    },
+    {
+     "name": "Nether star",
+     "seller": "LunaSells",
+     "rating": null,
+     "reviews": 15984,
+     "price": 0.09
+    },
+    {
+     "name": "Shard Axe (Sell Axe)",
+     "seller": "LunaSells",
+     "rating": null,
+     "reviews": 15984,
+     "price": 2.89
+    },
+    {
+     "name": "Money 1B (item listing)",
+     "seller": "TheLuckyShop",
+     "rating": null,
+     "reviews": 13175,
+     "price": 27.99
+    }
+   ]
+  },
+  "items-steal-a-brainrot-brainrots": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Los Sekolahs (750–999 M/s)",
+     "seller": "GARDDDSTORE",
+     "rating": null,
+     "reviews": 11120,
+     "price": 14.6
+    },
+    {
+     "name": "Rainbow Cerberus (1–5 B/s)",
+     "seller": "PingOver",
+     "rating": null,
+     "reviews": 3226,
+     "price": 15.72
+    },
+    {
+     "name": "Kraken (100–250 M/s)",
+     "seller": "ShenStore",
+     "rating": null,
+     "reviews": 39310,
+     "price": 45.0
+    },
+    {
+     "name": "Rosey and Teddy (100–250 M/s)",
+     "seller": "FourBloxID",
+     "rating": null,
+     "reviews": 107701,
+     "price": 9.97
+    },
+    {
+     "name": "Bumbatron (100–250 M/s)",
+     "seller": "PLAYNBUY",
+     "rating": null,
+     "reviews": 36335,
+     "price": 15.99
+    },
+    {
+     "name": "Dug dug dug (25–50 M/s)",
+     "seller": "PLAYNBUY",
+     "rating": null,
+     "reviews": 36335,
+     "price": 19.99
+    },
+    {
+     "name": "John Doe (Diamond)",
+     "seller": "IFANSTORE",
+     "rating": null,
+     "reviews": 10533,
+     "price": 4.5
+    },
+    {
+     "name": "Los Matteos (Divine)",
+     "seller": "RichBear",
+     "rating": null,
+     "reviews": 27728,
+     "price": 3.9
+    },
+    {
+     "name": "Spooky and Pumpky (50–100 M/s)",
+     "seller": "PLAYNBUY",
+     "rating": null,
+     "reviews": 36335,
+     "price": 5.99
+    },
+    {
+     "name": "Las Sis (1–25 M/s)",
+     "seller": "PLAYNBUY",
+     "rating": null,
+     "reviews": 36335,
+     "price": 1.99
+    },
+    {
+     "name": "Fishboard / Hippo Golazo / Baskito (1–25 M/s)",
+     "seller": "FourBloxID",
+     "rating": null,
+     "reviews": 107701,
+     "price": 0.5
+    },
+    {
+     "name": "Rose Base (skin)",
+     "seller": "FourBloxID",
+     "rating": null,
+     "reviews": 107701,
+     "price": 0.8
+    }
+   ]
+  },
+  "items-mm2-shop": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Sakura Set",
+     "seller": "Legalese",
+     "rating": null,
+     "reviews": 21072,
+     "price": 84.99
+    },
+    {
+     "name": "Heart Wand",
+     "seller": "QuickLoot",
+     "rating": null,
+     "reviews": 108149,
+     "price": 11.77
+    },
+    {
+     "name": "Icecream",
+     "seller": "BorKanoOo",
+     "rating": null,
+     "reviews": 27980,
+     "price": 6.94
+    },
+    {
+     "name": "Elderwood Set",
+     "seller": "BorKanoOo",
+     "rating": null,
+     "reviews": 27980,
+     "price": 3.99
+    },
+    {
+     "name": "Ginger Set",
+     "seller": "Incubater",
+     "rating": null,
+     "reviews": 143204,
+     "price": 2.9
+    },
+    {
+     "name": "Seer Set",
+     "seller": "BorKanoOo",
+     "rating": null,
+     "reviews": 27980,
+     "price": 2.99
+    },
+    {
+     "name": "Nightblade",
+     "seller": "BorKanoOo",
+     "rating": null,
+     "reviews": 27980,
+     "price": 1.99
+    },
+    {
+     "name": "Chroma Tides",
+     "seller": "SoNiiic",
+     "rating": null,
+     "reviews": 56808,
+     "price": 1.78
+    },
+    {
+     "name": "Shark",
+     "seller": "SoNiiic",
+     "rating": null,
+     "reviews": 56808,
+     "price": 1.5
+    },
+    {
+     "name": "Nebula",
+     "seller": "SoNiiic",
+     "rating": null,
+     "reviews": 56808,
+     "price": 1.2
+    },
+    {
+     "name": "Icewing",
+     "seller": "SoNiiic",
+     "rating": null,
+     "reviews": 56808,
+     "price": 1.18
+    },
+    {
+     "name": "Frostbite / Eggblade / Clockwork / Ghostblade",
+     "seller": "Legalese / OG_Store1",
+     "rating": null,
+     "reviews": 70072,
+     "price": 0.5
+    },
+    {
+     "name": "Icey (pet)",
+     "seller": "InstantGG",
+     "rating": null,
+     "reviews": 51003,
+     "price": 0.5
+    },
+    {
+     "name": "Fire Fox (pet)",
+     "seller": "InstantGG",
+     "rating": null,
+     "reviews": 51003,
+     "price": 0.25
+    }
+   ]
+  },
+  "items-fortnite-skins": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "OG účet (základní)",
+     "seller": "Ezsmurfshop",
+     "rating": null,
+     "reviews": 200219,
+     "price": 14.99
+    },
+    {
+     "name": "OG účet (vzácné skiny)",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 1648.0
+    }
+   ]
+  },
+  "items-adopt-me-pets": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Shadow Dragon",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 250.0
+    },
+    {
+     "name": "Bat Dragon (MFR)",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 1000.0
+    }
+   ]
+  },
+  "items-blox-fruits-shop": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Permanent Dragon",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 25.0
+    },
+    {
+     "name": "Galaxy Empyrean Kitsune skin",
+     "seller": null,
+     "rating": null,
+     "reviews": null,
+     "price": 48.0
+    }
+   ]
+  },
+  "items-warframe-items": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Platinum 1000",
+     "seller": "Wlanthy / Gamers_Stop",
+     "rating": null,
+     "reviews": 43956,
+     "price": 14.0
+    }
+   ]
+  },
+  "items-growtopia-items": {
+   "t": "2026-08-27T14:00:00Z",
+   "offers": [
+    {
+     "name": "Blue Gem Lock (100 WL)",
+     "seller": "BglsKING",
+     "rating": null,
+     "reviews": 7356,
+     "price": 2.975
+    }
+   ]
+  }
+ }
+}
