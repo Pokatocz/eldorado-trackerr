@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Přeskočit na obsah</a>
 <header class="topbar"><div class="topbar__in">
   <a class="brand" href="index.html">ELDORADO <span>TERMINAL</span></a>
   <nav class="nav"><a href="index.html#vydelek">Výdělek</a><a href="index.html#hry">Hry</a><a href="#ceny">Ceny</a><a href="#nabidky">Nabídky</a><a href="#met">Metody</a><a href="index.html#overeni">Ověření</a></nav>
@@ -54,7 +55,7 @@
     <div class="eyebrow">Živé nabídky</div>
     <h2>Co se právě prodává</h2>
     <p class="lead">Konkrétní nabídky stažené robotem z kategorií této hry — název, prodejce, cena a kolik z ní zbude po poplatku.</p>
-    <div class="tools"><input id="lq" type="search" placeholder="Filtrovat nabídky…" aria-label="Filtrovat nabídky"><span class="hint" id="lhint"></span></div>
+    <div class="tools"><input id="lq" type="search" placeholder="Filtrovat nabídky…" aria-label="Filtrovat nabídky"><span class="hint" id="lhint" aria-live="polite" role="status"></span></div>
     <div class="tbl scroll"><table class="wide" id="tlive"><thead><tr>
       <th class="s" data-k="name" data-d="asc">Nabídka</th><th>Kategorie</th><th class="s desc" data-k="price">Cena</th>
       <th>Netto po fee</th><th class="s" data-k="reviews">Prodejce</th><th>Hodnocení</th>
@@ -65,7 +66,7 @@
     <div class="eyebrow">Výdělkové metody</div>
     <h2>Jak se v téhle hře vydělává</h2>
     <p class="lead">Jen legitimní herní mechaniky. <b>$/h</b> se počítá z aktuální ceny na Eldoradu, takže se mění spolu s trhem. <b>AFK</b> 0 = musíš u toho být, 5 = běží samo. <b>Riziko prodeje</b> je podle skutečného vymáhání vydavatele, ne podle toho, co má v pravidlech.</p>
-    <div class="tools"><button class="chip on" data-f="all">vše</button><button class="chip" data-f="usd">jen s $/h</button><button class="chip" data-f="afk">AFK ≥ 3</button><span class="hint" id="mhint"></span></div>
+    <div class="tools"><button class="chip on" data-f="all" aria-pressed="true">vše</button><button class="chip" data-f="usd" aria-pressed="false">jen s $/h</button><button class="chip" data-f="afk" aria-pressed="false">AFK ≥ 3</button><span class="hint" id="mhint" aria-live="polite" role="status"></span></div>
     <p class="hint" style="margin:0 0 8px">$/h se počítá z aktuální ceny. Kde chybí, je uvedený důvod: <b>bez číselného výnosu</b> = research nenašel spolehlivé číslo · <b>výnos není za čas</b> = metoda dává kusy, ne hodinovku · <b>… se neprodává</b> = ta měna nejde na Eldoradu zpeněžit.</p>
     <div class="tbl scroll"><table class="wide" id="tmeth"><thead><tr>
       <th class="s desc" data-k="usd">$/h čistý</th><th>Trend</th><th class="s" data-k="method" data-d="asc">Metoda</th><th class="s" data-k="rate">Výnos ve hře</th>
@@ -214,7 +215,7 @@ T.load().then(D=>{
 
 $('lq').addEventListener('input',renderLive);
 document.querySelectorAll('#met .chip[data-f]').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('#met .chip[data-f]').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on'); methFilter=b.dataset.f; renderMeth();}));
+  document.querySelectorAll('#met .chip[data-f]').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false');});
+  b.classList.add('on'); b.setAttribute('aria-pressed','true'); methFilter=b.dataset.f; renderMeth();}));
 </script>
 </body></html>

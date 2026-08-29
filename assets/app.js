@@ -194,6 +194,10 @@ const T = {
   gameHref(id){ return 'game.html?g='+encodeURIComponent(id); },
 
   spark(cv,s,w=78,h=22){
+    if(cv.setAttribute){ const v=s.map(p=>p.price);
+      cv.setAttribute('role','img');
+      cv.setAttribute('aria-label', v.length<2 ? 'Bez historie ceny'
+        : (v[v.length-1]>=v[0]?'Cena roste, ':'Cena klesá, ')+`aktuálně ${T.USD(v[v.length-1])}`); }
     const dpr=devicePixelRatio||1; cv.width=w*dpr; cv.height=h*dpr; const x=cv.getContext('2d'); x.scale(dpr,dpr);
     const v=s.map(p=>p.price);
     if(v.length<2){ x.fillStyle='#233428'; x.fillRect(0,h/2,w,1); return; }
@@ -203,6 +207,10 @@ const T = {
     x.stroke();
   },
   chart(cv,s,label){
+    // graf je obrázek: dej mu textový popis, jinak je pro odečítač prázdný
+    if(cv.setAttribute){ cv.setAttribute('role','img');
+      cv.setAttribute('aria-label', s.length<2 ? 'Graf ceny: zatím jen jeden snímek.'
+        : `Graf ceny, ${s.length} snímků, od ${T.USD(s[0].price)} do ${T.USD(s[s.length-1].price)}.`); }
     const w=cv.clientWidth||620,h=190,dpr=devicePixelRatio||1;
     cv.width=w*dpr; cv.height=h*dpr; const x=cv.getContext('2d'); x.scale(dpr,dpr); x.clearRect(0,0,w,h);
     x.font='10.5px JetBrains Mono, monospace';
@@ -230,11 +238,18 @@ const T = {
   },
   sorter(tableSel,getVal,render){
     let k=null,dir='desc';
-    document.querySelectorAll(tableSel+' th.s').forEach(th=>th.addEventListener('click',()=>{
-      const kk=th.dataset.k; if(k===kk) dir=dir==='asc'?'desc':'asc'; else {k=kk; dir=th.dataset.d||'desc';}
-      document.querySelectorAll(tableSel+' th.s').forEach(t=>t.classList.remove('asc','desc'));
-      th.classList.add(dir); render();
-    }));
+    document.querySelectorAll(tableSel+' th.s').forEach(th=>{
+      // hlavička musí jít ovládat i klávesnicí a hlásit stav řazení odečítači
+      th.tabIndex=0; th.setAttribute('role','columnheader');
+      th.setAttribute('aria-sort','none'); th.setAttribute('scope','col');
+      const act=()=>{
+        const kk=th.dataset.k; if(k===kk) dir=dir==='asc'?'desc':'asc'; else {k=kk; dir=th.dataset.d||'desc';}
+        document.querySelectorAll(tableSel+' th.s').forEach(t=>{t.classList.remove('asc','desc'); t.setAttribute('aria-sort','none');});
+        th.classList.add(dir); th.setAttribute('aria-sort',dir==='asc'?'ascending':'descending'); render();
+      };
+      th.addEventListener('click',act);
+      th.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); act(); }});
+    });
     return rows=>{ if(!k) return rows;
       return rows.slice().sort((a,b)=>{ let va=getVal(a,k),vb=getVal(b,k);
         if(va==null&&vb==null) return 0; if(va==null) return 1; if(vb==null) return -1;

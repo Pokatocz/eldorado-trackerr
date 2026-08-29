@@ -88,6 +88,26 @@ Kontrola z 28. 8. 2026: **34 potvrzeno, 13 opraveno, 48 neověřeno**. Nejzáva�
 Co se potvrdilo: celá struktura poplatků, výběrové poplatky, ban pravidla Jagexu, Riotu, Throne & Liberty
 a DonutSMP, sazby Roblox DevEx, a ceny ESO, EVE, Star Citizen, PoE, Tibia i WoW retail.
 
+## Přístupnost
+
+Web byl 28. 8. 2026 protažen kontrolním seznamem ze skillu
+[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill). Jeho generátor návrhových
+systémů potvrdil zvolený směr (Dark OLED, zelené indikátory, mono+sans typografie), ale audit našel
+sedm skutečných chyb, které jsou opravené:
+
+| Nález | Oprava |
+|---|---|
+| 24 řaditelných hlaviček nešlo ovládat klávesnicí a nehlásily stav | `tabindex`, `aria-sort`, `scope`, obsluha Enter/Mezerník |
+| 507 klikatelných řádků bez přístupu z klávesnice | jméno hry je teď skutečný `<a>`; klik na řádek zůstal jako doplněk |
+| 59 hvězdiček watchlistu bez stavu | `aria-pressed` + popisný `aria-label` |
+| 115 grafů bez textového popisu | `role="img"` a `aria-label` se shrnutím vývoje ceny |
+| Počty výsledků se měnily bez oznámení | `aria-live="polite"` na počítadlech |
+| Barva `--dim` měla kontrast 3,26 : 1 (norma je 4,5) | zesvětlena na `#6E8C7A` = 5,14 : 1 |
+| Chyběl skip link | „Přeskočit na obsah" jako první Tab |
+
+Filtry (chipy) hlásí stav přes `aria-pressed`, tabulky mají vodorovný posuv místo přetékání a celý web
+respektuje `prefers-reduced-motion`.
+
 ## Nasazení
 
 1. Nahraj obsah složky do GitHub repozitáře. Soubor `.github/workflows/update.yml` vytvoř přes

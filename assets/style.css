@@ -16,7 +16,7 @@
   --rust:#E06C5A;         /* pokles / riziko */
   --text:#D6E7DB;
   --muted:#7E9A88;
-  --dim:#526B5C;
+  --dim:#6E8C7A;      /* zvýšeno kvůli kontrastu 4.5:1 na malém textu */
   --display:'Space Grotesk',system-ui,sans-serif;
   --body:'Inter Tight',system-ui,sans-serif;
   --mono:'JetBrains Mono',ui-monospace,monospace;
@@ -175,3 +175,17 @@ canvas.big{width:100%;height:190px;background:var(--panel2);border:1px solid var
 /* dlouhé URL ve zdrojích nesmí roztáhnout stránku */
 .panel ul li{overflow-wrap:anywhere;word-break:break-word}
 .panel a{overflow-wrap:anywhere}
+
+/* --- přístupnost (audit dle ui-ux-pro-max, 28.8.2026) --- */
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--phos);color:var(--void);
+  padding:10px 16px;border-radius:0 0 8px 0;font-family:var(--mono);font-size:12px;font-weight:600}
+.skip:focus{left:0;text-decoration:none}
+th.s:focus-visible{outline:2px solid var(--acid);outline-offset:-2px}
+th.s[aria-sort="ascending"]::after{content:' ⌃';color:var(--phos)}
+th.s[aria-sort="descending"]::after{content:' ⌄';color:var(--phos)}
+th.s[aria-sort="none"]::after{content:' ⌄';color:var(--dim)}
+td a.rowlink{color:var(--text);text-decoration:none;display:inline-block}
+td a.rowlink:hover{color:var(--phos);text-decoration:underline;text-underline-offset:3px}
+.star{cursor:pointer;border-radius:4px}
+.star:focus-visible{outline:2px solid var(--acid);outline-offset:1px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
